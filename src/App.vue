@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <fvMain id="app" parent>
+    <router-view></router-view>
+  </fvMain>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  data () {
+    return {
+      sidebar: false,
+      sidebarPin: false,
+      dialog: false,
+      options: [{a: 'One', b: 1}, {a: 'Two', b: 2}, {a: 'Three', b: 3}],
+      select: undefined
+    }
+  },
+  methods: {
+    updateSidebar(value) {
+      if (this.$route.name === 'Home') {
+        this.sidebar = false
+      } else {
+        this.sidebar = value
+      }
+    },
+    updateSidebarPin(value) {
+      if (this.$route.name === 'Home') {
+        this.sidebarPin = false
+      } else {
+        this.sidebarPin = value
+      }
+    }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
