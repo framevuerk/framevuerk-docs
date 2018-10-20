@@ -1,0 +1,54 @@
+{
+  "prop": [
+    {
+      "name": "value",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Visibility of dialog."
+    },
+    {
+      "name": "overlay",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Does dialog has an overlay behind?"
+    },
+    {
+      "name": "animation",
+      "type": "String",
+      "default": "'fv-fade'",
+      "description": "A CSS class to handle opening and closing animation (will directly set to Vue.js transition name)"
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newVisibilityState",
+      "description": "Fired when component request to change <b>value</b> (close and open request by dialog)."
+    },
+    {
+      "name": "open",
+      "params": "",
+      "description": "Fired when dialog opened."
+    },
+    {
+      "name": "close",
+      "params": "",
+      "description": "Fired when dialog closed."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "class": [
+    {
+      "name": ".not-center",
+      "description": "Remove vertically and horizontally position styles."
+    }
+  ],
+  "note": [
+    "<b>fvDialog</b> should atleast one <b>fvMain</b> parent with <b>parent</b> prop.",
+    "<b>fvDialog</b> uses <i>translate(-50%, -50%); left: 50%; top: 50%;</i> way to put itself vertically and horizontaly on center. If you use <b>.not-center</b> class or custom animation, dont remember to handle it."
+  ]
+}

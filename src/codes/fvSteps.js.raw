@@ -1,0 +1,8 @@
+export default {
+    data () {
+        return {
+            steps: ['Stage One', 'Stage Two', 'Stage Three', 'And Stage Four'],
+            value: 0
+        }
+    }
+}

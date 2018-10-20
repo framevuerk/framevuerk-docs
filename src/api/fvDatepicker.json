@@ -1,0 +1,94 @@
+{
+  "prop": [
+    {
+      "name": "value*",
+      "type": "",
+      "default": "",
+      "description": "Value of input"
+    },
+    {
+      "name": "required",
+      "type": "[Boolean, Function]",
+      "default": "false",
+      "description": "Does input required to fill? Also with <i>function</i> type you can pass function with one argument (<b>fn(value){}</b>) and return Boolean value."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Does input disabled?"
+    },
+    {
+      "name": "placeholder",
+      "type": "String",
+      "default": "''",
+      "description": "Placeholder text. (when no option selected)"
+    },
+    {
+      "name": "multiple",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Allow user to select multiple options."
+    },
+    {
+      "name": "deleteButton",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Show delete button next to selected values."
+    },
+    {
+      "name": "dateLibrary",
+      "type": "[Object, Function]",
+      "default": "",
+      "description": "Custom <i>Date</i> library instead of default javascript <i>Date</i> class."
+    },
+    {
+      "name": "defaultValue",
+      "type": "",
+      "default": "Date.now()",
+      "description": "Default highlighted date."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    }
+  ],
+  "scopedSlot": [
+    {
+      "name": "value",
+      "params": "[value]",
+      "description": "Template for value inside input."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "The <i>display</i> css prop of input is <b>inline-flex</b>, so do not change it to <b>block</b> or ... for custom styles.",
+    "You can globally set the <b>dateLibrary</b> prop by setting by <b>Framevuerk.use('date', Date)</b>.",
+    "Input <b>value</b> can be any types that allow by <b>Date Library</b> as first argument. All output <b>value</b> is <b>Date Library</b> constructor.",
+    "For jalaali dates, we highly propose <b>idate</b> npm package."
+  ]
+}

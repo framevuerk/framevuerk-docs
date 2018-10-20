@@ -1,0 +1,5 @@
+<fvMain parent>
+  <fvMenu v-model="menu" :source-element="menuSourceElement" :item="items" @click="clickHandler" />
+
+  <fvButton @click="openMenu"> Open Menu </fvButton>
+</fvMain>

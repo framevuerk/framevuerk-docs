@@ -1,0 +1,6 @@
+<!-- With total count -->
+<fvPagination :value="currentPage" :total="total" @input="currentPage = $event" />
+
+
+<!-- Without total count -->
+<fvPagination :value="currentPage2" :next="true" @input="currentPage2 = $event" />

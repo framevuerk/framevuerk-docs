@@ -1,0 +1,24 @@
+export default {
+    data () {
+        return {
+            fields: ['name', 'family'],
+            rows: [
+                {
+                    name: 'Reza',
+                    family: 'Nouri',
+                    customField: 'x'
+                },
+                {
+                    name: 'Amir',
+                    family: 'Momenian',
+                    customField: 'z'
+                },
+                {
+                    name: 'Saeed',
+                    family: 'Kamyabi',
+                    customField: 'y'
+                },
+            ]
+        }
+    }
+}

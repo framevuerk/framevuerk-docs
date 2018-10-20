@@ -1,0 +1,5 @@
+<fvMain parent>
+  <fvToast v-model="toast" :timeout="3500">
+    <!-- Toast Contents -->
+  </fvToast>
+</fvMain>

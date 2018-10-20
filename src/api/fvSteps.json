@@ -1,0 +1,57 @@
+{
+  "prop": [
+    {
+      "name": "value",
+      "type": "Number",
+      "default": "0",
+      "description": "Working step index."
+    },
+    {
+      "name": "steps*",
+      "type": "Array",
+      "default": "",
+      "description": "List of steps."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    }
+  ],
+  "scopedSlot": [
+    {
+      "name": "box",
+      "params": "[step, index]",
+      "description": "Template for inside steps box."
+    },
+    {
+      "name": "text",
+      "params": "[step, index]",
+      "description": "Template for under steps box."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ]
+}

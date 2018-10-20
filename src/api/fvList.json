@@ -1,0 +1,41 @@
+{
+  "prop": [
+    {
+      "name": "parent",
+      "type": "Boolean",
+      "default": "false",
+      "description": "If you want to handle focus and highlight items by arrow key, set it true."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "Do not set <b>parent</b> prop for <b>sub-list</b> slot.",
+    "You can use <b>.selected</b> class to <b>fvListItem</b> to set selected style."
+  ]
+}

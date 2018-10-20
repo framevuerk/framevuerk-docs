@@ -1,0 +1,72 @@
+{
+  "prop": [
+    {
+      "name": "value",
+      "type": "Number",
+      "default": "1",
+      "description": "Selected page number."
+    },
+    {
+      "name": "total",
+      "type": "Number",
+      "default": "1",
+      "description": "Total pages count. if you havn't, you can play with the <b>navigation</b>, <b>next</b> and <b>prev</b> props and leave it."
+    },
+    {
+      "name": "size",
+      "type": "Number",
+      "default": "5",
+      "description": "Length of pages appear to pagination. if you dont set <b>total</b>, it's not affect."
+    },
+    {
+      "name": "navigation",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Visibility of next/prev buttons."
+    },
+    {
+      "name": "next",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Handle disabled state of next button. If you dont set <b>navigation</b>. It's not usable. Also if you set the <b>total</b> and <b>navigation</b> props together, component consider this as <b>false</b> if <b>value</b> equal to <b>total</b>."
+    },
+    {
+      "name": "prev",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Handle disabled state of prev button. If you dont set <b>navigation</b>. It's not usable. Also if you set the <b>total</b> and <b>navigation</b> props together, component consider this as <b>false</b> if <b>value</b> equal to <b>1</b>."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b> (when user try to change the current page)."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "If you click on selected page button in run-time, you can change current page by custom number."
+  ]
+}

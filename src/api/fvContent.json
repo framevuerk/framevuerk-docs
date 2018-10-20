@@ -1,0 +1,19 @@
+{
+  "prop": [
+    {
+      "name": "initialScroll",
+      "type": "Number",
+      "default": "0",
+      "description": "Initial scrollTop position of component in px. (will apply after all child components mounts)"
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "note": [
+    "You should put <b>fvContent</b> directly into <b>fvMain</b> for best style matching.",
+    "In <b>framevuerk</b>, there is no <i>window</i> or <i>body</i> scroll event happens at all. So if you want to listen to <i>scroll</i> events and etc, listen to this element instead of <i>window</i> or <i>body</i>."
+  ]
+}

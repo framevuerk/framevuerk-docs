@@ -1,0 +1,50 @@
+{
+  "prop": [
+    {
+      "name": "src",
+      "type": "[String, Array]",
+      "default": "",
+      "description": "Image source or list of image sources."
+    },
+    {
+      "name": "alt",
+      "type": "[String, Array]",
+      "default": "",
+      "description": "Alt of image. If <b>src</b> prop is list of images, you can use list of alts here."
+    },
+    {
+      "name": "showButtons",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Show next/prev buttons on next to slider."
+    },
+    {
+      "name": "interval",
+      "type": "Number",
+      "default": "0",
+      "description": "Miliseconds time to automatic change the <b>slide</b>. If it's <b>0</b>, it does not apply."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ]
+}

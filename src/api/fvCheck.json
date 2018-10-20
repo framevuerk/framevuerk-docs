@@ -1,0 +1,73 @@
+{
+  "prop": [
+    {
+      "name": "value*",
+      "type": "",
+      "default": "",
+      "description": "Value of input."
+    },
+    {
+      "name": "content*",
+      "type": "",
+      "default": "",
+      "description": "Content of current box that will be put/set to <b>value</b>."
+    },
+    {
+      "name": "required",
+      "type": "[Boolean, Function]",
+      "default": "false",
+      "description": "Does value prop required to fill? Also with <i>function</i> type you can pass function with one argument (<b>fn(value){}</b>) and return Boolean value."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Does checkbox disabled?"
+    },
+    {
+      "name": "multiple",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Allow user to check multiple items. If it's <b>true</b>, <b>check box</b> will show to user and behave to <b>value</b> prop as <i>Array</i> and if it's <b>false</b>, <b>radio button</b> will show and <b>content</b> prop directly set to <b>value</b> on click."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default",
+      "description": "Used for label of check box."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "There is difference between <b>value</b> and <b>content</b> prop and it's can make you confused in first look. Reading source of examples can help you.",
+    "The <i>display</i> css prop of checkbox is <b>inline-flex</b>, so do not change it to <b>block</b> or ... for custom styles."
+  ]
+}

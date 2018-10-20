@@ -1,0 +1,18 @@
+{
+  "prop": [
+    {
+      "name": "parent",
+      "type": "Boolean",
+      "default": "false",
+      "description": "If true, all children dialogs overlays and position calculating based on this component."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "note": [
+    "Only active <b>parent</b> prop for the root <b>fvMain</b> if you confused about this prop."
+  ]
+}

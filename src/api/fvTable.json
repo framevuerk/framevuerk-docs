@@ -1,0 +1,96 @@
+{
+  "prop": [
+    {
+      "name": "fields",
+      "type": "Array",
+      "default": "[]",
+      "description": "List of table fields."
+    },
+    {
+      "name": "titleKey",
+      "type": "String",
+      "default": "''",
+      "description": "<b>title</b> key in each field object. only works when <b>fields</b> prop is list of objects."
+    },
+    {
+      "name": "valueKey",
+      "type": "String",
+      "default": "''",
+      "description": "<b>value</b> key in each field object. only works when <b>fields</b> prop is list of objects."
+    },
+    {
+      "name": "rows",
+      "type": "Array",
+      "default": "[]",
+      "description": "List of table rows."
+    },
+    {
+      "name": "showTitle",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Show fields title."
+    },
+    {
+      "name": "breaked",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Change style of table to small mode."
+    }
+  ],
+  "event": [
+    {
+      "name": "update:breaked",
+      "params": "newBreakedValue",
+      "description": "Fired when component request to change <b>breaked</b> prop."
+    }
+  ],
+  "scopedSlot": [
+    {
+      "name": "title",
+      "params": "[field, index, breaked]",
+      "description": "Field titles template."
+    },
+    {
+      "name": "field",
+      "params": "[field, row, index, breaked]",
+      "description": "Field values template."
+    },
+    {
+      "name": "title-${fieldValue}",
+      "params": "[field, index, breaked]",
+      "description": "Custom field title template."
+    },
+    {
+      "name": "field-${fieldValue}",
+      "params": "[field, row, index, breaked]",
+      "description": "Custom field value template."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "<b>fvTable</b> should atleast one <b>fvMain</b> parent with <b>parent</b> prop.",
+    "Pass model and use <b>.sync</b> modifier to <b>breaked</b> prop to calculate it on <i>resize</i> to allow component to break/unbreak based on parent size.",
+    "You can use <b>.fv-no-border</b> and <b>.fv-no-shadow</b> class to remove borders if you want to show table in full viewport size."
+  ]
+}

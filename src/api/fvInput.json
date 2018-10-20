@@ -1,0 +1,49 @@
+{
+  "prop": [
+    {
+      "name": "value",
+      "type": "",
+      "default": "",
+      "description": "Value of input"
+    },
+    {
+      "name": "required",
+      "type": "[Boolean, Function]",
+      "default": "false",
+      "description": "Does input required to fill? Also with <i>function</i> type you can pass function with one argument (<b>fn(value){}</b>) and return Boolean value."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "You can use <b>.fv-input</b> class to custom element and set <b>.placeholder</b> class to child element for placeholder style.",
+    "This component wrapped to normal html input element, so custom events and attributes are available on this."
+  ]
+}

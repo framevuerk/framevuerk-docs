@@ -1,0 +1,55 @@
+{
+  "prop": [
+    {
+      "name": "value*",
+      "type": "Boolean",
+      "default": "",
+      "description": "Sidebar visibility."
+    },
+    {
+      "name": "pin",
+      "type": "Boolean",
+      "default": "",
+      "description": "Is fvSidebar pinned to parent fvMain?"
+    },
+    {
+      "name": "position",
+      "type": "['right', 'left']",
+      "default": "Based on start direction.",
+      "description": "Position of sidebar."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newVisibilityState",
+      "description": "Fired when component request to change <b>value</b>(visibility state) prop."
+    },
+    {
+      "name": "update:pin",
+      "params": "newPinState",
+      "description": "Fired when component request to change <b>pin</b> prop."
+    },
+    {
+      "name": "open",
+      "params": "",
+      "description": "Fired when sidebar opened."
+    },
+    {
+      "name": "close",
+      "params": "",
+      "description": "Fired when sidebar closed."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "note": [
+    "You should put <b>fvSidebar</b> directly into <b>fvMain</b> with <b>parent</b> prop for best style matching.",
+    "You can set custom color for background via <b>sidebar-bg-color</b> key in your variables.",
+    "You can control sidebar width by setting static value to <i>width</i> prop in css or use <b>fvGrid</b> classes, something like <b>fv-col-md-4</b>.",
+    "Pass model and use <b>.sync</b> modifier to <b>pin</b> prop to calculate it on <i>mount</i> and do the same for <b>value</b> to allow user to close sidebar by cliclikng overlay."
+  ]
+}

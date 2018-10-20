@@ -1,0 +1,1 @@
+<fvSwitch v-model="input" />

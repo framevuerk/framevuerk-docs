@@ -1,0 +1,146 @@
+{
+  "prop": [
+    {
+      "name": "value*",
+      "type": "",
+      "default": "",
+      "description": "Value of input"
+    },
+    {
+      "name": "required",
+      "type": "[Boolean, Function]",
+      "default": "false",
+      "description": "Does input required to fill? Also with <i>function</i> type you can pass function with one argument (<b>fn(value){}</b>) and return Boolean value."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Does input disabled?"
+    },
+    {
+      "name": "placeholder",
+      "type": "String",
+      "default": "''",
+      "description": "Placeholder text. (when no option selected)"
+    },
+    {
+      "name": "multiple",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Allow user to select multiple options."
+    },
+    {
+      "name": "options",
+      "type": "Array",
+      "default": "[]",
+      "description": "List of options."
+    },
+    {
+      "name": "disabledKey",
+      "type": "String",
+      "default": "'disabled'",
+      "description": "<b>disabled</b> key in each option object. only works when <b>options</b> prop is list of objects."
+    },
+    {
+      "name": "valueKey",
+      "type": "String",
+      "default": "'value'",
+      "description": "<b>value</b> key in each option object. only works when <b>options</b> prop is list of objects."
+    },
+    {
+      "name": "textKey",
+      "type": "String",
+      "default": "'text'",
+      "description": "<b>text</b> key in each option object. only works when <b>options</b> prop is list of objects."
+    },
+    {
+      "name": "deleteButton",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Show delete button next to selected values."
+    },
+    {
+      "name": "loading",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Show loading indicator instead of options."
+    },
+    {
+      "name": "allowInsert",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Allow user to insert new option."
+    },
+    {
+      "name": "search",
+      "type": "[true, false, null]",
+      "default": "true",
+      "description": "Allow user to search in options. <b>false</b> make it disabled, <b>true</b> handled by internal local search and <b>null</b> just show search input, but not affect to options."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    },
+    {
+      "name": "insert",
+      "params": "text",
+      "description": "Fired when user try to insert new <b>value</b>."
+    },
+    {
+      "name": "search",
+      "params": "text",
+      "description": "Fired when user typed into search input."
+    }
+  ],
+  "scopedSlot": [
+    {
+      "name": "option",
+      "params": "[option]",
+      "description": "Template for options inside outer box."
+    },
+    {
+      "name": "value",
+      "params": "[value]",
+      "description": "Template for value inside input."
+    },
+    {
+      "name": "insert",
+      "params": "[value]",
+      "description": "Template for <i>insert new item</i> box inside outer box."
+    },
+    {
+      "name": "empty",
+      "params": "[userTypedValue]",
+      "description": "Template for empty outer box."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "The <i>display</i> css prop of input is <b>inline-flex</b>, so do not change it to <b>block</b> or ... for custom styles."
+  ]
+}

@@ -1,0 +1,5 @@
+<!-- Single Src -->
+<fvImg src="path/to/source.jpg" />
+
+<!-- Multiple Src -->
+<fvImg :src="['path/to/source.jpg', 'path/to/source2.jpg']" />

@@ -1,0 +1,63 @@
+{
+  "prop": [
+    {
+      "name": "value",
+      "type": "",
+      "default": "",
+      "description": "Value of input"
+    },
+    {
+      "name": "required",
+      "type": "[Boolean, Function]",
+      "default": "false",
+      "description": "Does input required to be ON? Also with <i>function</i> type you can pass function with one argument (<b>fn(value){}</b>) and return Boolean value."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Does input disabled?"
+    },
+    {
+      "name": "onValue",
+      "type": "",
+      "default": "true",
+      "description": "Export <b>value</b> when handler is ON."
+    },
+    {
+      "name": "offValue",
+      "type": "",
+      "default": "false",
+      "description": "Export <b>value</b> when handler is OFF."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ]
+}

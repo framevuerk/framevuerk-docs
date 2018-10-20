@@ -1,0 +1,3 @@
+<fvMain parent>
+  <fvTable :fields="fields" :rows="rows" />
+</fvMain>

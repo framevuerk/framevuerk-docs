@@ -1,0 +1,5 @@
+<!-- Normal -->
+<fvAvatar src="path/to/avatar.jpg" name="Amir Hashemi" />
+
+<!-- Character Mode -->
+<fvAvatar name="Amir Hashemi" />

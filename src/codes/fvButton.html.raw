@@ -1,0 +1,5 @@
+<!-- Normal -->
+<fvButton> Normal Button </fvButton>
+
+<!-- For another element -->
+<a class="fv-button"> Link Button </a>

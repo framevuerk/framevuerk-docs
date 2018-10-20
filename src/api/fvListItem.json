@@ -1,0 +1,69 @@
+{
+  "prop": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Disabled state of item."
+    },
+    {
+      "name": "expanded",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Should <b>sub-list</b> slot expanded by default?"
+    }
+  ],
+  "event": [
+    {
+      "name": "expand",
+      "params": "",
+      "description": "Fired when <b>sub-list</b> slot has been expanded."
+    },
+    {
+      "name": "collapse",
+      "params": "",
+      "description": "Fired when <b>sub-list</b> slot has been collapsed."
+    },
+    {
+      "name": "click",
+      "params": "event",
+      "description": "Fired when user clicked on this."
+    },
+    {
+      "name": "hover",
+      "params": "",
+      "description": "Fired user highlighted this, even with mouse event or by arrow key."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    },
+    {
+      "name": "sub-list",
+      "description": "Use this to create <b>fvList</b> component inside <b>fvListItem</b> as sub list."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<!-- Single (From, To Data) -->
+<fvRange v-model="rangeOne" :data="dateOne">
+
+<!-- Single (Array Data) -->
+<fvRange v-model="rangeTwo" :data="dateTwo">
+
+<!-- Multiple ([from, to]) -->
+<fvRange v-model="rangeThree" :data="dateThree" multiple>

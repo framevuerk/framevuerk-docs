@@ -1,0 +1,9 @@
+export default {
+    data () {
+        return {
+            currentPage: 1,
+            currentPage2: 1,
+            total: 22
+        }
+    }
+}

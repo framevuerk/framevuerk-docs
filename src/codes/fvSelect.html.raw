@@ -1,0 +1,1 @@
+<fvSelect v-model="input" :options="options" />

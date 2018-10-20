@@ -1,0 +1,12 @@
+<fvList parent>
+    <fvListItem> Item One </fvListItem>
+    <fvListItem> Item Two </fvListItem>
+    <fvListItem disabled> Item Three </fvListItem>
+    <fvListItem>
+        Item Four with childs
+        <fvList slot="sub-list">
+            <fvListItem> Item Four / One </fvListItem>
+            <fvListItem> Item Four / Two </fvListItem>
+        </fvList>
+    </fvListItem>
+</fvList>

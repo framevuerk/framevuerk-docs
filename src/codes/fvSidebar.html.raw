@@ -1,0 +1,5 @@
+<fvMain>
+    <fvSidebar v-model="sidebar" :pin.sync="sidebarPin">
+        <!-- Sidebar Content -->
+    </fvSidebar>
+</fvMain>

@@ -1,0 +1,85 @@
+{
+  "prop": [
+    {
+      "name": "value*",
+      "type": "",
+      "default": "",
+      "description": "Selected slide (slot) name. (without <b>slide-</b> prefix)"
+    },
+    {
+      "name": "showTabs",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Show tab buttons on top of slider."
+    },
+    {
+      "name": "showNavs",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Show navigation buttons on bottom of slider."
+    },
+    {
+      "name": "showButtons",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Show next/prev buttons on next to slider."
+    },
+    {
+      "name": "interval",
+      "type": "Number",
+      "default": "0",
+      "description": "Miliseconds time to automatic change the <b>value</b> key. If it's <b>0</b>, it does not apply."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newSelectedSlide",
+      "description": "Fired when component request to change <b>value</b>."
+    }
+  ],
+  "scopedSlot": [
+    {
+      "name": "slide-${slide}",
+      "params": "[selected]",
+      "description": "Your slides puted here by unique slot name."
+    },
+    {
+      "name": "tab",
+      "params": "[slide, selected]",
+      "description": "Field tab buttons template. <b>slide</b> param equal to slot (slide) names."
+    },
+    {
+      "name": "tab-${slide}",
+      "params": "[selected]",
+      "description": "Unique slide tab button template."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "<b>fvSlider</b> consider slots with <b>slide-</b> name starts as slide and text after that is slide name",
+    "If <b>value</b> prop is undefined at start, <b>fvSlider</b> will fire <b>input</b> event with first slide value.",
+    "If you want to get your custom object for <b>button</b> slot, you can use <b>value</b> as key and handle target object outside of <b>fvSlider</b>."
+  ]
+}

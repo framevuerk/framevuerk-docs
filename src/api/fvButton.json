@@ -1,0 +1,79 @@
+{
+  "prop": [
+    {
+      "name": "loading",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Show loading indicator inside button."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Disabled state of button."
+    }
+  ],
+  "event": [
+    {
+      "name": "click",
+      "params": "event",
+      "description": "Fired when user clicked on this."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-default",
+      "description": "Default theme (actived by default)"
+    },
+    {
+      "name": ".fv-primary",
+      "description": "Primary theme"
+    },
+    {
+      "name": ".fv-secondary",
+      "description": "Secondary theme"
+    },
+    {
+      "name": ".fv-danger",
+      "description": "Danger theme"
+    },
+    {
+      "name": ".fv-warning",
+      "description": "Warning theme"
+    },
+    {
+      "name": ".fv-info",
+      "description": "Info theme"
+    },
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "You can use <b>.fv-button</b> to custom element, like <i>a</i> tag.",
+    "To configure theme colors, play with <b>primary-color</b>, <b>secondary-color</b>, <b>danger-color</b>, <b>warning-color</b> and <b>info-color</b> key in your config variables.",
+    "This component wrapped to normal html button element, so custom events and attributes are available on this."
+  ]
+}

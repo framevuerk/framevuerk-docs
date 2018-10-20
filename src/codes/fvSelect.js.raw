@@ -1,0 +1,22 @@
+export default {
+    data () {
+        return {
+            input: undefined,
+            options: [
+                {
+                    text: 'Item One',
+                    value: 1
+                },
+                {
+                    text: 'Item Two',
+                    value: 2
+                },
+                {
+                    text: 'Item Three',
+                    value: 3,
+                    disabled: true
+                }
+            ]
+        }
+    }
+}

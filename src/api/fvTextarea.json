@@ -1,0 +1,32 @@
+{
+  "prop": [
+    {
+      "name": "value*",
+      "type": "",
+      "default": "",
+      "description": "Value of input"
+    },
+    {
+      "name": "required",
+      "type": "[Boolean, Function]",
+      "default": "false",
+      "description": "Does input required to fill? Also with <i>function</i> type you can pass function with one argument (<b>fn(value){}</b>) and return Boolean value."
+    },
+    {
+      "name": "autoHeight",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Calculate and set height of element at runtime."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    }
+  ],
+  "note": [
+    "This component wrapped to normal html textarea element, so custom events and attributes are available on this."
+  ]
+}

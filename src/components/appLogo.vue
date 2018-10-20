@@ -1,5 +1,5 @@
 <template>
-<div class="logo" :class="{ready: ready}">
+<div class="logo" :class="{ready: isReady || ready, white: white}">
   <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="534px" height="420px" viewBox="0 0 534 420" enable-background="new 0 0 534 420" xml:space="preserve">
     <path fill="#35495E" d="M320.296,71.189c0,0-16.014-0.447-22.081,3.909c0,0,6.068-14.188,20.215-25.191
       c2.799-2.177-19.282-19.904-49.138-19.904c-31.1,0-51.937,17.727-49.138,19.904c14.147,11.003,20.215,25.191,20.215,25.191
@@ -13,28 +13,35 @@
 
 <script>
 export default {
+  props: {
+    white: {
+      type: Boolean
+    },
+    ready: {
+      type: Boolean
+    }
+  },
   data () {
     return {
-      ready: false
+      isReady: false
     }
   },
   mounted () {
     setTimeout(() => {
-      this.ready = true
+      this.isReady = true
     }, 120)
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .logo {
-  width: 100%;
   height: auto;
   display: inline-block;
+  vertical-align: middle;
 
   & svg {
-    width: 15em;
+    width: 100%;
     height: auto;
     max-height: 12em;
     margin: 0 auto;
@@ -48,6 +55,18 @@ export default {
       fill: transparent;
       transition-delay: 0.6s;
       transition-duration: 1s;
+    }
+  }
+
+  &.white.ready {
+    & svg {
+      & polygon {
+        fill: #fff;
+      }
+
+      & path {
+        fill: #fff;
+      }
     }
   }
 

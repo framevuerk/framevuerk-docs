@@ -1,0 +1,17 @@
+{
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-default",
+      "description": "Transparent theme"
+    }
+  ],
+  "note": [
+    "You should put <b>fvFooter</b> directly into <b>fvMain</b> for best style matching.",
+    "You can set custom color for background via <b>footer-bg-color</b> key in your config variables"
+  ]
+}

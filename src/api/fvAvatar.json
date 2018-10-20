@@ -1,0 +1,28 @@
+{
+  "prop": [
+    {
+      "name": "src",
+      "type": "String",
+      "default": "",
+      "description": "Avatar (image) source."
+    },
+    {
+      "name": "name",
+      "type": "String",
+      "default": "",
+      "description": "Name of user. Uses of characters as fallback when <b>src</b> image not availabe."
+    },
+    {
+      "name": "size",
+      "type": "String",
+      "default": "'32px",
+      "description": "Size of avatar."
+    }
+  ],
+  "class": [
+    {
+      "name": ".square",
+      "description": "Show square instead of circle."
+    }
+  ]
+}

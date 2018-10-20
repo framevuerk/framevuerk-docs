@@ -1,0 +1,3 @@
+<fvForm @submit="sendIt" @reject="showWarning">
+  <!-- Your input components -->
+</fvForm

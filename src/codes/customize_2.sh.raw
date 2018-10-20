@@ -1,0 +1,5 @@
+framevuerk-builder -d "path/to/framevuerk/source/dir" -o "path/to/receive/builded/files" -c "path/to/config/file"
+
+# --dir, -d         path to framevuerk source folder. default: "./node_modules/framevuerk"
+# --output-dir, -o  path to output files. default: "./node_modules/framevuerk/dist"
+# --config, -c      path to config file. used default config if not set.

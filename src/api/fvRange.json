@@ -1,0 +1,66 @@
+{
+  "prop": [
+    {
+      "name": "value*",
+      "type": "",
+      "default": "",
+      "description": "Value of input. When <b>multiple</b> prop is <i>true</b>, it will be an <i>Array</i> with two index (like [<b>value1</b>, <b>value2</b>]) and if is not, it just <b>value</b>."
+    },
+    {
+      "name": "required",
+      "type": "[Boolean, Function]",
+      "default": "false",
+      "description": "Does input required to fill? Also with <i>function</i> type you can pass function with one argument (<b>fn(value){}</b>) and return Boolean value."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Does input disabled?"
+    },
+    {
+      "name": "multiple",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Allow user to select two data."
+    },
+    {
+      "name": "data",
+      "type": "[Array, { from: Number(,) to: Number }]",
+      "default": "{ from: 1, to: 10 }",
+      "description": "List of data. You can pass list of data (like [1, 2, 3, ...]) or object that contain <b>from</b> key with a <i>Number</i> value in it and <b>to</b> key with a bigger <i>Number</i> value in it."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "If <b>value</b> prop contain non indexed item into <b>data</b> prop, <b>fvRange</b> will reset itself and fire <b>input</b> event with default value."
+  ]
+}

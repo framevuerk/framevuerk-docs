@@ -1,0 +1,22 @@
+{
+  "event": [
+    {
+      "name": "submit",
+      "params": "",
+      "description": "Fired when user submitted form."
+    },
+    {
+      "name": "reject",
+      "params": "listOfInvalidChilds",
+      "description": "Fired when form rejected (because of illegal value inside inputs) on submit."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "note": [
+    "This component wrapped to normal html form element, so custom events and attributes are available on this."
+  ]
+}

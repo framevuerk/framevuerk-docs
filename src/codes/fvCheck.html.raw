@@ -1,0 +1,10 @@
+<!-- Radio Button (one of items can be selected) -->
+<fvCheck v-model="radioInput" content="mil"> A.C. Milan </fvCheck>
+<fvCheck v-model="radioInput" content="liv"> Liverpool </fvCheck>
+<fvCheck v-model="radioInput" content="fcb"> Barcelona </fvCheck>
+<fvCheck v-model="radioInput" content="mad" disabled> Real Madrid C.F. </fvCheck>
+
+<!-- Check Box (multiple items can be selected) -->
+<fvCheck v-model="checkInput" content="ir" multiple> English </fvCheck>
+<fvCheck v-model="checkInput" content="it" multiple> Italy </fvCheck>
+<fvCheck v-model="checkInput" content="es" multiple disabled> Spain </fvCheck>

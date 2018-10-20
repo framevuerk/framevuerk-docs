@@ -1,0 +1,35 @@
+export default {
+    data () {
+        return {
+            menu: false,
+            menuSourceElement: undefined,
+            items: [
+                {
+                    text: 'Cut',
+                    disabled: false,
+                    customKey: 1
+                },
+                {
+                    text: 'Copy',
+                    disabled: false,
+                    customKey: 2
+                },
+                {
+                    text: 'Paste',
+                    disabled: true,
+                    customKey: 3
+                }
+            ]
+        }
+    },
+    methods: {
+        openMenu (event) {
+            this.menuSourceElement = event.target
+            this.menu = true
+        },
+        clickHandler (item) {
+            // Do your stuff with clicked menu item here
+            console.log(item)
+        }
+    }
+}

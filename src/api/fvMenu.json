@@ -1,0 +1,88 @@
+{
+  "prop": [
+    {
+      "name": "value",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Visibility of menu."
+    },
+    {
+      "name": "items",
+      "type": "Array",
+      "default": "[]",
+      "description": "List of menu items."
+    },
+    {
+      "name": "disabledKey",
+      "type": "String",
+      "default": "'disabled'",
+      "description": "<b>disabled</b> key in each item object. only works when <b>items</b> prop is list of objects."
+    },
+    {
+      "name": "textKey",
+      "type": "String",
+      "default": "'text'",
+      "description": "<b>text</b> key in each item object. only works when <b>items</b> prop is list of objects."
+    },
+    {
+      "name": "sourceElement",
+      "type": "HTMLElement",
+      "default": "",
+      "description": "Element that try to open menu. <b>fvMenu</b> use this to calculate menu position. You can pass <b>$event.target</b> inside <b>@click</b> event of element that try to open the menu."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newVisibilityState",
+      "description": "Fired when component request to change <b>value</b> (close and open request by dialog)."
+    },
+    {
+      "name": "open",
+      "params": "",
+      "description": "Fired when dialog opened."
+    },
+    {
+      "name": "close",
+      "params": "",
+      "description": "Fired when dialog closed."
+    },
+    {
+      "name": "click",
+      "params": "clickedItem",
+      "description": "Fired when user clicked on a menu item."
+    }
+  ],
+  "scopedSlot": [
+    {
+      "name": "default",
+      "params": "[item]",
+      "description": "Template for menu items."
+    }
+  ],
+  "class": [
+    {
+      "name": ".fv-size-xs",
+      "description": "XSmall size"
+    },
+    {
+      "name": ".fv-size-sm",
+      "description": "Small size"
+    },
+    {
+      "name": ".fv-size-md",
+      "description": "Medium size (actived by default)"
+    },
+    {
+      "name": ".fv-size-lg",
+      "description": "Large size"
+    },
+    {
+      "name": ".fv-size-xl",
+      "description": "XLarge size"
+    }
+  ],
+  "note": [
+    "<b>fvMenu</b> should atleast one <b>fvMain</b> parent with <b>parent</b> prop."
+  ]
+}

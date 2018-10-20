@@ -1,0 +1,41 @@
+{
+  "prop": [
+    {
+      "name": "value",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Visibility of toast."
+    },
+    {
+      "name": "timeout",
+      "type": "Number",
+      "default": "3000",
+      "description": "Miliseconds time to automatic fire <b>input</b> event to change <b>value</b> key after toast show."
+    }
+  ],
+  "event": [
+    {
+      "name": "input",
+      "params": "newValue",
+      "description": "Fired when component request to change <b>value</b>."
+    },
+    {
+      "name": "open",
+      "params": "",
+      "description": "Fired when toast opened."
+    },
+    {
+      "name": "close",
+      "params": "",
+      "description": "Fired when toast closed."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "note": [
+    "<b>fvToast</b> should atleast one <b>fvMain</b> parent with <b>parent</b> prop."
+  ]
+}
