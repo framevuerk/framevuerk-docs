@@ -1,4 +1,6 @@
 {
+  "title": "fvRange",
+  "description": "To create range slider element use this component.",
   "prop": [
     {
       "name": "value*",

@@ -2,10 +2,10 @@
   <fvMain>
     <appSidebar></appSidebar>
     <fvContent>
-      <appHeader title="fvToast" sidebar></appHeader>
+      <appHeader :title="$route.meta.title" sidebar></appHeader>
       <div class="fv-row">
         <div class="fv-col-xs-12 fv-col-md-10 fv-col-offset-md-1 fv-col-lg-10 fv-col-offset-lg-1 fv-col-xl-8 fv-col-offset-xl-2">
-          <p>To create loading spinner use this component. It's very simple as follows:</p>
+          <appDescription :content="$route.meta.api"></appDescription>
           <br />
           <h2>Code:</h2>
           <appCode :content="require('../../codes/fvLoading.html.raw')" lang="html"></appCode>
@@ -34,7 +34,7 @@
           </appExample>
           <br />
           <h2>API:</h2>
-          <appApi :content="require('../../api/fvLoading.json')"></appApi>
+          <appApi :content="$route.meta.api"></appApi>
         </div>
       </div>
     </fvContent>
@@ -47,6 +47,7 @@ import appSidebar from '../../components/appSidebar.vue'
 import appCode from '../../components/appCode.vue'
 import appExample from '../../components/appExample.vue'
 import appApi from '../../components/appApi.vue'
+import appDescription from '../../components/appDescription.vue'
 
 export default {
   components: {
@@ -54,7 +55,8 @@ export default {
     appSidebar,
     appCode,
     appExample,
-    appApi
+    appApi,
+    appDescription
   }
 }
 </script>

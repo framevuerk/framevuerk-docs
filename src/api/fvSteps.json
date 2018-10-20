@@ -1,4 +1,6 @@
 {
+  "title": "fvSteps",
+  "description": "To create step highlighter in top of your forms use this component.",
   "prop": [
     {
       "name": "value",

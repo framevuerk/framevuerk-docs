@@ -1,4 +1,6 @@
 {
+  "title": "fvSwitch",
+  "description": "To create switch (handler, toggle) element use this component.",
   "prop": [
     {
       "name": "value",

@@ -1,4 +1,6 @@
 {
+  "title": "fvInput",
+  "description": "To create text input element use this component.",
   "prop": [
     {
       "name": "value",

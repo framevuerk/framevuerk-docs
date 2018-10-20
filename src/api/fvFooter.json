@@ -1,4 +1,6 @@
 {
+  "title": "fvFooter",
+  "description": "This is the footer part of Framevuerk.",
   "slot": [
     {
       "name": "default"

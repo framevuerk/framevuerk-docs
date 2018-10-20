@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Meta from 'vue-meta'
 import Framevuerk from 'framevuerk/dist/framevuerk.js'
 import 'framevuerk/dist/framevuerk.css'
 import '../node_modules/font-awesome/css/font-awesome.css'
@@ -43,6 +44,50 @@ const pages = {
 const routes = require('./routes.js').map(route => {
   route.component = pages[route.componentName] || pages.setup
   delete route.componentName
+  
+  route.meta = {}
+  route.meta.title = 'Framevuerk'
+  route.meta.description = 'Fast, Responsive, Multi Language, Both Direction Support and Configurable UI Framework based on Vue.js.'
+  if (route.api) {
+    route.meta.api = JSON.parse(JSON.stringify(route.api))
+    delete route.api
+
+    if (route.meta.api instanceof Array) {
+      route.meta.title = route.meta.api[0].title
+      route.meta.description = route.meta.api[0].description
+    } else {
+      route.meta.title = route.meta.api.title
+      route.meta.description = route.meta.api.description
+    }
+  }
+  
+  
+  
+  route.component.metaInfo = {
+    title: route.meta.title,
+    meta: [
+      {
+        name: 'description',
+        content: route.meta.description
+      },
+      {
+        property: 'og:title',
+        content: route.meta.title
+      },
+      {
+        property: 'og:description',
+        content: route.meta.description
+      },
+      {
+        property: 'og:site_name',
+        content: 'Framevuerk'
+      },
+      {
+        property: 'og:image',
+        content: '/framevuerk.png'
+      }
+    ]
+  }
   return route
 })
 
@@ -50,6 +95,7 @@ Vue.config.productionTip = false
 Vue.use(Framevuerk)
 Vue.use(VueRouter)
 Vue.use(VueHighlightJS)
+Vue.use(Meta)
 
 const router = new VueRouter({
   mode: process.env.NODE_ENV === 'production' ? 'history' : '',

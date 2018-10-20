@@ -1,4 +1,6 @@
 {
+  "title": "fvToast",
+  "description": "To show toast message (alert, custom messages) use this component.",
   "prop": [
     {
       "name": "value",

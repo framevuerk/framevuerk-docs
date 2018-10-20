@@ -1,4 +1,6 @@
 {
+  "title": "fvMain",
+  "description": "This is the main part of Framevuerk. For use the most of our components, you should put them into this container for best styles matching and functionality working.",
   "prop": [
     {
       "name": "parent",

@@ -1,4 +1,6 @@
 {
+  "title": "fvCheck",
+  "description": "To create full featured check boxes (even radio buttons) element use this component.",
   "prop": [
     {
       "name": "value*",

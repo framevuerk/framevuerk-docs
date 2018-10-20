@@ -1,4 +1,6 @@
 {
+  "title": "fvLoading",
+  "description": "To create loading spinner use this component.",
   "class": [
     {
       "name": ".fv-size-xs",

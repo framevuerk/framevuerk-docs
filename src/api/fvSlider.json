@@ -1,4 +1,6 @@
 {
+  "title": "fvSlider",
+  "description": "This is slider component.",
   "prop": [
     {
       "name": "value*",

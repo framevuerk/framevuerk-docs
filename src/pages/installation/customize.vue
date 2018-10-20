@@ -2,10 +2,10 @@
   <fvMain>
     <appSidebar></appSidebar>
     <fvContent class="fv-no-padding">
-      <appHeader title="Customize" sidebar></appHeader>
+      <appHeader :title="$route.meta.title" sidebar></appHeader>
       <div class="fv-row">
         <div class="fv-col-xs-12 fv-col-md-10 fv-col-offset-md-1 fv-col-lg-10 fv-col-offset-lg-1 fv-col-xl-8 fv-col-offset-xl-2">
-          <p>Framevuerk can have different language, direction, and colors based on the user's taste. To setup your custom version, you should install <b>framevuerk-builder</b> package.</p>
+          <appDescription :content="$route.meta.api"></appDescription>
           <appCode :content="require('../../codes/customize.sh.raw')" lang="terminal"></appCode>
           <p>And your config or list of configs array in <i>.json</i> file. (Also you can deliver same content via <i>.js</i> file and <i>module.exports</i> format)</p>
           <appCode :content="require('../../codes/customize.json.raw')" lang="json"></appCode>
@@ -30,12 +30,14 @@
 import appHeader from '../../components/appHeader.vue'
 import appSidebar from '../../components/appSidebar.vue'
 import appCode from '../../components/appCode.vue'
+import appDescription from '../../components/appDescription.vue'
 
 export default {
   components: {
     appHeader,
     appSidebar,
-    appCode
+    appCode,
+    appDescription
   }
 }
 </script>

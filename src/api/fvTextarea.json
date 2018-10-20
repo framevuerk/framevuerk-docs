@@ -1,4 +1,6 @@
 {
+  "title": "fvTextarea",
+  "description": "To create textarea element use this component.",
   "prop": [
     {
       "name": "value*",

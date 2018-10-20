@@ -1,4 +1,6 @@
 {
+  "title": "fvTable",
+  "description": "This is table component with many features.",
   "prop": [
     {
       "name": "fields",

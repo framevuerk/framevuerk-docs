@@ -1,4 +1,6 @@
 {
+  "title": "fvForm",
+  "description": "To create form element to check validity of <b>Framevuerk</b> form elements, use this component.",
   "event": [
     {
       "name": "submit",

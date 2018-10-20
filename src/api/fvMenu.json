@@ -1,4 +1,6 @@
 {
+  "title": "fvMenu",
+  "description": "To create popup menu element use this component.",
   "prop": [
     {
       "name": "value",

@@ -2,10 +2,10 @@
   <fvMain>
     <appSidebar></appSidebar>
     <fvContent>
-      <appHeader title="fvHeader" sidebar></appHeader>
+      <appHeader :title="$route.meta.title" sidebar></appHeader>
       <div class="fv-row">
         <div class="fv-col-xs-12 fv-col-md-10 fv-col-offset-md-1 fv-col-lg-10 fv-col-offset-lg-1 fv-col-xl-8 fv-col-offset-xl-2">
-          <p>This is the header part of Framevuerk. It's very simple as follows:</p>
+          <appDescription :content="$route.meta.api"></appDescription>
           <br />
           <h2>Code:</h2>
           <appCode :content="require('../../codes/fvHeader.html.raw')" lang="html"></appCode>
@@ -64,10 +64,10 @@
           </appExample>
           <br />
           <h2>Notes:</h2>
-          <appNotes :content="require('../../api/fvHeader.json')"></appNotes>
+          <appNotes :content="$route.meta.api"></appNotes>
           <br />
           <h2>API:</h2>
-          <appApi :content="require('../../api/fvHeader.json')"></appApi>
+          <appApi :content="$route.meta.api"></appApi>
         </div>
       </div>
     </fvContent>
@@ -81,6 +81,7 @@ import appCode from '../../components/appCode.vue'
 import appExample from '../../components/appExample.vue'
 import appApi from '../../components/appApi.vue'
 import appNotes from '../../components/appNotes.vue'
+import appDescription from '../../components/appDescription.vue'
 
 export default {
   components: {
@@ -89,7 +90,8 @@ export default {
     appCode,
     appExample,
     appApi,
-    appNotes
+    appNotes,
+    appDescription
   }
 }
 </script>

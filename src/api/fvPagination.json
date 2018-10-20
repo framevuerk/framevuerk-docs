@@ -1,4 +1,6 @@
 {
+  "title": "fvPagination",
+  "description": "To create full featured pagination element use this component.",
   "prop": [
     {
       "name": "value",

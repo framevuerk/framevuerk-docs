@@ -1,4 +1,6 @@
 {
+  "title": "fvContent",
+  "description": "This is the content part of Framevuerk.",
   "prop": [
     {
       "name": "initialScroll",

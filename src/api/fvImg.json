@@ -1,4 +1,6 @@
 {
+  "title": "fvImg",
+  "description": "This is image (normal and image slider) component.",
   "prop": [
     {
       "name": "src",

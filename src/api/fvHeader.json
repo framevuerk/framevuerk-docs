@@ -1,4 +1,6 @@
 {
+  "title": "fvHeader",
+  "description": "This is the header part of Framevuerk.",
   "slot": [
     {
       "name": "default"

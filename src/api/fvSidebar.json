@@ -1,4 +1,6 @@
 {
+  "title": "fvSidebar",
+  "description": "This is the sidebar part of Framevuerk.",
   "prop": [
     {
       "name": "value*",

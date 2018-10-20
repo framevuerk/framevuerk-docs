@@ -1,4 +1,6 @@
 {
+  "title": "fvList - fvListItem",
+  "description": "To create full featured list and list-item elements use these components.",
   "prop": [
     {
       "name": "parent",

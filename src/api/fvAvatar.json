@@ -1,4 +1,6 @@
 {
+  "title": "fvAvatar",
+  "description": "To create user avatars use this component.",
   "prop": [
     {
       "name": "src",
