@@ -19,3 +19,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# cashe files
+.idea/
+yarn.lock
+package-lock.json
