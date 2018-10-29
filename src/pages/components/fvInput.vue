@@ -13,26 +13,26 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvInput.vue">
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
-            <div class="fv-padding-small">
-              <fvInput class="fv-size-xl fv-margin-small" placeholder="XLarge size" />
-              <fvInput class="fv-size-lg fv-margin-small" placeholder="Large size" />
-              <fvInput class="fv-size-md fv-margin-small" placeholder="Medium size" />
-              <fvInput class="fv-size-sm fv-margin-small" placeholder="Small size" />
-              <fvInput class="fv-size-xs fv-margin-small" placeholder="XSmall size" />
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
+            <div class="fv-margin">
+              <fvInput class="fv-size-xl fv-margin-end fv-margin-bottom" placeholder="XLarge size" />
+              <fvInput class="fv-size-lg fv-margin-end fv-margin-bottom" placeholder="Large size" />
+              <fvInput class="fv-size-md fv-margin-end fv-margin-bottom" placeholder="Medium size" />
+              <fvInput class="fv-size-sm fv-margin-end fv-margin-bottom" placeholder="Small size" />
+              <fvInput class="fv-size-xs fv-margin-end fv-margin-bottom" placeholder="XSmall size" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Disabled</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
             <div class="fv-padding">
               <fvInput placeholder="Disabled" disabled/>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Required</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Required</label>
             <div class="fv-padding">
               <fvInput placeholder="Required" v-model="exmps.a" required/>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Custom Required</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required</label>
             <div class="fv-padding">
               <fvInput placeholder="Enter even number" type="number" v-model="exmps.b" :required="evenNumberValidator"/>
             </div>

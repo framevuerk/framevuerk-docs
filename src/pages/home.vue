@@ -1,6 +1,6 @@
 <template>
   <fvMain class="home">
-    <fvContent class="fv-no-padding">
+    <fvContent>
       <appHeader title="Framevuerk">
       <router-link class="fv-button fv-primary" to="/installation=setup">
         Documentions
@@ -14,13 +14,13 @@
           <div class="sep"></div>
           <div class="fv-col">
             <h1 class="fv-text-secondary">Framevuerk</h1>
-            <p><b>Fast</b>, <b>Responsive</b>, <b>Multi Language</b>, <b>Both Direction Support</b> and <b>Configurable</b> UI Framework based on <a class="fv-link" href="http://vuejs.org" target="_blank">Vue.js</a>.</p>
-            <div class="fv-vertical-padding">
+            <p><b>Fast</b>, <b>Responsive</b>, <b>Without Dependencies</b>, <b>Both Direction Support</b> and <b>Configurable</b> UI Framework based on <a class="fv-link" href="http://vuejs.org" target="_blank">Vue.js</a>.</p>
+            <div class="fv-padding-top fv-padding-bottom">
               <router-link class="fv-button fv-primary" to="/installation=setup">
                 <i class="fa fa-play"></i>
                 GET STARTED
               </router-link>
-              <span class="fv-padding-small"></span>
+              <span class="fv-margin"></span>
               <a class="fv-button" :href="$root.githubRepo" target="_blank">
                 <i class="fa fa-github"></i>
                 GITHUB

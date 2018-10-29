@@ -36,6 +36,7 @@ const componentFormItems = [
   sidebarItem('fvCheck', null, ['checkbox', 'check-box', 'check', 'radio', 'radiobutton', 'radio-button', 'form', 'fv-check', 'fvcheck']),
   sidebarItem('fvSteps', null, ['steps', 'step', 'form', 'fv-steps', 'fvsteps']),
   sidebarItem('fvRange', null, ['range', 'slider', 'from', 'to', 'form', 'fv-range', 'fvrange']),
+  sidebarItem('fvFormElement', null, ['focus', 'label', 'title', 'form', 'element', 'form element', 'fv-form-element', 'fvformElement']),
   sidebarItem('fvForm', null, ['submit', 'form', 'fv-form', 'fvform'])
 ]
 
@@ -50,7 +51,8 @@ const componentOtherItems = [
 ]
 
 const styleItems = [
-  sidebarItem('fvGrid', '/styles=fvGrid', ['css', 'style', 'grid', 'row', 'col', 'column', 'fv-row', 'fvrow', 'fv-col', 'fvcol'])
+  sidebarItem('fvGrid', '/styles=fvGrid', ['css', 'style', 'grid', 'row', 'col', 'column', 'fv-row', 'fvrow', 'fv-col', 'fvcol']),
+  sidebarItem('fvHelper', '/styles=fvHelper', ['css', 'style', 'helper', 'padding', 'margin'])
 ]
 
 const search = (text = '') => {

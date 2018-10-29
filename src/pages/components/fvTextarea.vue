@@ -13,27 +13,27 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvTextarea.vue">
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvTextarea class="fv-block" placeholder="Enter your text" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Auto height</label>
-            <div class="fv-row">
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Auto height</label>
+            <div class="fv-padding">
               <fvTextarea class="fv-block" placeholder="Enter your line of texts" v-model="exmps.a" auto-height />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Required</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Required</label>
             <div class="fv-padding">
               <fvTextarea class="fv-block" placeholder="Your address" v-model="exmps.b" auto-height required />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Custom Required</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required</label>
             <div class="fv-padding">
               <fvTextarea class="fv-block" placeholder="Enter three line of texts!" v-model="exmps.c" auto-height :required="threeLineValidator"/>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
             <div class="fv-padding">
               <fvTextarea class="fv-size-xl fv-block" placeholder="XLarge size" />
               <div class="fv-padding"><hr class="fv-hr" /></div>

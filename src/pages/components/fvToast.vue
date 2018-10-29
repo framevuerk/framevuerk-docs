@@ -21,13 +21,13 @@
               {{exmps.d}}
             </fvToast>
 
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvButton class="fv-default" @click="exmps.a = true"> <i class="fa fa-eye"></i> Click to Show </fvButton>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
           
-            <label class="fv-control-label fv-horizontal-padding">Live Example</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Live Example</label>
             <div class="fv-margin fv-border fv-shadow fv-radius">
               <div class="fv-padding fv-input-group">
                 <fvInput type="number" v-model="exmps.c" placeholder="Timeout" />

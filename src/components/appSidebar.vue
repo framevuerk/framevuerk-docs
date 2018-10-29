@@ -1,19 +1,19 @@
 <template>
   <fvSidebar v-model="$root.sidebar" :pin.sync="$root.sidebarPin" class="fv-col-xs-8 fv-col-md-5 fv-col-lg-3 fv-col-xl-2">
-    <fvContent ref="content" class="fv-no-padding" :initial-scroll="$root.sidebarScrollY">
+    <fvContent ref="content" :initial-scroll="$root.sidebarScrollY">
       <router-link class="fv-padding fv-block" to="/">
         <appLogo style="width: 35px;" white ready></appLogo>
         <b> Framevuerk </b>
       </router-link>
-      <div class="fv-horizontal-padding">
+      <div class="fv-padding-start fv-padding-end">
         <fvInput class="fv-block" placeholder="Type to search..." @input="search" autofocus/>
       </div>
-      <fvList class="fv-no-border" v-if="typeof searchResult === 'undefined'">
+      <fvList v-if="typeof searchResult === 'undefined'">
         <fvListItem expanded class="unclickable">
             Installation
             <fvList slot="sub-list">
               <fvListItem v-for="item in sidebarItems.installationItems" :key="item.text" :class="{ selected: $route.name === item.text }">
-                  <router-link class="fv-padding-small fv-block" :to="item.route">{{item.text}}</router-link>
+                  <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
               </fvListItem>
             </fvList>
         </fvListItem>
@@ -24,7 +24,7 @@
                   Main
                   <fvList slot="sub-list">
                     <fvListItem v-for="item in sidebarItems.componentMainItems" :key="item.text" :class="{ selected: $route.name === item.text }">
-                        <router-link class="fv-padding-small fv-block" :to="item.route">{{item.text}}</router-link>
+                        <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
                     </fvListItem>
                   </fvList>
               </fvListItem>
@@ -32,7 +32,7 @@
                   Form
                   <fvList slot="sub-list">
                     <fvListItem v-for="item in sidebarItems.componentFormItems" :key="item.text" :class="{ selected: $route.name === item.text }">
-                        <router-link class="fv-padding-small fv-block" :to="item.route">{{item.text}}</router-link>
+                        <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
                     </fvListItem>
                   </fvList>
               </fvListItem>
@@ -40,7 +40,7 @@
                   Dialog
                   <fvList slot="sub-list">
                     <fvListItem v-for="item in sidebarItems.componentDialogItems" :key="item.text" :class="{ selected: $route.name === item.text }">
-                        <router-link class="fv-padding-small fv-block" :to="item.route">{{item.text}}</router-link>
+                        <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
                     </fvListItem>
                   </fvList>
               </fvListItem>
@@ -48,7 +48,7 @@
                   Other
                   <fvList slot="sub-list">
                     <fvListItem v-for="item in sidebarItems.componentOtherItems" :key="item.text" :class="{ selected: $route.name === item.text }">
-                        <router-link class="fv-padding-small fv-block" :to="item.route">{{item.text}}</router-link>
+                        <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
                     </fvListItem>
                   </fvList>
               </fvListItem>
@@ -58,14 +58,14 @@
             Styles
             <fvList slot="sub-list">
               <fvListItem v-for="item in sidebarItems.styleItems" :key="item.text" :class="{ selected: $route.name === item.text }">
-                  <router-link class="fv-padding-small fv-block" :to="item.route">{{item.text}}</router-link>
+                  <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
               </fvListItem>
             </fvList>
         </fvListItem>
       </fvList>
-      <fvList class="fv-no-border" v-else>
+      <fvList v-else>
         <fvListItem v-for="item in searchResult" :key="item.text" :class="{ selected: $route.name === item.text }">
-            <router-link class="fv-padding-small fv-block" :to="item.route">{{item.text}}</router-link>
+            <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
         </fvListItem>
       </fvList>
     </fvContent>

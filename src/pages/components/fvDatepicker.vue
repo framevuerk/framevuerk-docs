@@ -13,23 +13,23 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvDatepicker.vue">
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-row">
               <div class="fv-col-md-6">
                 <fvDatepicker class="fv-form-control" placeholder="Default" v-model="exmps.a" />
               </div>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Custom Date Library (Jalaali date, using <a class="fv-link" href="https://github.com/nainemom/idate" target="_blank">IDate</a> library)</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Date Library (Jalaali date, using <a class="fv-link" href="https://github.com/nainemom/idate" target="_blank">IDate</a> library)</label>
             <div class="fv-row">
               <div class="fv-col-md-6">
                 <fvDatepicker class="fv-form-control" placeholder="Jalaali Date" v-model="exmps.b" :date-library="IDate"/>
               </div>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
   
-            <label class="fv-control-label fv-horizontal-padding">Custom Template</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Template</label>
             <div class="fv-row">
               <div class="fv-col-md-6">
                 <fvDatepicker class="fv-form-control" placeholder="Custom Template" v-model="exmps.c">
@@ -39,39 +39,39 @@
                 </fvDatepicker>
               </div>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Disabled</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
             <div class="fv-row">
               <div class="fv-col-md-6">
                 <fvDatepicker class="fv-form-control" placeholder="Disabled" disabled/>
               </div>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Required</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Required</label>
             <div class="fv-row">
               <div class="fv-col-md-6">
                 <fvDatepicker class="fv-form-control" placeholder="Required" v-model="exmps.d" required/>
               </div>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Custom Required (Date Range)</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required (Date Range)</label>
             <div class="fv-row">
               <div class="fv-col-md-6">
                 <fvDatepicker class="fv-form-control" placeholder="Select day from September" v-model="exmps.e" :required="dateRangeValidator" default-value="2018-09-14T11:50:36.966Z" />
               </div>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
-            <div class="fv-padding-small">
-              <fvDatepicker class="fv-size-xl fv-margin-small" placeholder="XLarge size" v-model="exmps.f" />
-              <fvDatepicker class="fv-size-lg fv-margin-small" placeholder="Large size" v-model="exmps.f" />
-              <fvDatepicker class="fv-size-md fv-margin-small" placeholder="Medium size" v-model="exmps.f" />
-              <fvDatepicker class="fv-size-sm fv-margin-small" placeholder="Small size" v-model="exmps.f" />
-              <fvDatepicker class="fv-size-xs fv-margin-small" placeholder="XSmall size" v-model="exmps.f" />
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
+            <div class="fv-margin">
+              <fvDatepicker class="fv-size-xl fv-margin-end fv-margin-bottom" placeholder="XLarge size" v-model="exmps.f" />
+              <fvDatepicker class="fv-size-lg fv-margin-end fv-margin-bottom" placeholder="Large size" v-model="exmps.f" />
+              <fvDatepicker class="fv-size-md fv-margin-end fv-margin-bottom" placeholder="Medium size" v-model="exmps.f" />
+              <fvDatepicker class="fv-size-sm fv-margin-end fv-margin-bottom" placeholder="Small size" v-model="exmps.f" />
+              <fvDatepicker class="fv-size-xs fv-margin-end fv-margin-bottom" placeholder="XSmall size" v-model="exmps.f" />
             </div>
 
           </appExample>

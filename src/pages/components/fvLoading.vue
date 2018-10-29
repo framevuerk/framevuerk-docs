@@ -12,26 +12,29 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvLoading.vue">
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvLoading />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
             <div class="fv-padding">
               <fvLoading class="fv-size-xl"/>
-              <span class="fv-padding-small"></span>
+              <span class="fv-margin"></span>
               <fvLoading class="fv-size-lg"/>
-              <span class="fv-padding-small"></span>
+              <span class="fv-margin"></span>
               <fvLoading class="fv-size-md"/>
-              <span class="fv-padding-small"></span>
+              <span class="fv-margin"></span>
               <fvLoading class="fv-size-sm"/>
-              <span class="fv-padding-small"></span>
+              <span class="fv-margin"></span>
               <fvLoading class="fv-size-xs"/>
             </div>
 
           </appExample>
+          <br />
+          <h2>Notes:</h2>
+          <appNotes :content="$route.meta.api"></appNotes>
           <br />
           <h2>API:</h2>
           <appApi :content="$route.meta.api"></appApi>
@@ -46,6 +49,7 @@ import appHeader from '../../components/appHeader.vue'
 import appSidebar from '../../components/appSidebar.vue'
 import appCode from '../../components/appCode.vue'
 import appExample from '../../components/appExample.vue'
+import appNotes from '../../components/appNotes.vue'
 import appApi from '../../components/appApi.vue'
 import appDescription from '../../components/appDescription.vue'
 
@@ -55,6 +59,7 @@ export default {
     appSidebar,
     appCode,
     appExample,
+    appNotes,
     appApi,
     appDescription
   }

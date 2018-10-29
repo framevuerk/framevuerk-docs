@@ -1,0 +1,34 @@
+{
+  "title": "fvFormElement",
+  "description": "To create form control element inside <b>fvForm</b> component, use this component.",
+  "prop": [
+    {
+      "name": "label",
+      "type": "String",
+      "default": "''",
+      "description": "Label of input."
+    },
+    {
+      "name": "singleLine",
+      "type": "Boolean",
+      "default": "false",
+      "description": "If you want draw label and input element in single line, set it to true."
+    }
+  ],
+  "slot": [
+    {
+      "name": "default"
+    }
+  ],
+  "scopedSlot": [
+    {
+      "name": "label",
+      "params": "[label, highlighted]",
+      "description": "Label template."
+    }
+  ],
+  "note": [
+    "You can apply <b>Framevuerk</b> grid classes to this component and parent <b>fvForm</b>.",
+    "If you want to build your custom form element, inject <b>fvFormElement</b> var (provided by <b>fvFormElement</b>) and call <b>turn(on:Boolean)</b> on <i>focus</i> and <i>blur</i> events of your component to make it compatible with <b>fvFormElement</b>."
+  ]
+}

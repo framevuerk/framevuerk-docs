@@ -1,0 +1,14 @@
+<!-- Padding Example -->
+<div class="fv-padding"></div>
+<div class="fv-padding-start"></div>
+<div class="fv-padding-bottom"></div>
+
+<!-- Margin Example -->
+<div class="fv-margin"></div>
+<div class="fv-margin-end"></div>
+<div class="fv-margin-top"></div>
+
+<!-- Border, Border-Radius and Shadow -->
+<div class="fv-border fv-shadow fv-radius"></div>
+
+

@@ -8,37 +8,36 @@
           <appDescription :content="$route.meta.api"></appDescription>
           <br />
           <h2>Code:</h2>
-          <appCode :content="require('../../codes/fvSwitch.html.raw')" lang="html"></appCode>
-          <appCode :content="require('../../codes/fvSwitch.js.raw')" lang="javascript"></appCode>
+          <appCode :content="require('../../codes/fvFormElement.html.raw')" lang="html"></appCode>
           <br />
           <h2>Examples:</h2>
-          <appExample dir="src/pages/components/fvSwitch.vue">
+          <appExample dir="src/pages/components/fvFormElement.vue">
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
-            <div class="fv-padding">
-              <fvSwitch v-model="exmps.a" />
+            <div class="fv-row">
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Name">
+                <fvInput placeholder="Enter your name" />
+              </fvFormElement>
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Country">
+                <fvSelect disabled placeholder="Enter your country" />
+              </fvFormElement>
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Married">
+                <fvSwitch />
+              </fvFormElement>
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
   
-            <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
-            <div class="fv-padding">
-              <fvSwitch disabled/>
-            </div>
-            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
-
-            <label class="fv-control-label fv-padding-start fv-padding-end">Required</label>
-            <div class="fv-padding">
-              <fvSwitch v-model="exmps.b" required/>
-            </div>
-            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
-
-            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
-            <div class="fv-padding">
-              <fvSwitch class="fv-size-xl fv-margin-end fv-margin-bottom" placeholder="XLarge size" />
-              <fvSwitch class="fv-size-lg fv-margin-end fv-margin-bottom" placeholder="Large size" />
-              <fvSwitch class="fv-size-md fv-margin-end fv-margin-bottom" placeholder="Medium size" />
-              <fvSwitch class="fv-size-sm fv-margin-end fv-margin-bottom" placeholder="Small size" />
-              <fvSwitch class="fv-size-xs fv-margin-end fv-margin-bottom" placeholder="XSmall size" />
+            <label class="fv-control-label fv-padding-start fv-padding-end">Single Line</label>
+            <div class="fv-row">
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Name" singleLine>
+                <fvInput placeholder="Enter your name" />
+              </fvFormElement>
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Country" singleLine>
+                <fvSelect disabled placeholder="Enter your country" />
+              </fvFormElement>
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Married" singleLine>
+                <fvSwitch />
+              </fvFormElement>
             </div>
 
           </appExample>

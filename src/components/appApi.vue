@@ -1,13 +1,13 @@
 <template>
-  <div class="fv-vertical-margin">
+  <div class="fv-margin-top fv-margin-bottom">
     <fvSlider v-model="slider">
       <template slot="tab" slot-scope="scope">
         {{ tabTitle(scope.slide) }}
       </template>
-      <div class="fv-vertical-padding" v-for="tab in tabs" :slot="'slide-' + tab.slot" :key="tab.slot">
+      <div class="fv-padding-top fv-padding-bottom" v-for="tab in tabs" :slot="'slide-' + tab.slot" :key="tab.slot">
         <fvTable class="fv-border fv-shadow fv-radius" :fields="fields(tab.slot)" :rows="content[tab.slot]" :breaked.sync="tableBreaked">
           <template slot="field-Name" slot-scope="scope">
-            <b class="fv-text-secondary">{{nameFormatter(scope.row.name).title}}</b> <b v-if="nameFormatter(scope.row.name).required" class="fv-text-danger fv-padding-small">*</b>
+            <b class="fv-text-secondary">{{nameFormatter(scope.row.name).title}}</b> <b v-if="nameFormatter(scope.row.name).required" class="fv-text-danger fv-margin">*</b>
           </template>
           <template slot="field-Type" slot-scope="scope">
             <div style="min-width: 120px">
@@ -31,14 +31,14 @@
             </div>
           </template>
           <template slot="field-Description" slot-scope="scope">
-            <div v-html="scope.row.description || '---'"></div>
+            <div v-html="descriptionFormatter(scope.row.description)"></div>
           </template>
         </fvTable>
       </div>
     </fvSlider>
   </div>
 </template>
-
+// (can apply to all elements, not this one or either this childs)
 <script>
 export default {
   props: {
@@ -115,6 +115,17 @@ export default {
     tabTitle (tabSlot) {
       const founded = this.tabs.find(tab => tab.slot === tabSlot)
       return founded ? founded.title : '---'
+    },
+    descriptionFormatter(description) {
+      if (!description) {
+        return '---'
+      }
+
+      if (description.indexOf('public_class') > -1) {
+        return `${description.replace('public_class', '')} <i>(can apply to all elements, not only this component or either this childs)</i>`
+      }
+
+      return description
     },
     nameFormatter (name) {
       let required = false

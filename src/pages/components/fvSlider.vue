@@ -13,7 +13,7 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvSlider.vue">
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvSlider class="fv-border fv-shadow" v-model="exmps.a">
                 <div slot="slide-one" class="fv-padding fv-text-center">
@@ -27,15 +27,15 @@
                 </div>
               </fvSlider>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">With Interval and Custom Tab Template</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">With Interval and Custom Tab Template</label>
             <div class="fv-padding">
               <fvSlider class="fv-border fv-shadow" v-model="exmps.b" :interval="2000">
                 <template slot="tab" slot-scope="scope">
                   <b>
                     <i v-if="scope.selected" class="fa fa-check"></i>
-                    <span class="fv-padding-small"></span>
+                    <span class="fv-margin"></span>
                     <i> {{scope.slide}} </i>
                   </b>
                 </template>
@@ -59,9 +59,9 @@
                 </div>
               </fvSlider>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Custom Style and Size</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Style and Size</label>
             <div class="fv-padding">
               <fvSlider class="fv-border fv-shadow fv-size-xl" v-model="exmps.c" :show-tabs="false" show-buttons show-navs>
                 <div slot="slide-one" slot-scope="scope" class="fv-padding fv-text-center">

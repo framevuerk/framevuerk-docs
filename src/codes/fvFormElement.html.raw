@@ -1,0 +1,9 @@
+<!-- Normal -->
+<fvFormElement label="Your Name">
+  <fvInput />
+</fvFormElement>
+
+<!-- Single Line -->
+<fvFormElement label="Your Family" single-line>
+  <fvInput />
+</fvFormElement>

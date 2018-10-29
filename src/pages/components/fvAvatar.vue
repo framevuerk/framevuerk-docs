@@ -12,7 +12,7 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvAvatar.vue">
-            <label class="fv-control-label fv-horizontal-padding">Usage</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Usage</label>
             <div class="fv-row">
               <div class="fv-col">
                 <div class="fv-text-center fv-border fv-shadow fv-radius fv-padding">
@@ -41,33 +41,33 @@
               <div class="fv-col">
                 <div class="fv-text-center fv-border fv-shadow fv-radius fv-padding">
                   <fvAvatar src="https://randomuser.me/api/portraits/women/78.jpg" name="Sally Wagner" size="64px" />
-                  <b class="fv-horizontal-padding-small">Sally Wagner</b>
+                  <b class="fv-hor-padding-sm">Sally Wagner</b>
                 </div>
               </div>
               <div class="fv-col">
                 <div class="fv-text-center fv-border fv-shadow fv-radius fv-padding">
                   <fvAvatar src="https://randomuser.me/api/portraits/lego/5.jpg" name="Lego Normal" size="64px" />
-                  <b class="fv-horizontal-padding-small">Lego Normal</b>
+                  <b class="fv-hor-padding-sm">Lego Normal</b>
                 </div>
               </div>
               <div class="fv-col">
                 <div class="fv-text-center fv-border fv-shadow fv-radius fv-padding">
                   <fvAvatar name="Without Src" size="64px" />
-                  <b class="fv-horizontal-padding-small">Without Src</b>
+                  <b class="fv-hor-padding-sm">Without Src</b>
                 </div>
               </div>
               <div class="fv-col-12">
                 <div class="fv-text-center fv-border fv-shadow fv-radius fv-padding">
                   <fvAvatar name="AB" size="128px" />
-                  <span class="fv-margin-small"></span>
+                  <span class="fv-margin"></span>
                   <fvAvatar name="CD" size="96px" />
-                  <span class="fv-margin-small"></span>
+                  <span class="fv-margin"></span>
                   <fvAvatar name="EF" size="64px" />
-                  <span class="fv-margin-small"></span>
+                  <span class="fv-margin"></span>
                   <fvAvatar name="GH" size="48px" />
-                  <span class="fv-margin-small"></span>
+                  <span class="fv-margin"></span>
                   <fvAvatar name="IJ" size="32px" />
-                  <span class="fv-margin-small"></span>
+                  <span class="fv-margin"></span>
                   <fvAvatar name="KL" size="16px" />
                 </div>
               </div>

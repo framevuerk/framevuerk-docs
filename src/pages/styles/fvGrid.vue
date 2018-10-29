@@ -1,7 +1,7 @@
 <template>
   <fvMain>
     <appSidebar></appSidebar>
-    <fvContent class="fv-no-padding">
+    <fvContent>
       <appHeader :title="$route.meta.title" sidebar></appHeader>
       <div class="fv-row">
         <div class="fv-col-xs-12 fv-col-md-10 fv-col-offset-md-1 fv-col-lg-10 fv-col-offset-lg-1 fv-col-xl-8 fv-col-offset-xl-2">

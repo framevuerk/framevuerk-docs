@@ -12,7 +12,7 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvHeader.vue">
-            <label class="fv-control-label fv-horizontal-padding">Fixed Header</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Fixed Header</label>
             <div class="fv-padding">
               <fvMain style="height: 200px;" class="fv-border">
                 <fvHeader>
@@ -23,8 +23,8 @@
                 </fvContent>
               </fvMain>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Normal Header With .fv-default class</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal Header With .fv-default class</label>
             <div class="fv-padding">
               <fvMain style="height: 200px;" class="fv-border">
                 <fvContent>
@@ -37,27 +37,23 @@
                 </fvContent>
               </fvMain>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">With Button</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">With Button</label>
             <div class="fv-padding">
               <fvHeader>
                 <fvButton class="fv-size-sm"> Button </fvButton>
-                <span class="fv-margin-small"></span>
                 <div class="fv-grow">
                   <h3>#I Have Button</h3>
                 </div>
-                <span class="fv-margin-small"></span>
                 <fvButton class="fv-size-sm"> Another Button </fvButton>
               </fvHeader>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">With Custom Elements</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">With Custom Elements</label>
             <div class="fv-padding">
               <fvHeader>
                 <fvInput class="fv-size-sm fv-grow" placeholder="Type to search..."></fvInput>
-                <span class="fv-margin-small"></span>
                 <fvButton class="fv-size-sm"> Start Searching </fvButton>
-                <span class="fv-margin-small"></span>
                 <a class="fv-link fv-font-sm" href="#"> Go to link </a>
               </fvHeader>
             </div>

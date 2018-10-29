@@ -22,5 +22,8 @@
       "name": ".fv-size-xl",
       "description": "XLarge size"
     }
+  ],
+  "note": [
+    "For change of spinner color, set css <i>color</i> property or use <b>fv-text-{color}</b> helper classes."
   ]
 }

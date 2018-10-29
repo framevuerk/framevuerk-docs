@@ -12,19 +12,19 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvImg.vue">
-            <label class="fv-control-label fv-horizontal-padding">Single src</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Single src</label>
             <div class="fv-padding">
               <fvImg class="fv-border fv-shadow" src="https://picsum.photos/600/400?image=101" alt="Image Test" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Multiple src</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Multiple src</label>
             <div class="fv-padding">
               <fvImg class="fv-border fv-shadow" :src="['https://picsum.photos/600/400?image=122', 'https://picsum.photos/600/400?image=93', 'https://picsum.photos/600/400?image=84']" :alt="['Image One', 'Image Two', 'Image Three']" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Multiple src with Interval</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Multiple src with Interval</label>
             <div class="fv-padding">
               <fvImg class="fv-border fv-shadow" :src="['https://picsum.photos/600/400?image=76', 'https://picsum.photos/600/400?image=74', 'https://picsum.photos/600/400?image=82']" :alt="['Image One', 'Image Two', 'Image Three']" :interval="3000" />
             </div>

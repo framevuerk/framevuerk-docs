@@ -11,33 +11,32 @@
       "description": "Automatic column"
     },
     {
-      "name": ".fv-col-${media}-${size}",
+      "name": ".fv-col-{xs|sm|md|lg|xl}-{1 to 12}",
       "description": "Static column for current and above media"
     },
     {
-      "name": ".fv-col-offset-${media}-${size}",
+      "name": ".fv-col-offset-{xs|sm|md|lg|xl}-{1 to 12}",
       "description": "Column offset for current and above media"
     },
     {
-      "name": ".fv-col-only-${media}-${size}",
+      "name": ".fv-col-only-{xs|sm|md|lg|xl}-{1 to 12}",
       "description": "Static column for only current media"
     },
     {
-      "name": ".fv-col-offset-only-${media}-${size}",
+      "name": ".fv-col-offset-only-{xs|sm|md|lg|xl}-{1 to 12}",
       "description": "Column offset for only current media"
     },
     {
-      "name": ".fv-col-lower-${media}-${size}",
+      "name": ".fv-col-lower-{xs|sm|md|lg|xl}-{1 to 12}",
       "description": "Static column for current and lower media"
     },
     {
-      "name": ".fv-col-offset-lower-${media}-${size}",
+      "name": ".fv-col-offset-lower-{xs|sm|md|lg|xl}-{1 to 12}",
       "description": "Column offset for current and lower media"
     }
   ],
   "note": [
     "<b>Framevuerk</b> grid system inspired from <b>Bootstrap</b> grid system.",
-    "<b>${media}</b> field in all classes can be one of <b>xl</b>, <b>lg</b>, <b>md</b>, <b>sm</b> and <b>xs</b> and <b>${size}</b> can be a number between 0 to 12.",
-    "Every <b>.fv-row</b> and <b>.fv-col${x}</b> classes has half of <b>padding</b> value from user variables. You can disable it by using <b>.fv-no-padding</b> class."
+    "Every <b>.fv-row</b> and <b>.fv-col</b> classes has half of <b>padding</b> value from user variables. You can use helper classes to remove it."
   ]
 }

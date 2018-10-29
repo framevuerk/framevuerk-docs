@@ -13,25 +13,25 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvPagination.vue">
-            <label class="fv-control-label fv-horizontal-padding">With Total Count</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">With Total Count</label>
             <div class="fv-padding fv-text-center">
               <fvPagination v-model="exmps.a" :total="50" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Without Total Count</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Without Total Count</label>
             <div class="fv-padding fv-text-center">
               <fvPagination v-model="exmps.b" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Custom Size (prop)</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Size (prop)</label>
             <div class="fv-padding fv-text-center">
               <fvPagination v-model="exmps.c" :total="50" :size="10" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
             <div class="fv-padding fv-text-center">
               <fvPagination class="fv-size-xs" v-model="exmps.d" :total="10" />
               <div class="fv-padding"><hr class="fv-hr" /></div>
@@ -43,10 +43,10 @@
               <div class="fv-padding"><hr class="fv-hr" /></div>
               <fvPagination class="fv-size-xl" v-model="exmps.d" :total="10" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
 
-            <label class="fv-control-label fv-horizontal-padding">Live Example</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Live Example</label>
             <div class="fv-margin fv-border fv-shadow fv-radius">
               <div class="fv-row">
                 <div class="fv-col-6">
@@ -76,7 +76,7 @@
                   </div>
                 </div>
                 <div class="fv-col-12">
-                  <hr class="fv-hr fv-vertical-margin"/>
+                  <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
                 </div>
                 <div class="fv-col-12 fv-text-center">
                   <fvPagination :value="exmps.value" :total="parseInt(exmps.total)" :size="parseInt(exmps.size)" :navigation="exmps.navigation" :next="exmps.next" :prev="exmps.prev" @input="exmps.value = $event" />

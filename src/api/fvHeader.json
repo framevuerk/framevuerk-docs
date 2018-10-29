@@ -15,7 +15,6 @@
   "note": [
     "You should put <b>fvHeader</b> directly into <b>fvMain</b> for best style matching.",
     "You can set custom color for background via <b>header-bg-color</b> key in your config variables.",
-    "Create a <i>span</i> with <b>.fv-margin-small</b> class to make space between elements.",
-    "Set <b>.fv-grow</b> class to main element of header. (usually <i>h2</i> element for title)"
+    "Set <b>.fv-grow</b> class to main element of header. (usually <i>h1</i> element for title)"
   ]
 }

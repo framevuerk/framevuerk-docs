@@ -1,14 +1,14 @@
 <template>
-  <div class="fv-border fv-shadow fv-radius fv-vertical-margin">
+  <div class="fv-border fv-shadow fv-radius fv-margin-top fv-margin-bottom">
     <fvMain style="overflow: visible">
       <fvContent style="overflow: visible">
-        <div class="fv-text-end fv-padding-small" v-if="dir">
+        <div class="fv-text-end fv-margin" v-if="dir">
           <a class="fv-link" :href="sourceLink" target="_blank">
             <i class="fa fa-code"></i>
             View Source
           </a>
         </div>
-        <div class="fv-vertical-padding">
+        <div class="fv-padding-top fv-padding-bottom">
           <slot></slot>
         </div>
       </fvContent>

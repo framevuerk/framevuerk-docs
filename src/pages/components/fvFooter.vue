@@ -12,7 +12,7 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvFooter.vue">
-            <label class="fv-control-label fv-horizontal-padding">Fixed Footer</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Fixed Footer</label>
             <div class="fv-padding">
               <fvMain style="height: 200px;" class="fv-border">
                 <fvContent class="fv-padding">
@@ -23,8 +23,8 @@
                 </fvFooter>
               </fvMain>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Normal Footer With .fv-default class</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal Footer With .fv-default class</label>
             <div class="fv-padding">
               <fvMain style="height: 200px;" class="fv-border">
                 <fvContent>

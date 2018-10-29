@@ -13,57 +13,57 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvCheck.vue">
-            <label class="fv-control-label fv-horizontal-padding">Radio Button Normal</label>
-            <div class="fv-padding-small">
-              <fvCheck class="fv-margin-small" v-model="exmps.a" content="mil"> A.C. Milan </fvCheck>
-              <fvCheck class="fv-margin-small" v-model="exmps.a" content="liv"> Liverpool </fvCheck>
-              <fvCheck class="fv-margin-small" v-model="exmps.a" content="fcb"> Barcelona </fvCheck>
-              <fvCheck class="fv-margin-small" v-model="exmps.a" content="mad"> Real Madrid C.F. </fvCheck>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Radio Button Normal</label>
+            <div class="fv-padding">
+              <fvCheck v-model="exmps.a" content="mil"> A.C. Milan </fvCheck>
+              <fvCheck v-model="exmps.a" content="liv"> Liverpool </fvCheck>
+              <fvCheck v-model="exmps.a" content="fcb"> Barcelona </fvCheck>
+              <fvCheck v-model="exmps.a" content="mad"> Real Madrid C.F. </fvCheck>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Check Box Normal</label>
-            <div class="fv-padding-small">
-              <fvCheck class="fv-margin-small" v-model="exmps.b" content="ir" multiple> Iran </fvCheck>
-              <fvCheck class="fv-margin-small" v-model="exmps.b" content="it" multiple> Italy </fvCheck>
-              <fvCheck class="fv-margin-small" v-model="exmps.b" content="es" multiple> Spain </fvCheck>
-              <fvCheck class="fv-margin-small" v-model="exmps.b" content="ge" multiple> Germany </fvCheck>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Check Box Normal</label>
+            <div class="fv-padding">
+              <fvCheck v-model="exmps.b" content="ir" multiple> Iran </fvCheck>
+              <fvCheck v-model="exmps.b" content="it" multiple> Italy </fvCheck>
+              <fvCheck v-model="exmps.b" content="es" multiple> Spain </fvCheck>
+              <fvCheck v-model="exmps.b" content="ge" multiple> Germany </fvCheck>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
   
-            <label class="fv-control-label fv-horizontal-padding">Disabled</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
             <div class="fv-padding">
-              <fvCheck class="fv-margin-small" content="a" disabled> Disabled Radio Button </fvCheck>
-              <fvCheck class="fv-margin-small" content="a" multiple disabled> Disabled Check Box </fvCheck>
+              <fvCheck content="a" disabled> Disabled Radio Button </fvCheck>
+              <fvCheck content="a" multiple disabled> Disabled Check Box </fvCheck>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Radio Button Required</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Radio Button Required</label>
             <div class="fv-padding">
-              <fvCheck class="fv-margin-small" v-model="exmps.c" content="a" required> Foo #1 </fvCheck>
-              <fvCheck class="fv-margin-small" v-model="exmps.c" content="b" required> Foo #1 </fvCheck>
+              <fvCheck v-model="exmps.c" content="a" required> Foo #1 </fvCheck>
+              <fvCheck v-model="exmps.c" content="b" required> Foo #1 </fvCheck>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Check Box Required</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Check Box Required</label>
             <div class="fv-padding">
-              <fvCheck class="fv-margin-small" v-model="exmps.d" content="a" multiple required> Bar #1 </fvCheck>
-              <fvCheck class="fv-margin-small" v-model="exmps.d" content="b" multiple required> Bar #2 </fvCheck>
+              <fvCheck v-model="exmps.d" content="a" multiple required> Bar #1 </fvCheck>
+              <fvCheck v-model="exmps.d" content="b" multiple required> Bar #2 </fvCheck>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
-            <div class="fv-padding-small">
-              <fvCheck class="fv-size-xl fv-margin-small" value="a" content="a" />
-              <fvCheck class="fv-size-xl fv-margin-small" :value="['a']" content="a" multiple />
-              <fvCheck class="fv-size-lg fv-margin-small" value="a" content="a" />
-              <fvCheck class="fv-size-lg fv-margin-small" :value="['a']" content="a" multiple />
-              <fvCheck class="fv-size-md fv-margin-small" value="a" content="a" />
-              <fvCheck class="fv-size-md fv-margin-small" :value="['a']" content="a" multiple />
-              <fvCheck class="fv-size-sm fv-margin-small" value="a" content="a" />
-              <fvCheck class="fv-size-sm fv-margin-small" :value="['a']" content="a" multiple />
-              <fvCheck class="fv-size-xs fv-margin-small" value="a" content="a" />
-              <fvCheck class="fv-size-xs fv-margin-small" :value="['a']" content="a" multiple />
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
+            <div class="fv-padding">
+              <fvCheck class="fv-size-xl" value="a" content="a" />
+              <fvCheck class="fv-size-xl" :value="['a']" content="a" multiple />
+              <fvCheck class="fv-size-lg" value="a" content="a" />
+              <fvCheck class="fv-size-lg" :value="['a']" content="a" multiple />
+              <fvCheck class="fv-size-md" value="a" content="a" />
+              <fvCheck class="fv-size-md" :value="['a']" content="a" multiple />
+              <fvCheck class="fv-size-sm" value="a" content="a" />
+              <fvCheck class="fv-size-sm" :value="['a']" content="a" multiple />
+              <fvCheck class="fv-size-xs" value="a" content="a" />
+              <fvCheck class="fv-size-xs" :value="['a']" content="a" multiple />
             </div>
           </appExample>
           <br />

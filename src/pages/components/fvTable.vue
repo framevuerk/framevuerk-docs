@@ -13,19 +13,19 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvTable.vue">
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvTable :fields="exmps.aFields" :rows="exmps.aRows" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Breaked</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Breaked</label>
             <div class="fv-padding">
               <fvTable :fields="exmps.aFields" :rows="exmps.aRows" breaked />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Custom Template</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Template</label>
             <div class="fv-padding">
               <fvTable :fields="exmps.bFields" :rows="exmps.bRows" title-key="title" value-key="name" :breaked.sync="exmps.bBreaked">
                 <template slot="title" slot-scope="scope">
@@ -34,7 +34,7 @@
                 </template>
                 <template slot="field-user" slot-scope="scope">
                   <fvAvatar :src="scope.row.avatar" :name="scope.row.user" />
-                  <span class="fv-margin-small"></span>
+                  <span class="fv-margin"></span>
                   {{ scope.row.user }}
                 </template>
                 <template slot="field-birthday" slot-scope="scope">

@@ -12,26 +12,26 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvButton.vue">
-            <label class="fv-control-label fv-horizontal-padding">Themes</label>
-            <div class="fv-padding-small">
-              <fvButton class="fv-default fv-margin-small"> Default theme </fvButton>
-              <fvButton class="fv-secondary fv-margin-small"> Secondary theme </fvButton>
-              <fvButton class="fv-primary fv-margin-small"> Primary theme </fvButton>
-              <fvButton class="fv-danger fv-margin-small"> Danger theme </fvButton>
-              <fvButton class="fv-warning fv-margin-small"> Warning theme </fvButton>
-              <fvButton class="fv-info fv-margin-small"> Info theme </fvButton>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Themes</label>
+            <div class="fv-margin">
+              <fvButton class="fv-default fv-margin-end fv-margin-bottom"> Default theme </fvButton>
+              <fvButton class="fv-secondary fv-margin-end fv-margin-bottom"> Secondary theme </fvButton>
+              <fvButton class="fv-primary fv-margin-end fv-margin-bottom"> Primary theme </fvButton>
+              <fvButton class="fv-danger fv-margin-end fv-margin-bottom"> Danger theme </fvButton>
+              <fvButton class="fv-warning fv-margin-end fv-margin-bottom"> Warning theme </fvButton>
+              <fvButton class="fv-info fv-margin-end fv-margin-bottom"> Info theme </fvButton>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
-            <div class="fv-padding-small">
-              <fvButton class="fv-size-xl fv-margin-small"> XLarge size </fvButton>
-              <fvButton class="fv-size-lg fv-margin-small"> Large size </fvButton>
-              <fvButton class="fv-size-md fv-margin-small"> Default size </fvButton>
-              <fvButton class="fv-size-sm fv-margin-small"> Small size </fvButton>
-              <fvButton class="fv-size-xs fv-margin-small"> XSmall size </fvButton>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
+            <div class="fv-margin">
+              <fvButton class="fv-size-xl fv-margin-end fv-margin-bottom"> XLarge size </fvButton>
+              <fvButton class="fv-size-lg fv-margin-end fv-margin-bottom"> Large size </fvButton>
+              <fvButton class="fv-size-md fv-margin-end fv-margin-bottom"> Default size </fvButton>
+              <fvButton class="fv-size-sm fv-margin-end fv-margin-bottom"> Small size </fvButton>
+              <fvButton class="fv-size-xs fv-margin-end fv-margin-bottom"> XSmall size </fvButton>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Custom elements</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom elements</label>
             <div class="fv-padding">
               <a class="fv-button fv-primary" href="http://framevuerk.com" target="_blank"> Link </a>
             </div>

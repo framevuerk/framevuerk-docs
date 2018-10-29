@@ -14,13 +14,13 @@
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvSteps.vue">
 
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvSteps :value="exmps.a" :steps="exmps.stepsA" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Custom Formated and Clickable Steps</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Formated and Clickable Steps</label>
             <div class="fv-padding">
               <fvSteps v-model="exmps.b" :steps="exmps.stepsB">
                 <template slot="box" slot-scope="scope">
@@ -32,9 +32,9 @@
                 </template>
               </fvSteps>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Size</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Size</label>
             <div class="fv-padding">
               <fvSteps class="fv-size-xs" :value="0" :steps="exmps.stepsC" />
               <div class="fv-padding"><hr class="fv-hr" /></div>

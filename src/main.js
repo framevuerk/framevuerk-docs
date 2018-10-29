@@ -1,9 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Meta from 'vue-meta'
-import Framevuerk from 'framevuerk/dist/framevuerk.js'
+
+// import tt from './framevuerk/cm2.js'
+// console.warn(tt)
+import Framevuerk from 'framevuerk/dist/framevuerk.min.js'
+// const Framevuerk = require('framevuerk/dist/framevuerk.js')
+
 import 'framevuerk/dist/framevuerk.css'
-import '../node_modules/font-awesome/css/font-awesome.css'
+import 'font-awesome/css/font-awesome.css'
 import VueHighlightJS from 'vue-highlightjs'
 import 'highlight.js/styles/github.css'
 
@@ -28,6 +33,7 @@ const pages = {
   fvCheck: require('./pages/components/fvCheck.vue').default,
   fvSteps: require('./pages/components/fvSteps.vue').default,
   fvRange: require('./pages/components/fvRange.vue').default,
+  fvFormElement: require('./pages/components/fvFormElement.vue').default,
   fvForm: require('./pages/components/fvForm.vue').default,
   fvDialog: require('./pages/components/fvDialog.vue').default,
   fvMenu: require('./pages/components/fvMenu.vue').default,
@@ -39,6 +45,7 @@ const pages = {
   fvLoading: require('./pages/components/fvLoading.vue').default,
   fvPagination: require('./pages/components/fvPagination.vue').default,
   fvGrid: require('./pages/styles/fvGrid.vue').default,
+  fvHelper: require('./pages/styles/fvHelper.vue').default
 }
 
 const routes = require('./routes.js').map(route => {
@@ -46,8 +53,8 @@ const routes = require('./routes.js').map(route => {
   delete route.componentName
   
   route.meta = {}
-  route.meta.title = 'Framevuerk'
-  route.meta.description = 'Fast, Responsive, Multi Language, Both Direction Support and Configurable UI Framework based on Vue.js.'
+  route.meta.title = 'Home'
+  route.meta.description = 'Fast, Responsive, Without Dependencies, Both Direction Support and Configurable UI Framework based on Vue.js.'
   if (route.api) {
     route.meta.api = JSON.parse(JSON.stringify(route.api))
     delete route.api
@@ -64,7 +71,7 @@ const routes = require('./routes.js').map(route => {
   
   
   route.component.metaInfo = {
-    title: route.meta.title,
+    title: `Framevuerk | ${route.meta.title}`,
     meta: [
       {
         name: 'description',
@@ -72,7 +79,8 @@ const routes = require('./routes.js').map(route => {
       },
       {
         property: 'og:title',
-        content: route.meta.title
+        content: route.meta.title,
+        template: 'Framevuerk | %s'
       },
       {
         property: 'og:description',

@@ -1,7 +1,6 @@
 {
   "name": "framevuerk-docs",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -22,6 +21,7 @@
     "@vue/cli-service": "^3.0.1",
     "framevuerk": "file:../framevuerk/framevuerk-2.0.0.tgz",
     "node-sass": "^4.9.3",
+    "prerender-spa-plugin": "^3.4.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "raw-loader": "^0.5.1",
@@ -42,6 +42,9 @@
       "parser": "babel-eslint"
     }
   },
+  "eslintIgnore": [
+    "/src/framevuerk/*"
+  ],
   "postcss": {
     "plugins": {
       "autoprefixer": {}

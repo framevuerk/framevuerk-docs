@@ -1,6 +1,6 @@
 {
   "title": "fvForm",
-  "description": "To create form element to check validity of <b>Framevuerk</b> form elements, use this component.",
+  "description": "To create form to check validity of <b>Framevuerk</b> form elements, use this component.",
   "event": [
     {
       "name": "submit",
@@ -18,7 +18,26 @@
       "name": "default"
     }
   ],
+  "class": [
+    {
+      "name": ".fv-control-label",
+      "description": "Apply block level label style for <b>label</b> element.public_class"
+    },
+    {
+      "name": ".fv-form-control-group",
+      "description": "Apply control group style for <b>fieldset</b> element.public_class"
+    },
+    {
+      "name": ".fv-form-control",
+      "description": "Apply block level form control style class for elements.public_class"
+    },
+    {
+      "name": ".fv-input-group",
+      "description": "Used for container for list of sibiling inputs and buttons that exhibiting one form element.public_class"
+    }
+  ],
   "note": [
-    "This component wrapped to normal html form element, so custom events and attributes are available on this."
+    "This component wrapped to normal html form element, so custom events and attributes are available on this.",
+    "If you want to build your custom form element, you should add <b>fvValidate</b> Boolean variable to your component and set validity of component to it (and optionaly active <b>.fv-invalid</b> class if it's false) AND add <b>disabled</b> Boolean variable (and optionaly active <b>.fv-disabled</b> class if it's true) to make it compatible with <b>fvForm</b>."
   ]
 }

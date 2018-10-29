@@ -20,26 +20,26 @@
             <fvMenu class="fv-size-xl" v-model="exmps.c" :source-element="exmps.cSourceElement" :items="exmps.cItems" @click="clickHandler">
               <template slot-scope="scope">
                 <i :class="scope.item.icon"></i>
-                <span class="fv-margin-small"></span>
+                <span class="fv-margin"></span>
                 {{scope.item.text}}
               </template>
             </fvMenu>
             
             
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvButton class="fv-default" @click="openMenu('a', $event.target)"> <i class="fa fa-ellipsis-v"></i> </fvButton>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
           
-            <label class="fv-control-label fv-horizontal-padding">Without Source-Element</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Without Source-Element</label>
             <div class="fv-padding">
               <fvButton class="fv-default" @click="openMenu('b')"> <i class="fa fa-ellipsis-h"></i> </fvButton>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
 
-            <label class="fv-control-label fv-horizontal-padding">Custom Template</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Template</label>
             <div class="fv-padding">
               <fvButton class="fv-default" @click="openMenu('c', $event.target)"> <i class="fa fa-ellipsis-v"></i> </fvButton>
             </div>

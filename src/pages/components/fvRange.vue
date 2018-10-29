@@ -14,31 +14,31 @@
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvRange.vue">
 
-            <label class="fv-control-label fv-horizontal-padding">Single</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Single</label>
             <div class="fv-padding">
               <fvRange v-model="exmps.a" :data="exmps.dataA" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
   
-            <label class="fv-control-label fv-horizontal-padding">Multiple</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Multiple</label>
             <div class="fv-padding">
               <fvRange v-model="exmps.b" :data="exmps.dataB" multiple />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Disabled</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
             <div class="fv-padding">
               <fvRange v-model="exmps.c" :data="exmps.dataA" disabled />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Custom Required</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required</label>
             <div class="fv-padding">
               <fvRange v-model="exmps.d" :data="exmps.dataA" :required="rangeValidator" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
             <div class="fv-padding">
               <fvRange class="fv-size-xs" v-model="exmps.e" :data="exmps.dataA" :required="rangeValidator" />
               <div class="fv-padding"><hr class="fv-hr" /></div>

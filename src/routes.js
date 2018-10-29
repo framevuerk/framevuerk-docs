@@ -131,6 +131,12 @@ module.exports = [
     api: require('./api/fvPagination.json')
   },
   {
+    name: 'fvFormElement',
+    path: '/components=fvFormElement',
+    componentName: 'fvFormElement',
+    api: require('./api/fvFormElement.json')
+  },
+  {
     name: 'fvForm',
     path: '/components=fvForm',
     componentName: 'fvForm',
@@ -174,5 +180,11 @@ module.exports = [
     path: '/styles=fvGrid',
     componentName: 'fvGrid',
     api: require('./api/fvGrid.json')
+  },
+  {
+    name: 'fvHelper',
+    path: '/styles=fvHelper',
+    componentName: 'fvHelper',
+    api: require('./api/fvHelper.json')
   }
 ]

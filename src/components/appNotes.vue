@@ -1,5 +1,5 @@
 <template>
-  <div class="fv-border fv-shadow fv-radius fv-vertical-margin fv-padding notes" v-highlightjs>
+  <div class="fv-border fv-shadow fv-radius fv-margin-top fv-margin-bottom fv-padding notes" v-highlightjs>
     <ul>
       <li v-for="note in content.note" :key="note" v-html="note"></li>
     </ul>

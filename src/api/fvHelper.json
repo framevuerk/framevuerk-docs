@@ -1,0 +1,126 @@
+{
+  "title": "fvHelper",
+  "description": "These is helper css classes of <b>Framevuerk</b>.",
+  "class": [
+    {
+      "name": ".fv-hidden",
+      "description": "Hide element."
+    },
+    {
+      "name": ".fv-hidden-{xs|sm|md|lg|xl}",
+      "description": "Hide element based on viewport size"
+    },
+    {
+      "name": ".fv-{margin|padding}",
+      "description": "Apply configured <b>padding</b> variable of framevuerk to padding/margin of element."
+    },
+    {
+      "name": ".fv-{margin|padding}-sm",
+      "description": "Apply half size of configured <b>padding</b> variable of framevuerk to padding/margin of element."
+    },
+    {
+      "name": ".fv-no-{margin|padding}",
+      "description": "Remove padding/margin from element."
+    },
+    {
+      "name": ".fv-{margin|padding}-{start|end|top|buttom}",
+      "description": "Apply configured <b>padding</b> variable of framevuerk to padding/margin of mentioned direction of element."
+    },
+    {
+      "name": ".fv-{margin|padding}-{start|end|top|buttom}-sm",
+      "description": "Apply half size of configured <b>padding</b> variable of framevuerk to padding/margin of mentioned direction of element."
+    },
+    {
+      "name": ".fv-border",
+      "description": "Apply border to element based on color of framevuerk configured <b>bg-color</b>."
+    },
+    {
+      "name": ".fv-no-border",
+      "description": "Remove border from element."
+    },
+    {
+      "name": ".fv-border-{start|end|top|buttom}",
+      "description": "Apply border to mentioned direction of element based on color of framevuerk configured <b>bg-color</b>."
+    },
+    {
+      "name": ".fv-{text|bg}-{primary|secondary|info|danger|warning|light|dark}",
+      "description": "Apply mentioned color to text/background of element based on colors in config file."
+    },
+    {
+      "name": ".fv-text-{start|end|center|justify}",
+      "description": "Apply mentioned text align to element based of framevuerk configured <b>direction</b>."
+    },
+    {
+      "name": ".fv-font-mono",
+      "description": "Apply monospace font to element."
+    },
+    {
+      "name": ".fv-dir-{start|end}",
+      "description": "Apply direction to element based of framevuerk configured <b>direction</b>."
+    },
+    {
+      "name": ".fv-shadow",
+      "description": "Apply shadow to element."
+    },
+    {
+      "name": ".fv-no-shadow",
+      "description": "Remove shadow from element."
+    },
+    {
+      "name": ".fv-radius",
+      "description": "Apply border-radius to element."
+    },
+    {
+      "name": ".fv-no-radius",
+      "description": "Remove border-radius from element."
+    },
+    {
+      "name": ".fv-pull-{start|end}",
+      "description": "Apply float of element to mentioned direction."
+    },
+    {
+      "name": ".fv-clear-both",
+      "description": "Set clear css prop to both."
+    },
+    {
+      "name": ".fv-pointer",
+      "description": "Set mouse cursor to finger on hover of element."
+    },
+    {
+      "name": ".fv-link",
+      "description": "Apply link style to <i>a</i> element."
+    },
+    {
+      "name": ".fv-hr",
+      "description": "Apply line style to <i>hr</i> element."
+    },
+    {
+      "name": ".fv-block",
+      "description": "Apply display block style to element."
+    },
+    {
+      "name": ".fv-inline-block",
+      "description": "Apply display inline-block style to element."
+    },
+    {
+      "name": ".fv-inline",
+      "description": "Apply display inline style to element."
+    },
+    {
+      "name": ".fv-flex",
+      "description": "Apply display flex style to element."
+    },
+    {
+      "name": ".fv-grow",
+      "description": "Apply <i>flex-grow: 1</i> style to element."
+    },
+    {
+      "name": ".fv-disabled",
+      "description": "Apply default disabled style of <b>Framevuerk</b> to element."
+    },
+    {
+      "name": ".fv-invalid",
+      "description": "Apply default invalid style (mostly uses for box input element) of <b>Framevuerk</b> to element."
+    }
+  ]
+}

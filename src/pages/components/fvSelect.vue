@@ -14,15 +14,15 @@
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvSelect.vue">
 
-            <label class="fv-control-label fv-horizontal-padding">Normal</label>
-            <div class="fv-padding-small">
-              <fvSelect class="fv-margin-small" placeholder="Default" v-model="exmps.a" :options="exmps.optionsA"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
+            <div class="fv-margin">
+              <fvSelect placeholder="Default" v-model="exmps.a" :options="exmps.optionsA"/>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
   
-            <label class="fv-control-label fv-horizontal-padding">Custom Template</label>
-            <div class="fv-padding-small">
-              <fvSelect class="fv-margin-small" placeholder="Custom Template" v-model="exmps.b" :options="exmps.optionsA">
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Template</label>
+            <div class="fv-margin">
+              <fvSelect placeholder="Custom Template" v-model="exmps.b" :options="exmps.optionsA">
                 <template slot="option" slot-scope="scope">
                   <fvAvatar :src="'https://randomuser.me/api/portraits/med/women/' + (scope.option.value * 6) + '.jpg'" size="32px" />
                   <span>
@@ -37,26 +37,26 @@
                 </template>
               </fvSelect>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Multiple</label>
-            <div class="fv-padding-small">
-              <fvSelect class="fv-margin-small" placeholder="Multiple" v-model="exmps.c" :options="exmps.optionsA" multiple/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Multiple</label>
+            <div class="fv-margin">
+              <fvSelect placeholder="Multiple" v-model="exmps.c" :options="exmps.optionsA" multiple/>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">Allow Insert</label>
-            <div class="fv-padding-small">
-              <fvSelect class="fv-margin-small" placeholder="Allow Insert" v-model="exmps.d" :options="exmps.optionsB" allow-insert @insert="exmps.optionsB.push({ text: $event, value: $event }); exmps.d = $event;"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Allow Insert</label>
+            <div class="fv-margin">
+              <fvSelect placeholder="Allow Insert" v-model="exmps.d" :options="exmps.optionsB" allow-insert @insert="exmps.optionsB.push({ text: $event, value: $event }); exmps.d = $event;"/>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-horizontal-padding">API Search</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">API Search</label>
             <div class="fv-row">
               <div class="fv-col-md-6">
                 <fvSelect class="fv-form-control" placeholder="Enter Github repo name" v-model="exmps.e" :options="exmps.optionsC" :loading="exmps.loadingA" :search="null" @search="calcCOptions">
                   <template slot="option" slot-scope="scope">
-                    <div class="fv-vertical-padding-small">
+                    <div class="fv-padding-top fv-padding-bottom">
                       <h3>
                         <fvAvatar :src="scope.option.ownerAvatar" size="32px" /> {{scope.option.text}}
                       </h3>
@@ -64,7 +64,7 @@
                         <span>
                           <i class="fa fa-star"></i> {{scope.option.stars}}
                         </span>
-                        <span class="fv-margin-small"></span>
+                        <span class="fv-margin"></span>
                         <span>
                           <i class="fa fa-code-fork"></i> {{scope.option.forks}}
                         </span>
@@ -82,24 +82,24 @@
                 </fvSelect>
               </div>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
 
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
-            <div class="fv-padding-small">
-              <fvSelect class="fv-size-xl fv-margin-small" placeholder="XLarge size" />
-              <fvSelect class="fv-size-lg fv-margin-small" placeholder="Large size" />
-              <fvSelect class="fv-size-md fv-margin-small" placeholder="Medium size" />
-              <fvSelect class="fv-size-sm fv-margin-small" placeholder="Small size" />
-              <fvSelect class="fv-size-xs fv-margin-small" placeholder="XSmall size" />
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
+            <div class="fv-margin">
+              <fvSelect class="fv-size-xl fv-margin-end fv-margin-bottom" placeholder="XLarge size" />
+              <fvSelect class="fv-size-lg fv-margin-end fv-margin-bottom" placeholder="Large size" />
+              <fvSelect class="fv-size-md fv-margin-end fv-margin-bottom" placeholder="Medium size" />
+              <fvSelect class="fv-size-sm fv-margin-end fv-margin-bottom" placeholder="Small size" />
+              <fvSelect class="fv-size-xs fv-margin-end fv-margin-bottom" placeholder="XSmall size" />
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Disabled</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
             <div class="fv-padding">
               <fvSelect placeholder="Disabled" disabled/>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Required</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Required</label>
             <div class="fv-padding">
               <fvSelect placeholder="Required" v-model="exmps.f" :options="exmps.optionsA" required/>
             </div>

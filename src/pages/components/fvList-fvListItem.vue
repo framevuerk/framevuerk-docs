@@ -12,15 +12,15 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvList-fvListItem.vue">
-            <label class="fv-control-label fv-horizontal-padding">Normal List</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal List</label>
             <div class="fv-padding">
               <fvList class="fv-border" parent>
                   <fvListItem> Item One </fvListItem>
                   <fvListItem> Item Two </fvListItem>
               </fvList>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">With sub-list and disabled item</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">With sub-list and disabled item</label>
             <div class="fv-padding">
               <fvList class="fv-border" parent>
                   <fvListItem> Item One </fvListItem>
@@ -35,8 +35,8 @@
                   </fvListItem>
               </fvList>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Without setting <b>parent</b> prop</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Without setting <b>parent</b> prop</label>
             <div class="fv-padding">
               <fvList class="fv-border">
                   <fvListItem> Item One </fvListItem>
@@ -44,8 +44,8 @@
               </fvList>
             </div>
 
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Sizes</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
             <div class="fv-padding">
               <fvList class="fv-border" parent>
                 <fvListItem class="fv-size-xs"> XSmall Size </fvListItem>

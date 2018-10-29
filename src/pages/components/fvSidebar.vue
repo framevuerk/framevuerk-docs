@@ -13,27 +13,27 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvSidebar.vue">
-            <label class="fv-control-label fv-horizontal-padding">Pinned Sidebar</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Pinned Sidebar</label>
             <div class="fv-padding">
               <fvMain style="height: 200px;" class="fv-border" parent>
                 <fvContent class="fv-padding">
                   <fvButton @click="exmps.a = !exmps.a">Toggle!</fvButton>
-                  <div class="fv-margin-small"/>
+                  <div class="fv-margin"/>
                   <div v-for="l in 20" :key="'line-'+l"> Line #{{l}} </div>
                 </fvContent>
-                <fvSidebar class="fv-padding" v-model="exmps.a" pin> I am pinned Sidebar </fvSidebar>
+                <fvSidebar class="fv-padding"  v-model="exmps.a" pin> I am pinned Sidebar </fvSidebar>
               </fvMain>
             </div>
-            <hr class="fv-hr fv-vertical-margin"/>
-            <label class="fv-control-label fv-horizontal-padding">Unpinned Sidebar</label>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Unpinned Sidebar</label>
             <div class="fv-padding">
               <fvMain style="height: 200px;" class="fv-border" parent>
                 <fvContent class="fv-padding">
                   <fvButton @click="exmps.b = !exmps.b">Toggle!</fvButton>
-                  <div class="fv-margin-small"/>
+                  <div class="fv-margin"/>
                   <div v-for="l in 20" :key="'line-'+l"> Line #{{l}} </div>
                 </fvContent>
-                <fvSidebar class="fv-padding" v-model="exmps.b"> I am unpinned Sidebar </fvSidebar>
+                <fvSidebar class="fv-padding"  v-model="exmps.b"> I am unpinned Sidebar </fvSidebar>
               </fvMain>
             </div>
           </appExample>
