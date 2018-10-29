@@ -54,5 +54,18 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/framevuerk/framevuerk-docs.git"
+  },
+  "engines": {
+    "node": ">= 4.x"
+  },
+  "author": "nainemom <nainemom@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/framevuerk/framevuerk-docs/issues"
+  },
+  "homepage": "https://github.com/framevuerk/framevuerk-docs#readme"
 }
