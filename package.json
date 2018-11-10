@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:framevuerk": "framevuerk-builder -d ./node_modules/framevuerk -o ./node_modules/framevuerk/dist -c ./framevuerk-config.json",
-    "build": "vue-cli-service build --dest docs --mode production",
+    "build": "npm run build:framevuerk && vue-cli-service build --dest docs --mode production",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
