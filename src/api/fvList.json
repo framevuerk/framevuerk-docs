@@ -37,7 +37,6 @@
     }
   ],
   "note": [
-    "Do not set <b>parent</b> prop for <b>sub-list</b> slot.",
-    "You can use <b>.selected</b> class to <b>fvListItem</b> to set selected style."
+    "Do not set <b>parent</b> prop for <b>sub-list</b> slot."
   ]
 }

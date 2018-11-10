@@ -34,16 +34,16 @@
     },
     {
       "name": "breaked",
-      "type": "Boolean",
-      "default": "false",
-      "description": "Change style of table to small mode."
+      "type": "[true, false, null]",
+      "default": "null",
+      "description": "Is <b>fvTable</b> breaked? if it's null, it will calcutate automatic by parent size."
     }
   ],
   "event": [
     {
-      "name": "update:breaked",
-      "params": "newBreakedValue",
-      "description": "Fired when component request to change <b>breaked</b> prop."
+      "name": "breakedChange",
+      "params": "newBreakedState",
+      "description": "Fired when internal breaked state changes."
     }
   ],
   "scopedSlot": [
@@ -91,8 +91,6 @@
     }
   ],
   "note": [
-    "<b>fvTable</b> should atleast one <b>fvMain</b> parent with <b>parent</b> prop.",
-    "Pass model and use <b>.sync</b> modifier to <b>breaked</b> prop to calculate it on <i>resize</i> to allow component to break/unbreak based on parent size.",
-    "You can use <b>.fv-no-border</b> and <b>.fv-no-shadow</b> class to remove borders if you want to show table in full viewport size."
+    "You can use <b>.fv-no-border</b> and <b>.fv-no-shadow</b> helper classes to remove borders if you want to show table in full viewport size."
   ]
 }

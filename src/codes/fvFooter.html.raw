@@ -1,17 +1,6 @@
-<!-- Fixed Footer -->
 <fvMain>
     <fvContent>
-        <!-- Your Contents -->
-    </fvContent>
-    <fvFooter>
-        <!-- Footer Content -->
-    </fvFooter>
-</fvMain>
-
-<!-- Normal Footer -->
-<fvMain>
-    <fvContent>
-        <!-- Your Contents -->
+        <!-- Your Contents Container -->
         <fvFooter>
             <!-- Footer Content -->
         </fvFooter>

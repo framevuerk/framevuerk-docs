@@ -1,20 +1,9 @@
 {
   "title": "fvMain",
-  "description": "This is the main part of Framevuerk. For use the most of our components, you should put them into this container for best styles matching and functionality working.",
-  "prop": [
-    {
-      "name": "parent",
-      "type": "Boolean",
-      "default": "false",
-      "description": "If true, all children dialogs overlays and position calculating based on this component."
-    }
-  ],
+  "description": "This is the main part of Framevuerk layout. If you want to use <b>fvSidebar</b> and <b>fvContent</b> components, you should put it into this container for best styles matching.",
   "slot": [
     {
       "name": "default"
     }
-  ],
-  "note": [
-    "Only active <b>parent</b> prop for the root <b>fvMain</b> if you confused about this prop."
   ]
 }

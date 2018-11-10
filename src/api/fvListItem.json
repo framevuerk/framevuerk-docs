@@ -48,6 +48,10 @@
   ],
   "class": [
     {
+      "name": ".selected",
+      "description": "Selected style"
+    },
+    {
       "name": ".fv-size-xs",
       "description": "XSmall size"
     },

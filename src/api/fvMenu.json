@@ -1,36 +1,12 @@
 {
   "title": "fvMenu",
-  "description": "To create popup menu element use this component.",
+  "description": "To create singleton menu element or popup dialog under clicked position, use this component.",
   "prop": [
     {
       "name": "value",
       "type": "Boolean",
       "default": "false",
       "description": "Visibility of menu."
-    },
-    {
-      "name": "items",
-      "type": "Array",
-      "default": "[]",
-      "description": "List of menu items."
-    },
-    {
-      "name": "disabledKey",
-      "type": "String",
-      "default": "'disabled'",
-      "description": "<b>disabled</b> key in each item object. only works when <b>items</b> prop is list of objects."
-    },
-    {
-      "name": "textKey",
-      "type": "String",
-      "default": "'text'",
-      "description": "<b>text</b> key in each item object. only works when <b>items</b> prop is list of objects."
-    },
-    {
-      "name": "sourceElement",
-      "type": "HTMLElement",
-      "default": "",
-      "description": "Element that try to open menu. <b>fvMenu</b> use this to calculate menu position. You can pass <b>$event.target</b> inside <b>@click</b> event of element that try to open the menu."
     }
   ],
   "event": [
@@ -48,18 +24,11 @@
       "name": "close",
       "params": "",
       "description": "Fired when dialog closed."
-    },
-    {
-      "name": "click",
-      "params": "clickedItem",
-      "description": "Fired when user clicked on a menu item."
     }
   ],
-  "scopedSlot": [
+  "slot": [
     {
-      "name": "default",
-      "params": "[item]",
-      "description": "Template for menu items."
+      "name": "default"
     }
   ],
   "class": [
@@ -85,6 +54,7 @@
     }
   ],
   "note": [
-    "<b>fvMenu</b> should atleast one <b>fvMain</b> parent with <b>parent</b> prop."
+    "<b>fvMenu</b> is singleton. It means you can create one <b>fvMenu</b> and use it on several places with custom arguments.",
+    "<b>fvMenu</b> calculate position of itself by listening to global click events."
   ]
 }

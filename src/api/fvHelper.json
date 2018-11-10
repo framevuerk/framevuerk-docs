@@ -107,8 +107,8 @@
       "description": "Apply display inline style to element."
     },
     {
-      "name": ".fv-flex",
-      "description": "Apply display flex style to element."
+      "name": ".fv-flex-{col|row}",
+      "description": "Apply display flex style to element with flex-direction set to column/row."
     },
     {
       "name": ".fv-grow",

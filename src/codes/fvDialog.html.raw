@@ -1,5 +1,3 @@
-<fvMain parent>
-  <fvDialog v-model="dialog">
-    <!-- Dialog Contents -->
-  </fvDialog>
-</fvMain>
+<fvDialog v-model="dialog">
+  <!-- Dialog Contents -->
+</fvDialog>

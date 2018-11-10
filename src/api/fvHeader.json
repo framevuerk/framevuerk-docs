@@ -8,13 +8,13 @@
   ],
   "class": [
     {
-      "name": ".fv-default",
+      "name": ".transparent",
       "description": "Transparent theme"
     }
   ],
   "note": [
-    "You should put <b>fvHeader</b> directly into <b>fvMain</b> for best style matching.",
     "You can set custom color for background via <b>header-bg-color</b> key in your config variables.",
-    "Set <b>.fv-grow</b> class to main element of header. (usually <i>h1</i> element for title)"
+    "Set <b>.fv-grow</b> class to main element of header. (usually <i>h1</i> element for title)",
+    "You can use <b>span</b> with <b>.fv-padding-start</b> class between your elements as seperator."
   ]
 }

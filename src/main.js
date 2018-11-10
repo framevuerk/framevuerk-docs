@@ -4,16 +4,16 @@ import Meta from 'vue-meta'
 
 // import tt from './framevuerk/cm2.js'
 // console.warn(tt)
-import Framevuerk from 'framevuerk/dist/framevuerk.min.js'
+import Framevuerk from 'framevuerk/dist/framevuerk-ltr.js'
 // const Framevuerk = require('framevuerk/dist/framevuerk.js')
 
-import 'framevuerk/dist/framevuerk.css'
+import 'framevuerk/dist/framevuerk-ltr.css'
 import 'font-awesome/css/font-awesome.css'
 import VueHighlightJS from 'vue-highlightjs'
 import 'highlight.js/styles/github.css'
 
 import App from './App.vue'
- 
+
 const pages = {
   home: require('./pages/home.vue').default,
   setup: require('./pages/installation/setup.vue').default,

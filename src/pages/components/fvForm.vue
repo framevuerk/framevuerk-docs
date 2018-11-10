@@ -30,7 +30,7 @@
                 <fvFormElement class="fv-col-12" label="Age Range">
                   <template slot="label" slot-scope="scope">
                     {{scope.label}}
-                    <span v-if="scope.highlighted" class="fv-margin-start-sm fv-font-mono fv-text-primary">
+                    <span v-if="scope.highlighted" class="fv-margin-start-sm fv-text-primary">
                       <span v-if="exmps.age">{{ exmps.age.text }}</span>
                     </span>
                   </template>

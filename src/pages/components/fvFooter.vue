@@ -12,27 +12,15 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvFooter.vue">
-            <label class="fv-control-label fv-padding-start fv-padding-end">Fixed Footer</label>
-            <div class="fv-padding">
-              <fvMain style="height: 200px;" class="fv-border">
-                <fvContent class="fv-padding">
-                  <div v-for="l in 20" :key="'line-'+l"> Line #{{l}} </div>
-                </fvContent>
-                <fvFooter>
-                  <h3 class="fv-text-center">I'm Fixed Footer</h3>
-                </fvFooter>
-              </fvMain>
-            </div>
-            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
-            <label class="fv-control-label fv-padding-start fv-padding-end">Normal Footer With .fv-default class</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvMain style="height: 200px;" class="fv-border">
                 <fvContent>
                   <div class="fv-padding">
-                    <div v-for="l in 25" :key="'line-'+l"> Line #{{l}} </div>
+                    <div v-for="l in 3" :key="'line-'+l"> Line #{{l}} </div>
                   </div>
-                  <fvFooter class="fv-default">
-                    <h3 class="fv-text-center">I'm Normal Footer</h3>
+                  <fvFooter>
+                    <h3 class="fv-text-center">I am Footer</h3>
                   </fvFooter>
                 </fvContent>
               </fvMain>

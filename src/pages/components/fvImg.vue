@@ -20,13 +20,13 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Multiple src</label>
             <div class="fv-padding">
-              <fvImg class="fv-border fv-shadow" :src="['https://picsum.photos/600/400?image=122', 'https://picsum.photos/600/400?image=93', 'https://picsum.photos/600/400?image=84']" :alt="['Image One', 'Image Two', 'Image Three']" />
+              <fvImg class="fv-border fv-shadow" :src="['https://picsum.photos/600/400?image=102', 'https://picsum.photos/600/400?image=108', 'https://picsum.photos/600/400?image=22']" :alt="['Image One', 'Image Two', 'Image Three']" />
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Multiple src with Interval</label>
             <div class="fv-padding">
-              <fvImg class="fv-border fv-shadow" :src="['https://picsum.photos/600/400?image=76', 'https://picsum.photos/600/400?image=74', 'https://picsum.photos/600/400?image=82']" :alt="['Image One', 'Image Two', 'Image Three']" :interval="3000" />
+              <fvImg class="fv-border fv-shadow" :src="['https://picsum.photos/600/400?image=131', 'https://picsum.photos/600/400?image=53', 'https://picsum.photos/600/400?image=31']" :alt="['Image One', 'Image Two', 'Image Three']" :interval="3000" />
             </div>
           </appExample>
           <br />

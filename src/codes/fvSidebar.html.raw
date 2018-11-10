@@ -1,5 +1,8 @@
 <fvMain>
-    <fvSidebar v-model="sidebar" :pin.sync="sidebarPin">
+    <fvSidebar v-model="sidebar">
         <!-- Sidebar Content -->
     </fvSidebar>
+    <fvContent>
+        <!-- Your Contents Container -->
+    </fvContent>
 </fvMain>

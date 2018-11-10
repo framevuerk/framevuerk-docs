@@ -15,33 +15,34 @@
           <appExample dir="src/pages/components/fvMenu.vue">
             <fvToast v-model="exmps.toast"> {{exmps.toastContent}} </fvToast>
 
-            <fvMenu v-model="exmps.a" :source-element="exmps.aSourceElement" :items="exmps.aItems" @click="clickHandler" />
-            <fvMenu v-model="exmps.b" :items="exmps.aItems" @click="clickHandler" />
-            <fvMenu class="fv-size-xl" v-model="exmps.c" :source-element="exmps.cSourceElement" :items="exmps.cItems" @click="clickHandler">
-              <template slot-scope="scope">
-                <i :class="scope.item.icon"></i>
-                <span class="fv-margin"></span>
-                {{scope.item.text}}
-              </template>
+            <fvMenu v-model="exmps.a">
+              <fvList parent>
+                <fvListItem v-for="item in exmps.aItems" @click="clickHandler(item, 'a')" :key="item.text"> {{item.text}} </fvListItem>
+              </fvList>
             </fvMenu>
+            <fvMenu v-model="exmps.c" class="fv-size-lg">
+              <fvList parent>
+                <fvListItem v-for="item in exmps.cItems" @click="clickHandler(item, 'c')" :key="item.text">
+                  <i :class="item.icon"></i>
+                  <span class="fv-margin"></span>
+                  {{item.text}}
+                </fvListItem>
+              </fvList>
+            </fvMenu>
+
             
             
             <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
-              <fvButton class="fv-default" @click="openMenu('a', $event.target)"> <i class="fa fa-ellipsis-v"></i> </fvButton>
+              <fvButton class="fv-default" @click="openMenu('a')"> <i class="fa fa-ellipsis-v"></i> </fvButton>
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
-          
-            <label class="fv-control-label fv-padding-start fv-padding-end">Without Source-Element</label>
-            <div class="fv-padding">
-              <fvButton class="fv-default" @click="openMenu('b')"> <i class="fa fa-ellipsis-h"></i> </fvButton>
-            </div>
-            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
-
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Custom Template</label>
-            <div class="fv-padding">
-              <fvButton class="fv-default" @click="openMenu('c', $event.target)"> <i class="fa fa-ellipsis-v"></i> </fvButton>
+            <div class="fv-padding fv-flex">
+              <fvButton class="fv-default" @click="openMenu('c')"> Open Menu </fvButton>
+              <div class="fv-grow" />
+              <fvButton class="fv-default" @click="openMenu('c')"> or Open same Menu here </fvButton>
             </div>
 
             
@@ -119,14 +120,12 @@ export default {
     }
   },
   methods: {
-    openMenu (menuKey, sourceElement = null) {
-      if (sourceElement) {
-        this.exmps[`${menuKey}SourceElement`] = sourceElement
-      }
+    openMenu (menuKey) {
       this.exmps[menuKey] = true
     },
-    clickHandler (item) {
+    clickHandler (item, menuKey) {
       this.exmps.toast = true
+      this.exmps[menuKey] = false
       this.exmps.toastContent = `You Clicked on ${item.text}`
     }
   }

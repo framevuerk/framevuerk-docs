@@ -1,5 +1,5 @@
 <template>
-  <fvSidebar v-model="$root.sidebar" :pin.sync="$root.sidebarPin" class="fv-col-xs-8 fv-col-md-5 fv-col-lg-3 fv-col-xl-2">
+  <fvSidebar v-model="$root.sidebar" class="fv-col-xs-8 fv-col-md-5 fv-col-lg-3 fv-col-xl-2">
     <fvContent ref="content" :initial-scroll="$root.sidebarScrollY">
       <router-link class="fv-padding fv-block" to="/">
         <appLogo style="width: 35px;" white ready></appLogo>
@@ -82,8 +82,6 @@ export default {
   },
   data () {
     return {
-      sidebar: false,
-      sidebarPin: false,
       query: '',
       sidebarItems,
       searchResult: undefined

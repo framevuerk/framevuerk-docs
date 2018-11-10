@@ -1,5 +1,8 @@
-<fvMain parent>
-  <fvMenu v-model="menu" :source-element="menuSourceElement" :item="items" @click="clickHandler" />
+<fvMenu v-model="menu">
+  <fvList parent autofocus>
+    <fvListItem> Item #1 </fvListItem>
+    <fvListItem> Item #2 </fvListItem>
+  </fvList>
+</fvMenu>
 
-  <fvButton @click="openMenu"> Open Menu </fvButton>
-</fvMain>
+<fvButton @click="menu = !menu"> Open Menu </fvButton>

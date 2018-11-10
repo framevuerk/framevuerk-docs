@@ -12,23 +12,11 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvHeader.vue">
-            <label class="fv-control-label fv-padding-start fv-padding-end">Fixed Header</label>
-            <div class="fv-padding">
-              <fvMain style="height: 200px;" class="fv-border">
-                <fvHeader>
-                  <h3 class="fv-grow">I'm Fixed Header</h3>
-                </fvHeader>
-                <fvContent class="fv-padding">
-                  <div v-for="l in 20" :key="'line-'+l"> Line #{{l}} </div>
-                </fvContent>
-              </fvMain>
-            </div>
-            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
-            <label class="fv-control-label fv-padding-start fv-padding-end">Normal Header With .fv-default class</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-padding">
               <fvMain style="height: 200px;" class="fv-border">
                 <fvContent>
-                  <fvHeader class="fv-default">
+                  <fvHeader>
                     <h3 class="fv-grow">I'm Normal Header</h3>
                   </fvHeader>
                   <div class="fv-padding">
@@ -42,9 +30,11 @@
             <div class="fv-padding">
               <fvHeader>
                 <fvButton class="fv-size-sm"> Button </fvButton>
+                <span class="fv-padding-start" />
                 <div class="fv-grow">
                   <h3>#I Have Button</h3>
                 </div>
+                <span class="fv-padding-start" />
                 <fvButton class="fv-size-sm"> Another Button </fvButton>
               </fvHeader>
             </div>
@@ -53,7 +43,20 @@
             <div class="fv-padding">
               <fvHeader>
                 <fvInput class="fv-size-sm fv-grow" placeholder="Type to search..."></fvInput>
+                <span class="fv-padding-start" />
                 <fvButton class="fv-size-sm"> Start Searching </fvButton>
+                <span class="fv-padding-start" />
+                <a class="fv-link fv-font-sm" href="#"> Go to link </a>
+              </fvHeader>
+            </div>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">With .transparnet Class</label>
+            <div class="fv-padding">
+              <fvHeader class="transparent">
+                <fvInput class="fv-size-sm fv-grow" placeholder="Type to search..."></fvInput>
+                <span class="fv-padding-start" />
+                <fvButton class="fv-size-sm"> Start Searching </fvButton>
+                <span class="fv-padding-start" />
                 <a class="fv-link fv-font-sm" href="#"> Go to link </a>
               </fvHeader>
             </div>

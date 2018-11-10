@@ -19,6 +19,7 @@
                   <div class="fv-block">
                     <fvAvatar src="https://randomuser.me/api/portraits/women/94.jpg" name="Vivan Hansen" size="128px" />
                   </div>
+                  <span class="fv-padding-top" />
                   <small>Normal</small>
                 </div>
               </div>
@@ -27,6 +28,7 @@
                   <div class="fv-block">
                     <fvAvatar class="square" src="https://randomuser.me/api/portraits/men/62.jpg" name="Arron Hamilton" size="128px" />
                   </div>
+                  <span class="fv-padding-top" />
                   <small><b>.square</b> mode</small>
                 </div>
               </div>
@@ -35,24 +37,28 @@
                   <div class="fv-block">
                     <fvAvatar name="Alessandro Nesta" size="128px" />
                   </div>
+                  <span class="fv-padding-top" />
                   <small>This ones has unavailable src and the name of user is 'Alessandro Nesta'!</small>
                 </div>
               </div>
               <div class="fv-col">
                 <div class="fv-text-center fv-border fv-shadow fv-radius fv-padding">
                   <fvAvatar src="https://randomuser.me/api/portraits/women/78.jpg" name="Sally Wagner" size="64px" />
+                  <span class="fv-padding-start" />
                   <b class="fv-hor-padding-sm">Sally Wagner</b>
                 </div>
               </div>
               <div class="fv-col">
                 <div class="fv-text-center fv-border fv-shadow fv-radius fv-padding">
                   <fvAvatar src="https://randomuser.me/api/portraits/lego/5.jpg" name="Lego Normal" size="64px" />
+                  <span class="fv-padding-start" />
                   <b class="fv-hor-padding-sm">Lego Normal</b>
                 </div>
               </div>
               <div class="fv-col">
                 <div class="fv-text-center fv-border fv-shadow fv-radius fv-padding">
                   <fvAvatar name="Without Src" size="64px" />
+                  <span class="fv-padding-start" />
                   <b class="fv-hor-padding-sm">Without Src</b>
                 </div>
               </div>

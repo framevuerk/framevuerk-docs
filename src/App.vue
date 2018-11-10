@@ -1,7 +1,5 @@
 <template>
-  <fvMain id="app" parent>
-    <router-view></router-view>
-  </fvMain>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -15,5 +13,8 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body {
+  line-height: 1.6;
 }
 </style>

@@ -56,27 +56,31 @@
               <div class="fv-col-md-6">
                 <fvSelect class="fv-form-control" placeholder="Enter Github repo name" v-model="exmps.e" :options="exmps.optionsC" :loading="exmps.loadingA" :search="null" @search="calcCOptions">
                   <template slot="option" slot-scope="scope">
-                    <div class="fv-padding-top fv-padding-bottom">
-                      <h3>
-                        <fvAvatar :src="scope.option.ownerAvatar" size="32px" /> {{scope.option.text}}
-                      </h3>
-                      <p>
-                        <span>
-                          <i class="fa fa-star"></i> {{scope.option.stars}}
-                        </span>
-                        <span class="fv-margin"></span>
-                        <span>
-                          <i class="fa fa-code-fork"></i> {{scope.option.forks}}
-                        </span>
-                      </p>
+                    <div class="fv-padding-top fv-padding-bottom fv-flex" style="align-items: center">
+                      <div class="fv-margin-end">
+                        <fvAvatar :src="scope.option.ownerAvatar" size="32px" />
+                      </div>
+                      <div class="fv-grow">
+                        <h3> {{scope.option.text}} </h3>
+                        <p>
+                          <span>
+                            <i class="fa fa-star"></i> {{scope.option.stars}}
+                          </span>
+                          <span class="fv-margin"></span>
+                          <span>
+                            <i class="fa fa-code-fork"></i> {{scope.option.forks}}
+                          </span>
+                        </p>
+                      </div>
+
                     </div>
                   </template>
                   <template slot="empty" slot-scope="scope">
                     <div v-if="scope.value">
-                      No repository found on <b>Github</b> with "{{scope.value}}".
+                      No repository found.
                     </div>
                     <div v-else>
-                      Start typing to search on <b>Github</b>
+                      Start typing to search
                     </div>
                   </template>
                 </fvSelect>

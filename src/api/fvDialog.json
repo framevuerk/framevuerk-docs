@@ -9,12 +9,6 @@
       "description": "Visibility of dialog."
     },
     {
-      "name": "overlay",
-      "type": "Boolean",
-      "default": "true",
-      "description": "Does dialog has an overlay behind?"
-    },
-    {
       "name": "animation",
       "type": "String",
       "default": "'fv-fade'",
@@ -43,14 +37,9 @@
       "name": "default"
     }
   ],
-  "class": [
-    {
-      "name": ".not-center",
-      "description": "Remove vertically and horizontally position styles."
-    }
-  ],
   "note": [
-    "<b>fvDialog</b> should atleast one <b>fvMain</b> parent with <b>parent</b> prop.",
-    "<b>fvDialog</b> uses <i>translate(-50%, -50%); left: 50%; top: 50%;</i> way to put itself vertically and horizontaly on center. If you use <b>.not-center</b> class or custom animation, dont remember to handle it."
+    "If you want to create modal dialog, pass <v>value</v> prop via <b>:value</b> and if you dont, pass it via <b>v-model</b>.",
+    "<b>fvDialog</b> is really developer friendly. You can put any contents you want into this and create your custom in/out animation.",
+    "<b>fvDialog</b> tries to keep focus inside. Basicly the last focusable element inside will focus on open, but element with [autofocus] attr has higher prority.<b>fvDialog</b> tries to keep focus inside. Basically the last focusable element inside will focus on open, but an element with [autofocus] attr has higher priority."
   ]
 }

@@ -1,19 +1,8 @@
-<!-- Fixed Header -->
-<fvMain>
-    <fvHeader>
-        <!-- Header Content -->
-    </fvHeader>
-    <fvContent>
-        <!-- Your Contents -->
-    </fvContent>
-</fvMain>
-
-<!-- Normal Header -->
 <fvMain>
     <fvContent>
         <fvHeader>
             <!-- Header Content -->
         </fvHeader>
-        <!-- Your Contents -->
+        <!-- Your Contents Container -->
     </fvContent>
 </fvMain>

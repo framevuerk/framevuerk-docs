@@ -18,6 +18,12 @@
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Color</label>
+            <div class="fv-padding">
+              <fvLoading class="fv-text-primary" />
+            </div>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+
             <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
             <div class="fv-padding">
               <fvLoading class="fv-size-xl"/>
