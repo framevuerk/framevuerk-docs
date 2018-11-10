@@ -2,7 +2,7 @@
   <pre class="markup fv-border fv-shadow fv-radius fv-margin-top fv-margin-bottom" v-highlightjs>
     <div class="panel fv-margin">
       <span class="hljs-comment" v-text="langText"></span>
-      <fvButton class="fv-size-sm" @click.prevent="copy" :disabled="copiedToast"><i class="fa fa-copy"></i> Copy</fvButton>
+      <!-- <fvButton class="fv-size-sm" @click.prevent="copy" :disabled="copiedToast"><i class="fa fa-copy"></i> Copy</fvButton> -->
     </div>
     <code :class="lang" ref="markup" v-text="content.trim()"></code>
     <fvToast v-model="copiedToast" :timeout="1200">Copied to Clipboard!</fvToast>

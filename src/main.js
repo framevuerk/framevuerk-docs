@@ -61,10 +61,10 @@ const routes = require('./routes.js').map(route => {
 
     if (route.meta.api instanceof Array) {
       route.meta.title = route.meta.api[0].title
-      route.meta.description = route.meta.api[0].description
+      route.meta.description = route.meta.api[0].description.replace(/<\/?[^>]+(>|$)/g, "")
     } else {
       route.meta.title = route.meta.api.title
-      route.meta.description = route.meta.api.description
+      route.meta.description = route.meta.api.description.replace(/<\/?[^>]+(>|$)/g, "")
     }
   }
   
@@ -115,23 +115,24 @@ new Vue({
   data () {
     return {
       sidebar: false,
-      sidebarPin: false,
-      sidebarScrollY: 0,
       githubRepo: 'https://github.com/framevuerk/framevuerk',
       githubDocsRepo: 'https://github.com/framevuerk/framevuerk-docs',
       npmRepo: 'https://www.npmjs.com/package/framevuerk'
     }
   },
+  methods: {
+    routeChange (path) {
+      if (window.ga) {
+        window.ga('send', 'pageview', path)
+      }
+    }
+  },
+  created () {
+    this.routeChange(this.$route.path)
+  },
   watch: {
-    '$route.path'() {
-      
-      // this.$nextTick(() => {
-      //   if (this.sidebarPin === false) {
-      //     console.log('salam')
-      //     this.sidebar = false
-      //   }
-      // })
-
+    '$route.path' (path) {
+      this.routeChange(path)
     }
   },
   render: h => h(App)
