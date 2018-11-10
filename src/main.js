@@ -130,6 +130,11 @@ new Vue({
   created () {
     this.routeChange(this.$route.path)
   },
+  mounted () {
+    this.$nextTick(() => {
+      window.document.dispatchEvent(new Event('ready-to-render'))
+    })
+  },
   watch: {
     '$route.path' (path) {
       this.routeChange(path)

@@ -46,7 +46,9 @@
             <fvDialog v-model="exmps.c" class="fv-col-md-6 fv-col-sm-8">
               <label class="fv-control-label fv-padding"> Paolo Maldini </label>
               <div class="fv-row">
-                <fvImg class="fv-col-sm-12 fv-col-md-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Maldini2008.JPG/262px-Maldini2008.JPG" alt="pato" />
+                <div class="fv-col-sm-12 fv-col-md-4 fv-hidden-xs fv-hidden-sm">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Maldini2008.JPG/262px-Maldini2008.JPG" alt="Paolo Maldini" style="position: sticky; top: 0.5em; max-width: 100%;" />
+                </div>
                 <p class="fv-col-sm-12 fv-col-md-8">
                   Paolo Cesare Maldini (Italian pronunciation: [ˈpaːolo malˈdiːni]; born 26 June 1968) is an Italian former professional footballer who played as a left-back and central defender for A.C. Milan and the Italy national team. He spent all 25 seasons of his career in the Serie A with Milan, before retiring at the age of 41 in 2009. He won 25 trophies with Milan: the UEFA Champions League five times, seven Serie A titles, one Coppa Italia, five Supercoppa Italiana titles, four European Super Cups, two Intercontinental Cups and one FIFA Club World Cup. Paolo Maldini is currently the co-owner of North American Soccer League (NASL) club Miami FC. He is also serving as sporting strategy & development director for Milan.[2]
                   <br />
