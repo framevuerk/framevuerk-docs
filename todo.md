@@ -1,4 +1,3 @@
-- add site icon
 - add form examples
 - add layout examples
 - add todo list examples
