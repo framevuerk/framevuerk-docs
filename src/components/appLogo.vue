@@ -28,7 +28,9 @@ export default {
   },
   mounted () {
     setTimeout(() => {
-      this.isReady = true
+      if (typeof __PRERENDER_INJECTED === 'undefined') {
+        this.isReady = true
+      }
     }, 120)
   }
 }
