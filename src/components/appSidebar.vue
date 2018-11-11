@@ -1,6 +1,6 @@
 <template>
   <fvSidebar v-model="$root.sidebar" class="fv-col-xs-8 fv-col-md-5 fv-col-lg-3 fv-col-xl-2">
-    <fvContent ref="content">
+    <fvContent>
       <router-link class="fv-padding fv-block" to="/">
         <appLogo style="width: 35px;" white ready></appLogo>
         <b> Framevuerk </b>
@@ -96,9 +96,6 @@ export default {
       } else {
         this.searchResult = sidebarItems.search(str)
       }
-      this.$nextTick(() => {
-        this.$refs.content.$el.scrollTo(0, 0)
-      })
     }
   }
 }
