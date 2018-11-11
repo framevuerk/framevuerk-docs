@@ -1,7 +1,7 @@
 {
   "name": "framevuerk-docs",
   "description": "Framevuerk Documents",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:framevuerk": "framevuerk-builder -d ./node_modules/framevuerk -o ./node_modules/framevuerk/dist -c ./framevuerk-config.json",
