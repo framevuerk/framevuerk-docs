@@ -10,7 +10,11 @@ if (process.env.NODE_ENV === 'production') {
     staticDir: path.join(__dirname, 'docs'),
     renderer: new Renderer({
       renderAfterDocumentEvent: 'ready-to-render',
-      maxConcurrentRoutes: 1
+      maxConcurrentRoutes: 1,
+      injectProperty: '__PRERENDER_INJECTED',
+      inject: {
+        prerender: true
+      }
     })
   }))
 }

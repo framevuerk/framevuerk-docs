@@ -28,7 +28,7 @@ export default {
   },
   mounted () {
     setTimeout(() => {
-      if (typeof __PRERENDER_INJECTED === 'undefined') {
+      if (typeof window.__PRERENDER_INJECTED === 'undefined') {
         this.isReady = true
       }
     }, 120)
