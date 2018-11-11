@@ -12,7 +12,13 @@
       "name": "singleLine",
       "type": "Boolean",
       "default": "false",
-      "description": "If you want draw label and input element in single line, set it to true."
+      "description": "If you want draw label and input element in single line, set this to true."
+    },
+    {
+      "name": "inline",
+      "type": "Boolean",
+      "default": "false",
+      "description": "If your input element(s) is a non block level (eg <b>fvCheck<b/> or <b>fvSwitch</b>) set this to true."
     }
   ],
   "slot": [

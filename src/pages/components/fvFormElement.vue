@@ -21,7 +21,7 @@
               <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Country">
                 <fvSelect disabled placeholder="Enter your country" />
               </fvFormElement>
-              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Married">
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Married" inline>
                 <fvSwitch />
               </fvFormElement>
             </div>
@@ -29,13 +29,13 @@
   
             <label class="fv-control-label fv-padding-start fv-padding-end">Single Line</label>
             <div class="fv-row">
-              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Name" singleLine>
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Name" singleLine >
                 <fvInput placeholder="Enter your name" />
               </fvFormElement>
               <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Country" singleLine>
                 <fvSelect disabled placeholder="Enter your country" />
               </fvFormElement>
-              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Married" singleLine>
+              <fvFormElement class="fv-col-lg-4 fv-col-md-6" label="Married" singleLine inline>
                 <fvSwitch />
               </fvFormElement>
             </div>
