@@ -1,7 +1,7 @@
 {
   "name": "framevuerk-docs",
   "description": "Framevuerk Documents",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:framevuerk": "framevuerk-builder -d ./node_modules/framevuerk -o ./node_modules/framevuerk/dist -c ./framevuerk-config.json",
@@ -11,7 +11,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "font-awesome": "^4.7.0",
-    "framevuerk": "^2.0.4",
+    "framevuerk": "^2.0.5",
     "idate": "^0.1.5",
     "vue": "2.5.17",
     "vue-highlightjs": "^1.3.3",
