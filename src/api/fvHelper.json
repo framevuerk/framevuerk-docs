@@ -47,7 +47,7 @@
       "description": "Apply mentioned color to text/background of element based on colors in config file."
     },
     {
-      "name": ".fv-text-{start|end|center|justify}",
+      "name": ".fv-text-{start|end|center|justify|left|right}",
       "description": "Apply mentioned text align to element based of framevuerk configured <b>direction</b>."
     },
     {
@@ -57,6 +57,10 @@
     {
       "name": ".fv-dir-{start|end}",
       "description": "Apply direction to element based of framevuerk configured <b>direction</b>."
+    },
+    {
+      "name": ".fv-{rtl|ltr}",
+      "description": "Apply direction to element."
     },
     {
       "name": ".fv-shadow",
