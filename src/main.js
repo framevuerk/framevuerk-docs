@@ -47,7 +47,6 @@ const pages = {
   fvGrid: require('./pages/styles/fvGrid.vue').default,
   fvHelper: require('./pages/styles/fvHelper.vue').default
 }
-
 const routes = require('./routes.js').map(route => {
   route.component = pages[route.componentName] || pages.setup
   delete route.componentName
@@ -104,7 +103,6 @@ Vue.use(Framevuerk)
 Vue.use(VueRouter)
 Vue.use(VueHighlightJS)
 Vue.use(Meta)
-
 const router = new VueRouter({
   mode: process.env.NODE_ENV === 'production' ? 'history' : '',
   routes,

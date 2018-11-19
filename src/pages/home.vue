@@ -2,7 +2,7 @@
   <fvMain class="home">
     <fvContent>
       <appHeader title="Framevuerk">
-        <router-link class="fv-button fv-primary" to="/installation=setup">
+        <router-link class="fv-button fv-primary" to="/installation/setup">
           Documentions
         </router-link>
       </appHeader>
@@ -17,7 +17,7 @@
               <h1 class="fv-text-secondary">Framevuerk</h1>
               <p><b>Fast</b>, <b>Responsive</b>, <b>Without Dependencies</b>, <b>Both Direction Support</b> and <b>Configurable</b> UI Framework based on <a class="fv-link" href="http://vuejs.org" target="_blank">Vue.js</a>.</p>
               <div class="fv-padding-top fv-padding-bottom">
-                <router-link class="fv-button fv-primary" to="/installation=setup">
+                <router-link class="fv-button fv-primary" to="/installation/setup">
                   <i class="fa fa-play"></i>
                   GET STARTED
                 </router-link>
