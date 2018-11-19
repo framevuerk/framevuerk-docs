@@ -38,6 +38,16 @@
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
+            <label class="fv-control-label fv-padding-start fv-padding-end">Context Menu (Right Click)</label>
+            <div class="fv-margin fv-text-center fv-border fv-radius fv-shadow fv-paddingz" @contextmenu.prevent="openMenu('a')">
+                <br />
+                Right Click in this box
+                <br />
+                <br />
+            </div>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+
+
             <label class="fv-control-label fv-padding-start fv-padding-end">Custom Template</label>
             <div class="fv-padding fv-flex">
               <fvButton class="fv-default" @click="openMenu('c')"> Open Menu </fvButton>
