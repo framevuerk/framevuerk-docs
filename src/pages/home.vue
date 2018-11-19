@@ -88,9 +88,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
-  font-size: 1.1em;
-}
 .logo-container {
   margin: 140px auto;
   display: flex;
