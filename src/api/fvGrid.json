@@ -1,5 +1,5 @@
 {
-  "title": "fvGrid",
+  "title": "Grid",
   "description": "To use grid system, use <b>.fv-row</b> and <b>.fv-col(x)</b> classes.",
   "class": [
     {

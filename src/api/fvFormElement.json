@@ -1,5 +1,5 @@
 {
-  "title": "fvFormElement",
+  "title": "Form Element",
   "description": "To create form control element inside <b>fvForm</b> component, use this component.",
   "prop": [
     {

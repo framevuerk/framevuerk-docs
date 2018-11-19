@@ -1,5 +1,5 @@
 {
-  "title": "fvDialog",
+  "title": "Dialog Box",
   "description": "To create full featured dialog element (alert, confirm, custom messages) use this component.",
   "prop": [
     {

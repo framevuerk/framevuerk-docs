@@ -1,5 +1,5 @@
 {
-  "title": "fvMenu",
+  "title": "Popup Menu",
   "description": "To create singleton menu element or popup dialog under clicked position, use this component.",
   "prop": [
     {

@@ -1,5 +1,5 @@
 {
-  "title": "fvInput",
+  "title": "Input (Textbox)",
   "description": "To create text input element use this component.",
   "prop": [
     {

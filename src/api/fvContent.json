@@ -1,5 +1,5 @@
 {
-  "title": "fvContent",
+  "title": "Content",
   "description": "This is the content part of Framevuerk layout. If you want to use <b>fvHeader</b> and <b>fvFooter</b> components, you should put them into this container before and after your contents container for best styles matching.",
   "slot": [
     {

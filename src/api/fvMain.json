@@ -1,5 +1,5 @@
 {
-  "title": "fvMain",
+  "title": "Main",
   "description": "This is the main part of Framevuerk layout. If you want to use <b>fvSidebar</b> and <b>fvContent</b> components, you should put it into this container for best styles matching.",
   "slot": [
     {
