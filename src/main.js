@@ -47,6 +47,7 @@ const pages = {
   fvGrid: require('./pages/styles/fvGrid.vue').default,
   fvHelper: require('./pages/styles/fvHelper.vue').default
 }
+
 const routes = require('./routes.js').map(route => {
   route.component = pages[route.componentName] || pages.setup
   delete route.componentName
@@ -70,16 +71,44 @@ const routes = require('./routes.js').map(route => {
   
   
   route.component.metaInfo = {
-    title: `Framevuerk | ${route.meta.title}`,
+    title: `Framevuerk - ${route.meta.title}`,
     meta: [
+      // standard
       {
         name: 'description',
         content: route.meta.description
       },
+      // schema.org
+      {
+        itemprop: 'name',
+        content: route.meta.title,
+        template: 'Framevuerk - %s'
+      },
+      {
+        itemprop: 'description',
+        content: route.meta.description
+      },
+      {
+        itemprop: 'image',
+        content: 'https://framevuerk.com/framevuerk.png'
+      },
+      // Open Graph
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:url',
+        content: `https://framevuerk.com${route.path}`
+      },
       {
         property: 'og:title',
         content: route.meta.title,
-        template: 'Framevuerk | %s'
+        template: 'Framevuerk - %s'
       },
       {
         property: 'og:description',
@@ -91,7 +120,39 @@ const routes = require('./routes.js').map(route => {
       },
       {
         property: 'og:image',
-        content: '/framevuerk.png'
+        content: 'https://framevuerk.com/framevuerk.png'
+      },
+      // twitter
+      {
+        property: 'twitter:title',
+        content: route.meta.title,
+        template: 'Framevuerk - %s'
+      },
+      {
+        property: 'twitter:description',
+        content: route.meta.description
+      },
+
+      {
+        property: 'twitter:site',
+        content: '@framevuerk'
+      },
+      {
+        property: 'twitter:creator',
+        content: '@nainemom'
+      },
+      {
+        property: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        property: 'twitter:image:src',
+        content: 'https://framevuerk.com/framevuerk.png'
+      },
+      // facebook
+      {
+        property: 'fb:admins',
+        content: '100005486080043'
       }
     ]
   }
