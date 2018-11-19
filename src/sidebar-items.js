@@ -21,30 +21,30 @@ const componentLayoutItems = [
 ]
 
 const componentDialogItems = [
-  sidebarItem('Dialog', '/components/dialog', ['dialog', 'modal', 'alert', 'message', 'box', 'fv-dialog', 'fvdialog']),
-  sidebarItem('Menu', '/components/menu', ['menu', 'sheet', 'fv-menu', 'fvmenu', 'dialog'])
+  sidebarItem('Dialog Box', '/components/dialog', ['dialog', 'modal', 'alert', 'message', 'box', 'fv-dialog', 'fvdialog']),
+  sidebarItem('Popup Menu', '/components/menu', ['menu', 'sheet', 'fv-menu', 'fvmenu', 'dialog'])
 ]
 
 const componentFormItems = [
   sidebarItem('Button', '/components/button', ['button', 'fv-button', 'fvbutton', 'form']),
-  sidebarItem('Input', '/components/input', ['input', 'text-box', 'textbox', 'form', 'fv-input', 'fvinput']),
+  sidebarItem('Input (Textbox)', '/components/input', ['input', 'text-box', 'textbox', 'form', 'fv-input', 'fvinput']),
   sidebarItem('Textarea', '/components/textarea', ['input', 'text-box', 'textbox', 'form', 'fv-textarea', 'fvtextarea', 'textarea']),
-  sidebarItem('Select', '/components/select', ['input', 'select', 'option', 'form', 'dropdown', 'fv-select', 'fvselect']),
+  sidebarItem('Dropdown Select', '/components/select', ['input', 'select', 'option', 'form', 'dropdown', 'fv-select', 'fvselect']),
   sidebarItem('Datepicker', '/components/datepicker', ['input', 'date-picker', 'datepicker', 'form', 'fv-datepicker', 'fvdatepicker']),
   sidebarItem('Switch', '/components/switch', ['switch', 'toggle', 'handle', 'check', 'form', 'fv-switch', 'fvswitch']),
-  sidebarItem('Check', '/components/check', ['checkbox', 'check-box', 'check', 'radio', 'radiobutton', 'radio-button', 'form', 'fv-check', 'fvcheck']),
+  sidebarItem('Checkbox - Radio', '/components/check', ['checkbox', 'check-box', 'check', 'radio', 'radiobutton', 'radio-button', 'form', 'fv-check', 'fvcheck']),
   sidebarItem('Steps', '/components/steps', ['steps', 'step', 'form', 'fv-steps', 'fvsteps']),
-  sidebarItem('Range', '/components/range', ['range', 'slider', 'from', 'to', 'form', 'fv-range', 'fvrange']),
-  sidebarItem('FormElement', '/components/form-element', ['focus', 'label', 'title', 'form', 'element', 'form element', 'fv-form-element', 'fvformElement']),
+  sidebarItem('Range Slider', '/components/range', ['range', 'slider', 'from', 'to', 'form', 'fv-range', 'fvrange']),
+  sidebarItem('Form Element', '/components/form-element', ['focus', 'label', 'title', 'form', 'element', 'form element', 'fv-form-element', 'fvformElement']),
   sidebarItem('Form', '/components/form', ['submit', 'form', 'fv-form', 'fvform'])
 ]
 
 const componentOtherItems = [
   sidebarItem('Table', '/components/table', ['table', 'list', 'fv-table', 'fvtable']),
   sidebarItem('List - ListItem', '/components/list', ['list', 'list-item', 'item', 'fvlist', 'fv-list', 'fvlistitem', 'fv-list-item']),
-  sidebarItem('Slider', '/components/slider', ['slider', 'fv-slider', 'fvslider']),
-  sidebarItem('Img', '/components/img', ['image', 'picture', 'img', 'pic', 'fv-img', 'fvimg']),
-  sidebarItem('Toast', '/components/toast', ['toast', 'alert', 'msg', 'message', 'fv-toast', 'fvtoast']),
+  sidebarItem('Content Slider', '/components/slider', ['slider', 'fv-slider', 'fvslider']),
+  sidebarItem('Image', '/components/img', ['image', 'picture', 'img', 'pic', 'fv-img', 'fvimg']),
+  sidebarItem('Toast Message', '/components/toast', ['toast', 'alert', 'msg', 'message', 'fv-toast', 'fvtoast']),
   sidebarItem('Avatar', '/components/avatar', ['avatar', 'profile-picture', 'profile', 'display-image', 'fv-avatar', 'fvavatar']),
   sidebarItem('Loading', '/components/loading', ['loading', 'spinner', 'waiting', 'fv-loading', 'fvloading']),
   sidebarItem('Pagination', '/components/pagination', ['pagination', 'paginate', 'page', 'fv-pagination', 'fvpagination'])
