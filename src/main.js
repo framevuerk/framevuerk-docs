@@ -147,7 +147,7 @@ const routes = require('./routes.js').map(route => {
       },
       {
         property: 'twitter:image:src',
-        content: 'https://framevuerk.com/framevuerk.png'
+        content: 'https://framevuerk.com/framevuerk_card.png'
       },
       // facebook
       {
