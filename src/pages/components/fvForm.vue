@@ -22,7 +22,7 @@
                 <fvFormElement class="fv-col-md-6" label="Last Name">
                   <fvInput v-model="exmps.lastName" placeholder="Enter Last Name" required />
                 </fvFormElement>
-                <fvFormElement class="fv-col-12" label="Gender">
+                <fvFormElement class="fv-col-12" label="Gender" inline>
                   <fvCheck v-model="exmps.gender" content="m" required> Men </fvCheck>
                   <fvCheck v-model="exmps.gender" content="f" required> Women </fvCheck>
                   <fvCheck v-model="exmps.gender" :content="null" required> Other </fvCheck>
@@ -36,7 +36,7 @@
                   </template>
                   <fvRange v-model="exmps.age" :data="exmps.ages" required />
                 </fvFormElement>
-                <fvFormElement class="fv-col-sm-4" label="Is Maried?">
+                <fvFormElement class="fv-col-sm-4" label="Is Maried?" inline>
                   <fvSwitch v-model="exmps.married" @input="exmps.marriageDate = undefined" />
                 </fvFormElement>
                 <fvFormElement class="fv-col-sm-8" label="Date of Marriage">
