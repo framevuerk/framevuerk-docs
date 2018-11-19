@@ -11,6 +11,11 @@
     </div>
     <span class="fv-margin-start"></span>
     <slot></slot>
+    <span class="fv-margin-start" v-if="!$attrs.hide_github"></span>
+    <a class="fv-button" :href="$root.githubRepo" target="_blank" v-if="!$attrs.hide_github">
+      <i class="fa fa-github"></i>
+      GITHUB
+    </a>
   </fvHeader>
 </template>
 
