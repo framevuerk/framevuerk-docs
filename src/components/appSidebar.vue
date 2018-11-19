@@ -97,9 +97,6 @@ export default {
         this.searchResult = sidebarItems.search(str)
       }
     }
-  },
-  created() {
-    console.log(this.$route)
   }
 }
 </script>
@@ -107,15 +104,14 @@ export default {
 <style lang="scss" scoped>
 .app-sidebar {
   padding: 0;
+  min-width: 250px;
 }
 
-.unclickable /deep/ > .content{
-  background: rgba(0, 0, 0, 0.14);
-  padding: 0.8em 0;
-  font-weight: bold;
-
-  & > .expand {
-    // display: none;
+.unclickable /deep/ {
+  & > .content{
+    background: rgba(0, 0, 0, 0.14);
+    padding: 0.8em 0;
+    font-weight: bold;
   }
 }
 </style>
