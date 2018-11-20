@@ -15,7 +15,7 @@
           <appExample dir="src/pages/components/fvDatepicker.vue">
             <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
             <div class="fv-row">
-              <div class="fv-col-md-6">
+              <div class="fv-col-md-7">
                 <fvDatepicker class="fv-form-control" placeholder="Default" v-model="exmps.a" />
               </div>
             </div>
@@ -23,7 +23,7 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Custom Date Library (Jalaali date, using <a class="fv-link" href="https://github.com/nainemom/idate" target="_blank">IDate</a> library)</label>
             <div class="fv-row">
-              <div class="fv-col-md-6">
+              <div class="fv-col-md-7">
                 <fvDatepicker class="fv-form-control" placeholder="Jalaali Date" v-model="exmps.b" :date-library="IDate"/>
               </div>
             </div>
@@ -31,7 +31,7 @@
   
             <label class="fv-control-label fv-padding-start fv-padding-end">Custom Template</label>
             <div class="fv-row">
-              <div class="fv-col-md-6">
+              <div class="fv-col-md-7">
                 <fvDatepicker class="fv-form-control" placeholder="Custom Template" v-model="exmps.c">
                   <template slot="value" slot-scope="scope">
                     {{scope.value.toDateString()}}
@@ -43,7 +43,7 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
             <div class="fv-row">
-              <div class="fv-col-md-6">
+              <div class="fv-col-md-7">
                 <fvDatepicker class="fv-form-control" placeholder="Disabled" disabled/>
               </div>
             </div>
@@ -51,7 +51,7 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Required</label>
             <div class="fv-row">
-              <div class="fv-col-md-6">
+              <div class="fv-col-md-7">
                 <fvDatepicker class="fv-form-control" placeholder="Required" v-model="exmps.d" required/>
               </div>
             </div>
@@ -59,7 +59,7 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required (Date Range)</label>
             <div class="fv-row">
-              <div class="fv-col-md-6">
+              <div class="fv-col-md-7">
                 <fvDatepicker class="fv-form-control" placeholder="Select day from September" v-model="exmps.e" :required="dateRangeValidator" default-value="2018-09-14T11:50:36.966Z" />
               </div>
             </div>
