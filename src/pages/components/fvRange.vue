@@ -16,23 +16,29 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Single</label>
             <div class="fv-padding">
-              <fvRange v-model="exmps.a" :data="exmps.dataA" />
+              <fvRange v-model="exmps.rangeOne" :data="exmps.dataOne" />
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
   
             <label class="fv-control-label fv-padding-start fv-padding-end">Multiple</label>
             <div class="fv-padding">
-              <fvRange v-model="exmps.b" :data="exmps.dataB" multiple />
+              <fvRange v-model="exmps.rangeTwo" :data="exmps.dataTwo" multiple />
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
             <div class="fv-padding">
-              <fvRange v-model="exmps.c" :data="exmps.dataA" disabled />
+              <fvRange v-model="exmps.rangeThree" :data="exmps.dataThree" />
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Big Data</label>
+            <div class="fv-padding">
+              <fvRange v-model="exmps.rangeFour" :data="exmps.dataFour" />
+            </div>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+
+            <!-- <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required</label>
             <div class="fv-padding">
               <fvRange v-model="exmps.d" :data="exmps.dataA" :required="rangeValidator" />
             </div>
@@ -49,7 +55,7 @@
               <fvRange class="fv-size-lg" v-model="exmps.e" :data="exmps.dataA" :required="rangeValidator" />
               <div class="fv-padding"><hr class="fv-hr" /></div>
               <fvRange class="fv-size-xl" v-model="exmps.e" :data="exmps.dataA" :required="rangeValidator" />
-            </div>
+            </div> -->
 
           </appExample>
           <br />
@@ -86,16 +92,23 @@ export default {
   data () {
     return {
       exmps: {
-        dataA: {
-          from: 1,
-          to: 15
+        dataOne: {
+            from: 1,
+            to: 10
         },
-        dataB: [1, 0, 5, 4, 9, 7],
-        a: undefined,
-        b: undefined,
-        c: 4,
-        d: undefined,
-        e: 7
+        dataTwo: {
+            from: 100,
+            to: 150
+        },
+        dataThree: [100, 101, 102, 103, 105],
+        dataFour: {
+          from: 0,
+          to: 9999999999
+        },
+        rangeOne: undefined,
+        rangeTwo: undefined,
+        rangeThree: undefined,
+        rangeFour: undefined
       }
     }
   },
