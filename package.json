@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build:framevuerk": "framevuerk-builder -d ./node_modules/framevuerk -o ./node_modules/framevuerk/dist -c ./framevuerk-config.json",
     "build": "npm run build:framevuerk && vue-cli-service build --dest docs --mode production && node ./sitemap-generator.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lint:fix": "vue-cli-service lint --fix"
   },
   "dependencies": {
     "axios": "^0.18.0",
