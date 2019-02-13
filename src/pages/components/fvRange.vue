@@ -28,34 +28,34 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Disabled</label>
             <div class="fv-padding">
-              <fvRange v-model="exmps.rangeThree" :data="exmps.dataThree" />
+              <fvRange v-model="exmps.rangeThree" :data="exmps.dataOne" disabled/>
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Big Data</label>
             <div class="fv-padding">
-              <fvRange v-model="exmps.rangeFour" :data="exmps.dataFour" />
+              <fvRange v-model="exmps.rangeFour" :data="exmps.dataThree" />
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <!-- <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required</label>
             <div class="fv-padding">
-              <fvRange v-model="exmps.d" :data="exmps.dataA" :required="rangeValidator" />
+              <fvRange v-model="exmps.rangeFive" :data="exmps.dataOne" :required="rangeValidator" />
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
             <div class="fv-padding">
-              <fvRange class="fv-size-xs" v-model="exmps.e" :data="exmps.dataA" :required="rangeValidator" />
+              <fvRange class="fv-size-xs" v-model="exmps.rangeSix" :data="exmps.dataOne" />
               <div class="fv-padding"><hr class="fv-hr" /></div>
-              <fvRange class="fv-size-sm" v-model="exmps.e" :data="exmps.dataA" :required="rangeValidator" />
+              <fvRange class="fv-size-sm" v-model="exmps.rangeSix" :data="exmps.dataOne" />
               <div class="fv-padding"><hr class="fv-hr" /></div>
-              <fvRange class="fv-size-md" v-model="exmps.e" :data="exmps.dataA" :required="rangeValidator" />
+              <fvRange class="fv-size-md" v-model="exmps.rangeSix" :data="exmps.dataOne" />
               <div class="fv-padding"><hr class="fv-hr" /></div>
-              <fvRange class="fv-size-lg" v-model="exmps.e" :data="exmps.dataA" :required="rangeValidator" />
+              <fvRange class="fv-size-lg" v-model="exmps.rangeSix" :data="exmps.dataOne" />
               <div class="fv-padding"><hr class="fv-hr" /></div>
-              <fvRange class="fv-size-xl" v-model="exmps.e" :data="exmps.dataA" :required="rangeValidator" />
-            </div> -->
+              <fvRange class="fv-size-xl" v-model="exmps.rangeSix" :data="exmps.dataOne" />
+            </div>
 
           </appExample>
           <br />
@@ -96,19 +96,17 @@ export default {
             from: 1,
             to: 10
         },
-        dataTwo: {
-            from: 100,
-            to: 150
-        },
-        dataThree: [100, 101, 102, 103, 105],
-        dataFour: {
+        dataTwo: [100, 101, 102, 103, 105],
+        dataThree: {
           from: 0,
           to: 9999999999
         },
-        rangeOne: undefined,
-        rangeTwo: undefined,
-        rangeThree: undefined,
-        rangeFour: undefined
+        rangeOne: 4,
+        rangeTwo: 104,
+        rangeThree: 3,
+        rangeFour: 65656,
+        rangeFive: 2,
+        rangeSix: 6
       }
     }
   },
