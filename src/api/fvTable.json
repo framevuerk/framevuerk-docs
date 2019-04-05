@@ -41,6 +41,11 @@
   ],
   "event": [
     {
+      "name": "rowClick (added from 2.2.0)",
+      "params": "[row, index]",
+      "description": "Fired when user clicked on a row."
+    },
+    {
       "name": "breakedChange",
       "params": "newBreakedState",
       "description": "Fired when internal breaked state changes."
