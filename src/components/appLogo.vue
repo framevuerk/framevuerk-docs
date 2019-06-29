@@ -31,7 +31,7 @@ export default {
       if (typeof window.__PRERENDER_INJECTED === 'undefined') {
         this.isReady = true
       }
-    }, 120)
+    }, 1000)
   }
 }
 </script>
