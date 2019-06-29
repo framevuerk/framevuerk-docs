@@ -31,10 +31,10 @@
                   <template slot="label" slot-scope="scope">
                     {{scope.label}}
                     <span v-if="scope.highlighted" class="fv-margin-start-sm fv-text-primary">
-                      <span v-if="exmps.age">{{ exmps.age.text }}</span>
+                      <span v-if="exmps.age">{{ exmps.ages[exmps.age].text }}</span>
                     </span>
                   </template>
-                  <fvRange v-model="exmps.age" :data="exmps.ages" required />
+                  <fvRange v-model="exmps.age" :data="{from: 1, to: 5}" required />
                 </fvFormElement>
                 <fvFormElement class="fv-col-sm-4" label="Is Maried?" inline>
                   <fvSwitch v-model="exmps.married" @input="exmps.marriageDate = undefined" />
