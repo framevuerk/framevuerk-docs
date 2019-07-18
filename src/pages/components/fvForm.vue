@@ -31,7 +31,7 @@
                   <template slot="label" slot-scope="scope">
                     {{scope.label}}
                     <span v-if="scope.highlighted" class="fv-margin-start-sm fv-text-primary">
-                      <span v-if="exmps.age">{{ exmps.ages[exmps.age].text }}</span>
+                      <span v-if="exmps.age">{{ exmps.ages[exmps.age - 1].text }}</span>
                     </span>
                   </template>
                   <fvRange v-model="exmps.age" :data="{from: 1, to: 5}" required />
