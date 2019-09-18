@@ -24,7 +24,7 @@
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
-    "framevuerk-builder": "^2.0.0",
+    "framevuerk-builder": "^2.0.3",
     "node-sass": "^4.9.3",
     "prerender-spa-plugin": "^3.4.0",
     "pug": "^2.0.3",
