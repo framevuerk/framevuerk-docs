@@ -27,6 +27,12 @@
       "description": "Show next/prev buttons on next to slider."
     },
     {
+      "name": "swipeSupport (added from 2.3.0)",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Allow user to swipe slides."
+    },
+    {
       "name": "interval",
       "type": "Number",
       "default": "0",
