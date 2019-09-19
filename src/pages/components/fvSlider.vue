@@ -63,7 +63,7 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Custom Style and Size</label>
             <div class="fv-padding">
-              <fvSlider class="fv-border fv-shadow fv-size-xl" v-model="exmps.c" :show-tabs="false" show-buttons show-navs :slide-per-page="3">
+              <fvSlider class="fv-border fv-shadow fv-size-xl" v-model="exmps.c" :show-tabs="true" show-buttons show-navs :slides-per-page="2">
                 <div slot="slide-one" slot-scope="scope" class="fv-padding fv-text-center">
                   <div class="anim-slide" :class="{selected: scope.selected}">
                     <fvAvatar src="https://randomuser.me/api/portraits/men/34.jpg" size="128px" />
@@ -85,6 +85,30 @@
                     <fvAvatar src="https://randomuser.me/api/portraits/women/43.jpg" size="128px" />
                     <h2>Gail Howell</h2>
                     <p> 5067 Hillcrest Rd </p>
+                    <br />
+                  </div>
+                </div>
+                <div slot="slide-four" slot-scope="scope" class="fv-padding fv-text-center">
+                  <div class="anim-slide" :class="{selected: scope.selected}">
+                    <fvAvatar src="https://randomuser.me/api/portraits/women/33.jpg" size="128px" />
+                    <h2>Lava James</h2>
+                    <p> 406 Halk St </p>
+                    <br />
+                  </div>
+                </div>
+                <div slot="slide-five" slot-scope="scope" class="fv-padding fv-text-center">
+                  <div class="anim-slide" :class="{selected: scope.selected}">
+                    <fvAvatar src="https://randomuser.me/api/portraits/men/33.jpg" size="128px" />
+                    <h2>Ali Kashani</h2>
+                    <p> 899 Boodapest St </p>
+                    <br />
+                  </div>
+                </div>
+                <div slot="slide-six" slot-scope="scope" class="fv-padding fv-text-center">
+                  <div class="anim-slide" :class="{selected: scope.selected}">
+                    <fvAvatar src="https://randomuser.me/api/portraits/men/13.jpg" size="128px" />
+                    <h2>David Length</h2>
+                    <p> 32 Ren Rd </p>
                     <br />
                   </div>
                 </div>
@@ -141,11 +165,12 @@ export default {
     & .fv-avatar,
     & h2,
     & p {
-      transform: rotateZ(0deg);
+      transform: auto;
+      opacity: 1;
       transition-timing-function: ease;
       transition-duration: 0.5s;
-      transition-property: transform;
-      will-change: transform;
+      transition-property: transform, opacity;
+      will-change: transform, opacity;
 
     }
 
@@ -154,12 +179,10 @@ export default {
         transform: rotateZ(180deg);
       }
 
-      & h2 {
-        transform: scale(1.2, 1.2) translateY(50px);
-      }
-
-      & p {
-        transform: scaleX(1.5);
+      & h2,
+      & p,
+      & .fv-avatar {
+        opacity: 0.2;
       }
     }
   }
