@@ -63,36 +63,30 @@
 
             <label class="fv-control-label fv-padding-start fv-padding-end">Custom Style and Size</label>
             <div class="fv-padding">
-              <fvSlider class="fv-border fv-shadow fv-size-xl" v-model="exmps.c" :show-tabs="false" show-buttons show-navs>
+              <fvSlider class="fv-border fv-shadow fv-size-xl" v-model="exmps.c" :show-tabs="false" show-buttons show-navs :slide-per-page="3">
                 <div slot="slide-one" slot-scope="scope" class="fv-padding fv-text-center">
-                  <transition name="slider-animation">
-                    <div v-if="scope.selected">
-                      <fvAvatar src="https://randomuser.me/api/portraits/men/34.jpg" size="128px" />
-                      <h2>Lee Myers</h2>
-                      <p> 4744 Crescent Canyon St </p>
-                      <br />
-                    </div>
-                  </transition>
+                  <div class="anim-slide" :class="{selected: scope.selected}">
+                    <fvAvatar src="https://randomuser.me/api/portraits/men/34.jpg" size="128px" />
+                    <h2>Lee Myers</h2>
+                    <p> 4744 Crescent Canyon St </p>
+                    <br />
+                  </div>
                 </div>
                 <div slot="slide-two" slot-scope="scope" class="fv-padding fv-text-center">
-                  <transition name="slider-animation">
-                    <div v-if="scope.selected">
-                      <fvAvatar src="https://randomuser.me/api/portraits/women/6.jpg" size="128px" />
-                      <h2>Cherly Walker</h2>
-                      <p> 2964 Barn St </p>
-                      <br />
-                    </div>
-                  </transition>
+                  <div class="anim-slide" :class="{selected: scope.selected}">
+                    <fvAvatar src="https://randomuser.me/api/portraits/women/6.jpg" size="128px" />
+                    <h2>Cherly Walker</h2>
+                    <p> 2964 Barn St </p>
+                    <br />
+                  </div>
                 </div>
                 <div slot="slide-three" slot-scope="scope" class="fv-padding fv-text-center">
-                  <transition name="slider-animation">
-                    <div v-if="scope.selected">
-                      <fvAvatar src="https://randomuser.me/api/portraits/women/43.jpg" size="128px" />
-                      <h2>Gail Howell</h2>
-                      <p> 5067 Hillcrest Rd </p>
-                      <br />
-                    </div>
-                  </transition>
+                  <div class="anim-slide" :class="{selected: scope.selected}">
+                    <fvAvatar src="https://randomuser.me/api/portraits/women/43.jpg" size="128px" />
+                    <h2>Gail Howell</h2>
+                    <p> 5067 Hillcrest Rd </p>
+                    <br />
+                  </div>
                 </div>
               </fvSlider>
             </div>
@@ -143,32 +137,30 @@ export default {
 
 
 <style lang="scss">
-  .slider-animation-enter-active,
-  .slider-animation-leave-active,
-  .slider-animation-leave-active {
-    opacity: 1;
-    transition-timing-function: ease;
-    transition-duration: 0.34s;
-    transition-delay: 0.38s;
-    transition-property: opacity;
-    will-change: opacity;
-
-    & .fv-avatar {
+  .anim-slide {
+    & .fv-avatar,
+    & h2,
+    & p {
       transform: rotateZ(0deg);
       transition-timing-function: ease;
-      transition-duration: 0.64s;
+      transition-duration: 0.5s;
       transition-property: transform;
       will-change: transform;
 
     }
-  }
 
-  .slider-animation-enter {
-    opacity: 0.8;
+    &:not(.selected) {
+      & .fv-avatar {
+        transform: rotateZ(180deg);
+      }
 
-    & .fv-avatar {
-      transform: rotateZ(180deg);
+      & h2 {
+        transform: scale(1.2, 1.2) translateY(50px);
+      }
 
+      & p {
+        transform: scaleX(1.5);
+      }
     }
   }
 
