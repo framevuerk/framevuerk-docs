@@ -61,58 +61,94 @@
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
 
-            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Style and Size</label>
-            <div class="fv-padding">
-              <fvSlider class="fv-border fv-shadow fv-size-xl" v-model="exmps.c" :show-tabs="true" show-buttons show-navs :slides-per-page="2">
-                <div slot="slide-one" slot-scope="scope" class="fv-padding fv-text-center">
-                  <div class="anim-slide" :class="{selected: scope.selected}">
-                    <fvAvatar src="https://randomuser.me/api/portraits/men/34.jpg" size="128px" />
-                    <h2>Lee Myers</h2>
-                    <p> 4744 Crescent Canyon St </p>
-                    <br />
+            <label class="fv-control-label fv-padding-start fv-padding-end">Live Example</label>
+            <div class="fv-margin fv-border fv-shadow fv-radius">
+              <div class="fv-row">
+                <div class="fv-col-6">
+                  <label class="fv-control-label">Slides Per Page</label>
+                  <fvInput class="fv-form-control" placeholder="Slides Per Page" v-model="exmps.c.slidesPerPage" type="number" />
+                </div>
+
+                <div class="fv-col-4">
+                  <label class="fv-control-label">Show Tabs</label>
+                  <div class="fv-form-control">
+                    <fvSwitch v-model="exmps.c.showTabs" />
                   </div>
                 </div>
-                <div slot="slide-two" slot-scope="scope" class="fv-padding fv-text-center">
-                  <div class="anim-slide" :class="{selected: scope.selected}">
-                    <fvAvatar src="https://randomuser.me/api/portraits/women/6.jpg" size="128px" />
-                    <h2>Cherly Walker</h2>
-                    <p> 2964 Barn St </p>
-                    <br />
+                <div class="fv-col-4">
+                  <label class="fv-control-label">Show Buttons</label>
+                  <div class="fv-form-control">
+                    <fvSwitch v-model="exmps.c.showButtons" />
                   </div>
                 </div>
-                <div slot="slide-three" slot-scope="scope" class="fv-padding fv-text-center">
-                  <div class="anim-slide" :class="{selected: scope.selected}">
-                    <fvAvatar src="https://randomuser.me/api/portraits/women/43.jpg" size="128px" />
-                    <h2>Gail Howell</h2>
-                    <p> 5067 Hillcrest Rd </p>
-                    <br />
+                <div class="fv-col-4">
+                  <label class="fv-control-label">Show Navs</label>
+                  <div class="fv-form-control">
+                    <fvSwitch v-model="exmps.c.showNavs" />
                   </div>
                 </div>
-                <div slot="slide-four" slot-scope="scope" class="fv-padding fv-text-center">
-                  <div class="anim-slide" :class="{selected: scope.selected}">
-                    <fvAvatar src="https://randomuser.me/api/portraits/women/33.jpg" size="128px" />
-                    <h2>Lava James</h2>
-                    <p> 406 Halk St </p>
-                    <br />
-                  </div>
+
+                <div class="fv-col-12">
+                  <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
                 </div>
-                <div slot="slide-five" slot-scope="scope" class="fv-padding fv-text-center">
-                  <div class="anim-slide" :class="{selected: scope.selected}">
-                    <fvAvatar src="https://randomuser.me/api/portraits/men/33.jpg" size="128px" />
-                    <h2>Ali Kashani</h2>
-                    <p> 899 Boodapest St </p>
-                    <br />
-                  </div>
+                <div class="fv-col-12 fv-text-center">
+                  <fvSlider class="fv-border fv-shadow fv-size-xl"
+                    v-model="exmps.c.value"
+                    :show-tabs="exmps.c.showTabs"
+                    :show-buttons="exmps.c.showButtons"
+                    :show-navs="exmps.c.showNavs"
+                    :slides-per-page="exmps.c.slidesPerPage">
+                    <div slot="slide-one" slot-scope="scope" class="fv-padding fv-text-center">
+                      <div class="anim-slide" :class="{selected: scope.selected}">
+                        <fvAvatar src="https://randomuser.me/api/portraits/men/34.jpg" size="128px" />
+                        <h2>Lee Myers</h2>
+                        <p> 4744 Crescent Canyon St </p>
+                        <br />
+                      </div>
+                    </div>
+                    <div slot="slide-two" slot-scope="scope" class="fv-padding fv-text-center">
+                      <div class="anim-slide" :class="{selected: scope.selected}">
+                        <fvAvatar src="https://randomuser.me/api/portraits/women/6.jpg" size="128px" />
+                        <h2>Cherly Walker</h2>
+                        <p> 2964 Barn St </p>
+                        <br />
+                      </div>
+                    </div>
+                    <div slot="slide-three" slot-scope="scope" class="fv-padding fv-text-center">
+                      <div class="anim-slide" :class="{selected: scope.selected}">
+                        <fvAvatar src="https://randomuser.me/api/portraits/women/43.jpg" size="128px" />
+                        <h2>Gail Howell</h2>
+                        <p> 5067 Hillcrest Rd </p>
+                        <br />
+                      </div>
+                    </div>
+                    <div slot="slide-four" slot-scope="scope" class="fv-padding fv-text-center">
+                      <div class="anim-slide" :class="{selected: scope.selected}">
+                        <fvAvatar src="https://randomuser.me/api/portraits/women/33.jpg" size="128px" />
+                        <h2>Lava James</h2>
+                        <p> 406 Halk St </p>
+                        <br />
+                      </div>
+                    </div>
+                    <div slot="slide-five" slot-scope="scope" class="fv-padding fv-text-center">
+                      <div class="anim-slide" :class="{selected: scope.selected}">
+                        <fvAvatar src="https://randomuser.me/api/portraits/men/33.jpg" size="128px" />
+                        <h2>Ali Kashani</h2>
+                        <p> 899 Boodapest St </p>
+                        <br />
+                      </div>
+                    </div>
+                    <div slot="slide-six" slot-scope="scope" class="fv-padding fv-text-center">
+                      <div class="anim-slide" :class="{selected: scope.selected}">
+                        <fvAvatar src="https://randomuser.me/api/portraits/men/13.jpg" size="128px" />
+                        <h2>David Length</h2>
+                        <p> 32 Ren Rd </p>
+                        <br />
+                      </div>
+                    </div>
+                  </fvSlider>
                 </div>
-                <div slot="slide-six" slot-scope="scope" class="fv-padding fv-text-center">
-                  <div class="anim-slide" :class="{selected: scope.selected}">
-                    <fvAvatar src="https://randomuser.me/api/portraits/men/13.jpg" size="128px" />
-                    <h2>David Length</h2>
-                    <p> 32 Ren Rd </p>
-                    <br />
-                  </div>
-                </div>
-              </fvSlider>
+              </div>
             </div>
           </appExample>
           <br />
@@ -151,8 +187,15 @@ export default {
       exmps: {
         a: undefined,
         b: undefined,
-        c: undefined,
-        d: undefined
+        d: undefined,
+        c: {
+          value: undefined,
+          showTabs: true,
+          slidesPerPage: 3,
+          showNavs: true,
+          showButtons: true,
+          interval: 0
+        }
       }
     }
   }
