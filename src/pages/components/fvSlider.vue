@@ -93,63 +93,35 @@
                 </div>
                 <div class="fv-col-12 fv-text-center">
                   <fvSlider class="fv-border fv-shadow fv-size-xl"
+                    v-if="exmps.c.slides"
                     v-model="exmps.c.value"
                     :show-tabs="exmps.c.showTabs"
                     :show-buttons="exmps.c.showButtons"
                     :show-navs="exmps.c.showNavs"
-                    :slides-per-page="exmps.c.slidesPerPage">
-                    <div slot="slide-one" slot-scope="scope" class="fv-padding fv-text-center">
-                      <div class="anim-slide" :class="{selected: scope.selected}">
-                        <fvAvatar src="https://randomuser.me/api/portraits/men/34.jpg" size="128px" />
-                        <h2>Lee Myers</h2>
-                        <p> 4744 Crescent Canyon St </p>
-                        <br />
+                    :slides-per-page="parseInt(exmps.c.slidesPerPage)">
+                    <template v-for="slide in exmps.c.slides" :slot="slide.id" slot-scope="scope">
+                      <div class="fv-padding fv-text-center" :key="slide.id">
+                        <div class="anim-slide" :class="{selected: scope.selected}">
+                          <fvAvatar :src="slide.picture" size="128px" />
+                          <h2>{{ slide.name }} </h2>
+                          <p> {{ slide.mail }} </p>
+                          <br />
+                        </div>
                       </div>
-                    </div>
-                    <div slot="slide-two" slot-scope="scope" class="fv-padding fv-text-center">
-                      <div class="anim-slide" :class="{selected: scope.selected}">
-                        <fvAvatar src="https://randomuser.me/api/portraits/women/6.jpg" size="128px" />
-                        <h2>Cherly Walker</h2>
-                        <p> 2964 Barn St </p>
-                        <br />
-                      </div>
-                    </div>
-                    <div slot="slide-three" slot-scope="scope" class="fv-padding fv-text-center">
-                      <div class="anim-slide" :class="{selected: scope.selected}">
-                        <fvAvatar src="https://randomuser.me/api/portraits/women/43.jpg" size="128px" />
-                        <h2>Gail Howell</h2>
-                        <p> 5067 Hillcrest Rd </p>
-                        <br />
-                      </div>
-                    </div>
-                    <div slot="slide-four" slot-scope="scope" class="fv-padding fv-text-center">
-                      <div class="anim-slide" :class="{selected: scope.selected}">
-                        <fvAvatar src="https://randomuser.me/api/portraits/women/33.jpg" size="128px" />
-                        <h2>Lava James</h2>
-                        <p> 406 Halk St </p>
-                        <br />
-                      </div>
-                    </div>
-                    <div slot="slide-five" slot-scope="scope" class="fv-padding fv-text-center">
-                      <div class="anim-slide" :class="{selected: scope.selected}">
-                        <fvAvatar src="https://randomuser.me/api/portraits/men/33.jpg" size="128px" />
-                        <h2>Ali Kashani</h2>
-                        <p> 899 Boodapest St </p>
-                        <br />
-                      </div>
-                    </div>
-                    <div slot="slide-six" slot-scope="scope" class="fv-padding fv-text-center">
-                      <div class="anim-slide" :class="{selected: scope.selected}">
-                        <fvAvatar src="https://randomuser.me/api/portraits/men/13.jpg" size="128px" />
-                        <h2>David Length</h2>
-                        <p> 32 Ren Rd </p>
-                        <br />
-                      </div>
-                    </div>
+                    </template>
                   </fvSlider>
                 </div>
               </div>
             </div>
+            <!-- <div v-for="slide in exmps.c.slides" sslot="slide.id" slotscope="scope" class="fv-padding fv-text-center">
+              <div class="anim-slide" sclass="{selected: scope.selected}">
+                <fvAvatar :src="slide.picture" size="128px" />
+                <b>{{ slide.id }} </b>
+                <h2>{{ slide.name }} </h2>
+                <p> {{ slide.mail }} </p>
+                <br />
+              </div>
+            </div> -->
           </appExample>
           <br />
           <h2>Notes:</h2>
@@ -171,6 +143,7 @@ import appExample from '../../components/appExample.vue'
 import appApi from '../../components/appApi.vue'
 import appNotes from '../../components/appNotes.vue'
 import appDescription from '../../components/appDescription.vue'
+// import axios from 'axios'
 
 export default {
   components: {
@@ -191,10 +164,12 @@ export default {
         c: {
           value: undefined,
           showTabs: true,
-          slidesPerPage: 3,
+          slidesPerPage: 1,
           showNavs: true,
           showButtons: true,
-          interval: 0
+          interval: 0,
+          slides: JSON.parse('[{"id":"1","name":"julia edwards","mail":"julia.edwards@example.com","picture":"https://randomuser.me/api/portraits/women/30.jpg","cell":"081-355-4554"},{"id":"2","name":"glen peters","mail":"glen.peters@example.com","picture":"https://randomuser.me/api/portraits/men/72.jpg","cell":"(826)-834-6384"},{"id":"3","name":"bertine heggestad","mail":"bertine.heggestad@example.com","picture":"https://randomuser.me/api/portraits/women/79.jpg","cell":"41638560"},{"id":"4","name":"chloe andersen","mail":"chloe.andersen@example.com","picture":"https://randomuser.me/api/portraits/women/1.jpg","cell":"527-671-2604"},{"id":"5","name":"roman white","mail":"roman.white@example.com","picture":"https://randomuser.me/api/portraits/men/94.jpg","cell":"(245)-374-3387"},{"id":"6","name":"veronica martin","mail":"veronica.martin@example.com","picture":"https://randomuser.me/api/portraits/women/52.jpg","cell":"622-324-668"},{"id":"7","name":"lucas sørensen","mail":"lucas.sørensen@example.com","picture":"https://randomuser.me/api/portraits/men/32.jpg","cell":"70732424"},{"id":"8","name":"laurine duval","mail":"laurine.duval@example.com","picture":"https://randomuser.me/api/portraits/women/36.jpg","cell":"06-60-56-88-15"},{"id":"9","name":"lauren gregory","mail":"lauren.gregory@example.com","picture":"https://randomuser.me/api/portraits/women/54.jpg","cell":"081-058-6412"},{"id":"10","name":"hanne-lore pfister","mail":"hanne-lore.pfister@example.com","picture":"https://randomuser.me/api/portraits/women/83.jpg","cell":"0176-7190332"},{"id":"11","name":"maria esteban","mail":"maria.esteban@example.com","picture":"https://randomuser.me/api/portraits/women/95.jpg","cell":"604-130-505"},{"id":"12","name":"kübra alpuğan","mail":"kübra.alpuğan@example.com","picture":"https://randomuser.me/api/portraits/women/92.jpg","cell":"(076)-505-4102"},{"id":"13","name":"iúri cardoso","mail":"iúri.cardoso@example.com","picture":"https://randomuser.me/api/portraits/men/77.jpg","cell":"(18) 8039-3285"},{"id":"14","name":"esma elmastaşoğlu","mail":"esma.elmastaşoğlu@example.com","picture":"https://randomuser.me/api/portraits/women/92.jpg","cell":"(301)-454-0039"}]'),
+          fetchTimeout: null
         }
       }
     }
