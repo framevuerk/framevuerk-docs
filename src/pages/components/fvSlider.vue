@@ -100,6 +100,7 @@
                     :show-navs="exmps.c.showNavs"
                     :slides-per-page="parseInt(exmps.c.slidesPerPage)">
                     <fvSlide v-for="slide in exmps.c.slides" :key="slide.id" :value="slide.id" class="anim-slide fv-text-center fv-padding-top fv-padding-bottom">
+                      <br />
                       <fvAvatar :src="slide.picture" size="64px" />
                       <h3>{{ slide.name }}</h3>
                       <p class="fv-text-light"> <i class="fa fa-envelope" /> {{ slide.mail }} </p>
@@ -167,7 +168,7 @@ export default {
 
 
 <style lang="scss">
-  .anim-slide {
+  .anim-slidez {
     &,
     & .fv-avatar,
     & h3,
