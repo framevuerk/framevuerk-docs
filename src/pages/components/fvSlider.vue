@@ -100,7 +100,7 @@
                     :show-navs="exmps.c.showNavs"
                     :slides-per-page="parseInt(exmps.c.slidesPerPage)">
                     <fvSlide v-for="slide in exmps.c.slides" :key="slide.id" :value="slide.id" class="anim-slide fv-text-center fv-padding-top fv-padding-bottom">
-                      <fvAvatar :src="slide.picture" size="96px" />
+                      <fvAvatar :src="slide.picture" size="64px" />
                       <h3>{{ slide.name }}</h3>
                       <p class="fv-text-light"> <i class="fa fa-envelope" /> {{ slide.mail }} </p>
                       <p class="fv-text-light"> <i class="fa fa-phone" /> {{ slide.cell }} </p>
@@ -168,20 +168,37 @@ export default {
 
 <style lang="scss">
   .anim-slide {
-    &  {
+    &,
+    & .fv-avatar,
+    & h3,
+    & p  {
       transform: auto;
       opacity: 1;
       transition-timing-function: ease;
       transition-duration: 0.3s;
-      transition-property: transform, opacity;
-      will-change: transform, opacity;
+      filter: auto;
+      transition-property: transform, opacity, filter;
+      will-change: transform, opacity, filter;
       white-space: nowrap;
 
     }
 
     &:not(.fv-selected) {
-      transform: scale(0.6, 0.6);
-      opacity: 0.4;
+      & .fv-avatar {
+        filter: blur(4px);
+      }
+      & p {
+        opacity: 0;
+      }
+      & h3 {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      // transform: scale(1.6, 1.6);
+      
+      
+      // opacity: 0.3;
+      // letter-spacing: 12px;
     }
   }
 
