@@ -1,8 +1,8 @@
 <fvSlider v-model="slider">
   <fvSlide>
     <!-- Slide One Content -->
-  </fvSlider>
-  <fvSlider>
+  </fvSlide>
+  <fvSlide>
     <!-- Slide Two Content -->
-  </fvSlider>
+  </fvSlide>
 </fvSlider>
