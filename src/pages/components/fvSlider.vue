@@ -13,54 +13,6 @@
           <br />
           <h2>Examples:</h2>
           <appExample dir="src/pages/components/fvSlider.vue">
-            <!-- <label class="fv-control-label fv-padding-start fv-padding-end">Normal</label>
-            <div class="fv-padding">
-              <fvSlider class="fv-border fv-shadow" v-model="exmps.a">
-                <div slot="slide-one" class="fv-padding fv-text-center">
-                  Content of <b>one</b>
-                </div>
-                <div slot="slide-two" class="fv-padding fv-text-center">
-                  Content of <b>two</b>
-                </div>
-                <div slot="slide-three" class="fv-padding fv-text-center">
-                  Content of <b>three</b>
-                </div>
-              </fvSlider>
-            </div>
-            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
-
-            <label class="fv-control-label fv-padding-start fv-padding-end">With Interval and Custom Tab Template</label>
-            <div class="fv-padding">
-              <fvSlider class="fv-border fv-shadow" v-model="exmps.b" :interval="2000">
-                <template slot="tab" slot-scope="scope">
-                  <b>
-                    <i v-if="scope.selected" class="fa fa-check"></i>
-                    <span class="fv-margin"></span>
-                    <i> {{scope.slide}} </i>
-                  </b>
-                </template>
-                <div slot="slide-Tab One" class="fv-padding fv-text-center">
-                  <div>
-                    <h2>Tab One</h2>
-                    <p> Hello Dear ;) </p>
-                  </div>
-                </div>
-                <div slot="slide-Tab Two" class="fv-padding fv-text-center">
-                  <div>
-                    <h2>Another Tab</h2>
-                    <p> Goodbye Dear :( </p>
-                  </div>
-                </div>
-                <div slot="slide-Tab Three" class="fv-padding fv-text-center">
-                  <div>
-                    <h2>One Other Tab</h2>
-                    <p> Why i am here? :? </p>
-                  </div>
-                </div>
-              </fvSlider>
-            </div>
-            <hr class="fv-hr fv-margin-top fv-margin-bottom"/> -->
-
             <label class="fv-control-label fv-padding-start fv-padding-end">Live Example</label>
             <div class="fv-margin fv-border fv-shadow fv-radius">
               <div class="fv-row">
@@ -69,23 +21,32 @@
                   <fvRange class="fv-form-control" v-model="exmps.c.slidesPerPage" :data="{from: 1, to: exmps.c.slides.length}" required />
                   <!-- <fvInput class="fv-form-control" placeholder="Slides Per Page" v-model="exmps.c.slidesPerPage" type="number" /> -->
                 </div>
-
-                <div class="fv-col-4">
+                <div class="fv-col-6">
+                  <label class="fv-control-label">Timer Interval (in miliseconds)</label>
+                  <fvInput class="fv-form-control" placeholder="Timer Interval" v-model="exmps.c.interval" type="number" />
+                </div>
+                <div class="fv-col-3">
                   <label class="fv-control-label">Show Tabs</label>
                   <div class="fv-form-control">
                     <fvSwitch v-model="exmps.c.showTabs" />
                   </div>
                 </div>
-                <div class="fv-col-4">
+                <div class="fv-col-3">
                   <label class="fv-control-label">Show Buttons</label>
                   <div class="fv-form-control">
                     <fvSwitch v-model="exmps.c.showButtons" />
                   </div>
                 </div>
-                <div class="fv-col-4">
+                <div class="fv-col-3">
                   <label class="fv-control-label">Show Navs</label>
                   <div class="fv-form-control">
                     <fvSwitch v-model="exmps.c.showNavs" />
+                  </div>
+                </div>
+                <div class="fv-col-3">
+                  <label class="fv-control-label">Swipe Support</label>
+                  <div class="fv-form-control">
+                    <fvSwitch v-model="exmps.c.swipeSupport" />
                   </div>
                 </div>
 
@@ -98,14 +59,18 @@
                     :show-tabs="exmps.c.showTabs"
                     :show-buttons="exmps.c.showButtons"
                     :show-navs="exmps.c.showNavs"
-                    :slides-per-page="parseInt(exmps.c.slidesPerPage)">
-                    <fvSlide v-for="slide in exmps.c.slides" :key="slide.id" :value="slide.id" class="anim-slide fv-text-center fv-padding-top fv-padding-bottom">
-                      <br />
-                      <fvAvatar :src="slide.picture" size="64px" />
-                      <h3>{{ slide.name }}</h3>
-                      <p class="fv-text-light"> <i class="fa fa-envelope" /> {{ slide.mail }} </p>
-                      <p class="fv-text-light"> <i class="fa fa-phone" /> {{ slide.cell }} </p>
-                      <br />
+                    :slides-per-page="parseInt(exmps.c.slidesPerPage)"
+                    :interval="parseInt(exmps.c.interval)"
+                    :swipe-support="exmps.c.swipeSupport">
+                    <template slot="tab" slot-scope="scope">
+                      {{ exmps.c.slides[scope.index].name }}
+                    </template>
+                    <fvSlide v-for="slide in exmps.c.slides" :key="slide.id" :value="slide.id" class="anim-slide fv-text-center fv-padding-top fv-padding-bottom fv-margin-bottom fv-margin-top">
+                      <fvAvatar class="square" :src="slide.picture" size="64px" />
+                      <div>
+                        <h3>{{ slide.name }}</h3>
+                        <label class="fv-text-light">{{ slide.cell }}</label>
+                      </div>
                     </fvSlide>
                   </fvSlider>
                 </div>
@@ -152,13 +117,14 @@ export default {
         d: undefined,
         c: {
           value: undefined,
-          showTabs: true,
+          showTabs: false,
           slidesPerPage: 1,
           showNavs: true,
           showButtons: true,
           interval: 0,
-          slides: JSON.parse('[{"id":"1","name":"Julia Edwards","mail":"julia.edwards@example.com","picture":"https://randomuser.me/api/portraits/women/30.jpg","cell":"081-355-4554"},{"id":"2","name":"Glen Peters","mail":"glen.peters@example.com","picture":"https://randomuser.me/api/portraits/men/72.jpg","cell":"(826)-834-6384"},{"id":"3","name":"Bertine Heggestad","mail":"bertine.heggestad@example.com","picture":"https://randomuser.me/api/portraits/women/79.jpg","cell":"41638560"},{"id":"4","name":"Chloe Andersen","mail":"chloe.andersen@example.com","picture":"https://randomuser.me/api/portraits/women/1.jpg","cell":"527-671-2604"},{"id":"5","name":"Roman White","mail":"roman.white@example.com","picture":"https://randomuser.me/api/portraits/men/94.jpg","cell":"(245)-374-3387"},{"id":"6","name":"Veronica Martin","mail":"veronica.martin@example.com","picture":"https://randomuser.me/api/portraits/women/52.jpg","cell":"622-324-668"},{"id":"7","name":"Lucas Sørensen","mail":"lucas.sørensen@example.com","picture":"https://randomuser.me/api/portraits/men/32.jpg","cell":"70732424"},{"id":"8","name":"Laurine Duval","mail":"laurine.duval@example.com","picture":"https://randomuser.me/api/portraits/women/36.jpg","cell":"06-60-56-88-15"},{"id":"9","name":"Lauren Gregory","mail":"lauren.gregory@example.com","picture":"https://randomuser.me/api/portraits/women/54.jpg","cell":"081-058-6412"},{"id":"10","name":"Hanne-lore Pfister","mail":"hanne-lore.pfister@example.com","picture":"https://randomuser.me/api/portraits/women/83.jpg","cell":"0176-7190332"},{"id":"11","name":"Maria Esteban","mail":"maria.esteban@example.com","picture":"https://randomuser.me/api/portraits/women/95.jpg","cell":"604-130-505"},{"id":"12","name":"Kübra Alpuğan","mail":"kübra.alpuğan@example.com","picture":"https://randomuser.me/api/portraits/women/92.jpg","cell":"(076)-505-4102"},{"id":"13","name":"Iúri Cardoso","mail":"iúri.cardoso@example.com","picture":"https://randomuser.me/api/portraits/men/77.jpg","cell":"(18) 8039-3285"},{"id":"14","name":"Esma Elmastaşoğlu","mail":"esma.elmastaşoğlu@example.com","picture":"https://randomuser.me/api/portraits/women/93.jpg","cell":"(301)-454-0039"}]'),
-          fetchTimeout: null
+          slides: JSON.parse('[{"id":"1","name":"Julia Edwards","mail":"julia.edwards@example.com","picture":"https://randomuser.me/api/portraits/women/30.jpg","cell":"081-355-4554"},{"id":"2","name":"Glen Peters","mail":"glen.peters@example.com","picture":"https://randomuser.me/api/portraits/men/72.jpg","cell":"(826)-834-6384"},{"id":"3","name":"Bertine Heggestad","mail":"bertine.heggestad@example.com","picture":"https://randomuser.me/api/portraits/women/79.jpg","cell":"41638560"},{"id":"4","name":"Chloe Andersen","mail":"chloe.andersen@example.com","picture":"https://randomuser.me/api/portraits/women/1.jpg","cell":"527-671-2604"},{"id":"5","name":"Roman White","mail":"roman.white@example.com","picture":"https://randomuser.me/api/portraits/men/94.jpg","cell":"(245)-374-3387"}]'),
+          fetchTimeout: null,
+          swipeSupport: true
         }
       }
     }
@@ -168,19 +134,20 @@ export default {
 
 
 <style lang="scss">
-  .anim-slidez {
+  .anim-slide {
     &,
     & .fv-avatar,
     & h3,
-    & p  {
+    & label  {
       transform: auto;
       opacity: 1;
       transition-timing-function: ease;
-      transition-duration: 0.3s;
+      transition-duration: 0.5s;
       filter: auto;
       transition-property: transform, opacity, filter;
       will-change: transform, opacity, filter;
       white-space: nowrap;
+      overflow: hidden;
 
     }
 
@@ -188,7 +155,7 @@ export default {
       & .fv-avatar {
         filter: blur(4px);
       }
-      & p {
+      & label {
         opacity: 0;
       }
       & h3 {
