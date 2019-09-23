@@ -2,9 +2,9 @@
   <div class="fv-margin-top fv-margin-bottom">
     <fvSlider v-model="slider">
       <template slot="tab" slot-scope="scope">
-        {{ tabTitle(scope.slide) }}
+        {{ tabs[scope.index].title }}
       </template>
-      <div class="fv-padding-top fv-padding-bottom" v-for="tab in tabs" :slot="'slide-' + tab.slot" :key="tab.slot">
+      <fvSlide class="fv-padding-top fv-padding-bottom" v-for="tab in tabs" :key="tab.slot">
         <fvTable class="fv-border fv-shadow fv-radius" :fields="fields(tab.slot)" :rows="content[tab.slot]" :breaked.sync="tableBreaked">
           <template slot="field-Name" slot-scope="scope">
             <b class="fv-text-secondary">{{nameFormatter(scope.row.name).title}}</b> <b v-if="nameFormatter(scope.row.name).required" class="fv-text-danger fv-margin">*</b>
@@ -34,7 +34,7 @@
             <div v-html="descriptionFormatter(scope.row.description)"></div>
           </template>
         </fvTable>
-      </div>
+      </fvSlide>
     </fvSlider>
   </div>
 </template>
@@ -111,10 +111,6 @@ export default {
         case 'class':
           return ['Name', 'Description']
       }
-    },
-    tabTitle (tabSlot) {
-      const founded = this.tabs.find(tab => tab.slot === tabSlot)
-      return founded ? founded.title : '---'
     },
     descriptionFormatter(description) {
       if (!description) {
