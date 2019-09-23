@@ -46,6 +46,11 @@
       "description": "Fired when user clicked on a row."
     },
     {
+      "name": "titleClick (added from 2.4.0)",
+      "params": "[field, index]",
+      "description": "Fired when user clicked on a field title."
+    },
+    {
       "name": "breakedChange",
       "params": "newBreakedState",
       "description": "Fired when internal breaked state changes."

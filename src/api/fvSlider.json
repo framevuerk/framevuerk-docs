@@ -5,8 +5,8 @@
     {
       "name": "value*",
       "type": "",
-      "default": "",
-      "description": "Selected slide (slot) name. (without <b>slide-</b> prefix)"
+      "default": "0",
+      "description": "Selected slide index."
     },
     {
       "name": "showTabs",
@@ -33,6 +33,12 @@
       "description": "Allow user to swipe slides."
     },
     {
+      "name": "slidesPerPage (added from 2.4.0)",
+      "type": "Number",
+      "default": "1",
+      "description": "Number of visible slides per view."
+    },
+    {
       "name": "interval",
       "type": "Number",
       "default": "0",
@@ -48,17 +54,12 @@
   ],
   "scopedSlot": [
     {
-      "name": "slide-${slide}",
-      "params": "[selected]",
-      "description": "Your slides puted here by unique slot name."
-    },
-    {
       "name": "tab",
-      "params": "[slide, selected]",
+      "params": "[index, selected]",
       "description": "Field tab buttons template. <b>slide</b> param equal to slot (slide) names."
     },
     {
-      "name": "tab-${slide}",
+      "name": "tab-${index}",
       "params": "[selected]",
       "description": "Unique slide tab button template."
     }
@@ -84,10 +85,5 @@
       "name": ".fv-size-xl",
       "description": "XLarge size"
     }
-  ],
-  "note": [
-    "<b>fvSlider</b> consider slots with <b>slide-</b> name starts as slide and text after that is slide name",
-    "If <b>value</b> prop is undefined at start, <b>fvSlider</b> will fire <b>input</b> event with first slide value.",
-    "If you want to get your custom object for <b>button</b> slot, you can use <b>value</b> as key and handle target object outside of <b>fvSlider</b>."
   ]
 }
