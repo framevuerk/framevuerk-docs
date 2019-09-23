@@ -66,9 +66,9 @@
                       {{ exmps.c.slides[scope.index].name }}
                     </template>
                     <fvSlide v-for="slide in exmps.c.slides" :key="slide.id" :value="slide.id" class="anim-slide fv-text-center fv-padding-top fv-padding-bottom fv-margin-bottom fv-margin-top">
-                      <fvAvatar class="square" :src="slide.picture" size="64px" />
+                      <fvAvatar class="square" :src="slide.picture" size="96px" />
                       <div>
-                        <h3>{{ slide.name }}</h3>
+                        <h2>{{ slide.name }}</h2>
                         <label class="fv-text-light">{{ slide.cell }}</label>
                       </div>
                     </fvSlide>
@@ -78,9 +78,9 @@
             </div>
           </appExample>
           <br />
-          <h2>Notes:</h2>
+          <!-- <h2>Notes:</h2>
           <appNotes :content="$route.meta.api"></appNotes>
-          <br />
+          <br /> -->
           <h2>API:</h2>
           <appApi :content="$route.meta.api"></appApi>
         </div>
@@ -137,7 +137,7 @@ export default {
   .anim-slide {
     &,
     & .fv-avatar,
-    & h3,
+    & h2,
     & label  {
       transform: auto;
       opacity: 1;
@@ -158,7 +158,7 @@ export default {
       & label {
         opacity: 0;
       }
-      & h3 {
+      & h2 {
         opacity: 0;
         transform: translateY(20px);
       }
