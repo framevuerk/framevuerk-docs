@@ -143,9 +143,8 @@ export default {
       opacity: 1;
       transition-timing-function: ease;
       transition-duration: 0.5s;
-      filter: auto;
-      transition-property: transform, opacity, filter;
-      will-change: transform, opacity, filter;
+      transition-property: transform, opacity;
+      will-change: transform, opacity;
       white-space: nowrap;
       overflow: hidden;
 
@@ -153,7 +152,7 @@ export default {
 
     &:not(.fv-selected) {
       & .fv-avatar {
-        filter: blur(4px);
+        opacity: 0;
       }
       & label {
         opacity: 0;
