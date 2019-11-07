@@ -4,8 +4,7 @@
   "version": "2.3.1",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build:framevuerk": "framevuerk-builder -d ./node_modules/framevuerk -o ./node_modules/framevuerk/dist -c ./framevuerk-config.json",
-    "build": "npm run build:framevuerk && vue-cli-service build --dest docs --mode production && node ./sitemap-generator.js",
+    "build": "vue-cli-service build --dest docs --mode production && node ./sitemap-generator.js",
     "lint": "vue-cli-service lint",
     "lint:fix": "vue-cli-service lint --fix"
   },
@@ -24,8 +23,7 @@
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
-    "framevuerk-builder": "^2.0.3",
-    "node-sass": "^4.9.3",
+    "node-sass": "4.13.0",
     "prerender-spa-plugin": "^3.4.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
