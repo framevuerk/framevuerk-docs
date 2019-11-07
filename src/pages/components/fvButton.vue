@@ -14,12 +14,12 @@
           <appExample dir="src/pages/components/fvButton.vue">
             <label class="fv-control-label fv-padding-start fv-padding-end">Themes</label>
             <div class="fv-margin">
-              <fvButton class="fv-default fv-margin-end fv-margin-bottom"> Default theme </fvButton>
-              <fvButton class="fv-secondary fv-margin-end fv-margin-bottom"> Secondary theme </fvButton>
-              <fvButton class="fv-primary fv-margin-end fv-margin-bottom"> Primary theme </fvButton>
-              <fvButton class="fv-danger fv-margin-end fv-margin-bottom"> Danger theme </fvButton>
-              <fvButton class="fv-warning fv-margin-end fv-margin-bottom"> Warning theme </fvButton>
-              <fvButton class="fv-info fv-margin-end fv-margin-bottom"> Info theme </fvButton>
+              <fvButton class="fv-default fv-margin-end fv-margin-bottom" color="background"> Default theme </fvButton>
+              <fvButton class="fv-secondary fv-margin-end fv-margin-bottom" color="secondary"> Secondary theme </fvButton>
+              <fvButton class="fv-primary fv-margin-end fv-margin-bottom" color="primary"> Primary theme </fvButton>
+              <fvButton class="fv-danger fv-margin-end fv-margin-bottom" color="danger"> Danger theme </fvButton>
+              <fvButton class="fv-warning fv-margin-end fv-margin-bottom" color="warning"> Warning theme </fvButton>
+              <fvButton class="fv-info fv-margin-end fv-margin-bottom" color="info"> Info theme </fvButton>
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
             <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
@@ -31,9 +31,15 @@
               <fvButton class="fv-size-xs fv-margin-end fv-margin-bottom"> XSmall size </fvButton>
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
-            <label class="fv-control-label fv-padding-start fv-padding-end">Custom elements</label>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom States</label>
             <div class="fv-padding">
-              <a class="fv-button fv-primary" href="http://framevuerk.com" target="_blank"> Link </a>
+              <fvButton class="fv-default fv-margin-end fv-margin-bottom" color="background" loading> Loading </fvButton>
+              <fvButton class="fv-default fv-margin-end fv-margin-bottom" color="background" disabled> Disabled </fvButton>
+            </div>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Custom Elements</label>
+            <div class="fv-padding">
+              <fvButton tag="a" href="http://framevuerk.com" target="_blank"> Link </fvButton>
             </div>
           </appExample>
           <br />

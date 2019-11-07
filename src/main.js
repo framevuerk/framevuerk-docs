@@ -4,10 +4,10 @@ import Meta from 'vue-meta'
 
 // import tt from './framevuerk/cm2.js'
 // console.warn(tt)
-import Framevuerk from 'framevuerk/dist/framevuerk-ltr.js'
+import Framevuerk from 'framevuerk/dist/framevuerk.js'
 // const Framevuerk = require('framevuerk/dist/framevuerk.js')
 
-import 'framevuerk/dist/framevuerk-ltr.css'
+import 'framevuerk/dist/framevuerk.css'
 import 'font-awesome/css/font-awesome.css'
 import VueHighlightJS from 'vue-highlightjs'
 import 'highlight.js/styles/github.css'
@@ -160,7 +160,18 @@ const routes = require('./routes.js').map(route => {
 })
 
 Vue.config.productionTip = false
-Vue.use(Framevuerk)
+Vue.use(Framevuerk, [
+  {
+    name: 'custom',
+    type: 'color',
+    value: '#ff5598'
+  },
+  {
+    name: 'background',
+    type: 'color',
+    value: '#333'
+  }
+])
 Vue.use(VueRouter)
 Vue.use(VueHighlightJS)
 Vue.use(Meta)
@@ -168,7 +179,6 @@ const router = new VueRouter({
   mode: process.env.NODE_ENV === 'production' ? 'history' : '',
   routes,
 })
-
 new Vue({
   router,
   data () {

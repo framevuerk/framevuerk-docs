@@ -23,6 +23,11 @@ module.exports = {
     config.module.rule('raw').test(/\.raw$/).use('raw-loader').loader('raw-loader').end()
   },
   configureWebpack: {
-    plugins: plugins
+    plugins: plugins,
+    devServer: {
+      watchOptions: {
+        poll: 1000
+      }
+    }
   }
 }
