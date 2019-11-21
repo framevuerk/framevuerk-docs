@@ -20,6 +20,7 @@
               <fvButton class="fv-danger fv-margin-end fv-margin-bottom" color="danger"> Danger theme </fvButton>
               <fvButton class="fv-warning fv-margin-end fv-margin-bottom" color="warning"> Warning theme </fvButton>
               <fvButton class="fv-info fv-margin-end fv-margin-bottom" color="info"> Info theme </fvButton>
+              <fvButton class="fv-info fv-margin-end fv-margin-bottom" color="custom"> Custom theme </fvButton>
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
             <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>

@@ -169,7 +169,7 @@ Vue.use(Framevuerk, [
   {
     name: 'background',
     type: 'color',
-    value: '#333'
+    value: '#fff'
   }
 ])
 Vue.use(VueRouter)
