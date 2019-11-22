@@ -32,6 +32,11 @@
               <fvInput placeholder="Required" v-model="exmps.a" required/>
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
+            <label class="fv-control-label fv-padding-start fv-padding-end">Multi Line</label>
+            <div class="fv-padding">
+              <fvInput placeholder="Multi Line" v-model="exmps.c" multiline/>
+            </div>
+            <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
             <label class="fv-control-label fv-padding-start fv-padding-end">Custom Required</label>
             <div class="fv-padding">
               <fvInput placeholder="Enter even number" type="number" v-model="exmps.b" :required="evenNumberValidator"/>
@@ -72,7 +77,8 @@ export default {
     return {
       exmps: {
         a: undefined,
-        b: undefined
+        b: undefined,
+        c: undefined
       }
     }
   },

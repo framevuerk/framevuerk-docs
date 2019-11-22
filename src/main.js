@@ -160,6 +160,7 @@ const routes = require('./routes.js').map(route => {
 })
 
 Vue.config.productionTip = false
+
 Vue.use(Framevuerk, [
   {
     name: 'custom',
@@ -169,7 +170,7 @@ Vue.use(Framevuerk, [
   {
     name: 'background',
     type: 'color',
-    value: '#fff'
+    value: '#333'
   }
 ])
 Vue.use(VueRouter)

@@ -6,7 +6,7 @@
         <b> Framevuerk </b>
       </router-link>
       <div class="fv-padding-start fv-padding-end fv-padding-bottom">
-        <fvInput class="fv-block" placeholder="Type to search..." @input="search" autofocus color="sidebar"/>
+        <fvInput class="fv-block" placeholder="Type to search..." @input="search" autofocus color="background"/>
       </div>
       <fvList v-if="typeof searchResult === 'undefined'">
         <fvListItem expanded class="unclickable">

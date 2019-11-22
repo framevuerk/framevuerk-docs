@@ -103,13 +103,13 @@ module.exports = [
     api: require('./api/fvSteps.json'),
     priority: 0.8
   },
-  {
-    name: 'Textarea',
-    path: '/components/textarea',
-    componentName: 'fvTextarea',
-    api: require('./api/fvTextarea.json'),
-    priority: 0.8
-  },
+  // {
+  //   name: 'Textarea',
+  //   path: '/components/textarea',
+  //   componentName: 'fvTextarea',
+  //   api: require('./api/fvTextarea.json'),
+  //   priority: 0.8
+  // },
   {
     name: 'Select',
     path: '/components/select',

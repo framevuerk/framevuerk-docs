@@ -27,8 +27,8 @@ const componentDialogItems = [
 
 const componentFormItems = [
   sidebarItem('Button', '/components/button', ['button', 'fv-button', 'fvbutton', 'form']),
-  sidebarItem('Input (Textbox)', '/components/input', ['input', 'text-box', 'textbox', 'form', 'fv-input', 'fvinput']),
-  sidebarItem('Textarea', '/components/textarea', ['input', 'text-box', 'textbox', 'form', 'fv-textarea', 'fvtextarea', 'textarea']),
+  sidebarItem('Input (Textbox)', '/components/input', ['input', 'text-box', 'textbox', 'form', 'fv-input', 'fvinput', 'textarea', 'fv-textarea', 'fvtextarea', 'multiline']),
+  // sidebarItem('Textarea', '/components/textarea', ['input', 'text-box', 'textbox', 'form', 'fv-textarea', 'fvtextarea', 'textarea']),
   sidebarItem('Dropdown Select', '/components/select', ['input', 'select', 'option', 'form', 'dropdown', 'fv-select', 'fvselect']),
   sidebarItem('Datepicker', '/components/datepicker', ['input', 'date-picker', 'datepicker', 'form', 'fv-datepicker', 'fvdatepicker']),
   sidebarItem('Switch', '/components/switch', ['switch', 'toggle', 'handle', 'check', 'form', 'fv-switch', 'fvswitch']),
