@@ -161,6 +161,7 @@ const routes = require('./routes.js').map(route => {
 
 Vue.config.productionTip = false
 
+global.Framevuerk = Framevuerk
 Vue.use(Framevuerk, [
   {
     name: 'custom',
