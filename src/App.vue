@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
+  <ThemeProvider id="app" :colors="{
+    primary: '#19b6ee'  
+  }">
     <router-view></router-view>
-  </div>
+  </ThemeProvider>
 </template>
 
 <script>

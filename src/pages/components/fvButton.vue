@@ -11,6 +11,11 @@
           <appCode :content="require('../../codes/fvButton.html.raw')" lang="html"></appCode>
           <br />
           <h2>Examples:</h2>
+
+          <theme-provider >
+            <button color="asghar">salam</button>
+          </theme-provider>
+
           <appExample dir="src/pages/components/fvButton.vue">
             <label class="fv-control-label fv-padding-start fv-padding-end">Themes</label>
             <div class="fv-margin">
