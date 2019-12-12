@@ -1,9 +1,10 @@
 <template>
-  <ThemeProvider id="app" :colors="{
-    primary: '#19b6ee'  
-  }">
-    <router-view></router-view>
-  </ThemeProvider>
+<fvThemeProvider id="app" :colors="{
+  primary: '#19b6ee',
+  custom: '#FF3D7F'
+}">
+  <router-view></router-view>
+</fvThemeProvider>
 </template>
 
 <script>
@@ -17,6 +18,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
 }
 body {
   line-height: 1.6;

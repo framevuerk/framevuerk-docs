@@ -1,5 +1,26 @@
 <template>
-  <fvContent>
+<fvLayout>
+  <template slot="header">
+    <button data-sidebar-toggle="true"> Sidebar Toggle </button>
+    Hi i am your header!!!Hi i am your header!!!Hi i am your header!!!Hi i am your header!!!Hi i am your header!!!Hi i am your header!!! <br>
+    salam <br>
+  </template>
+  <template slot="sidebar">
+    <div style="width: 200px">
+      salam chetorin khubi azizam?
+    </div>
+  </template>
+  <template slot="content">
+    <div v-for="(v, i) in Array(100).fill(1)" :key="i">
+      Content
+    </div>
+  </template>
+  <template slot="footer">
+    Hi i am your footer!!!
+  </template>
+</fvLayout>
+
+  <!-- <fvContent>
     <appHeader title="Framevuerk">
       <router-link class="fv-button fv-primary" to="/installation/setup">
         Documentions
@@ -70,18 +91,18 @@
       </div>
     </section>
     <fvFooter class="fv-text-center fv-padding"> Released under the MIT License Copyright © 2016-{{new Date().getFullYear()}} Amir Momenian. </fvFooter>
-  </fvContent>
+  </fvContent> -->
 </template>
 
 <script>
-import appHeader from '../components/appHeader.vue'
-import appLogo from '../components/appLogo.vue'
+// import appHeader from '../components/appHeader.vue'
+// import appLogo from '../components/appLogo.vue'
 
 export default {
-  components: {
-    appHeader,
-    appLogo
-  }
+  // components: {
+  //   appHeader,
+  //   appLogo
+  // }
 }
 </script>
 

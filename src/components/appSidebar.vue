@@ -107,11 +107,11 @@ export default {
   min-width: 250px;
 }
 
-.unclickable /deep/ {
-  & > .content{
-    background: rgba(0, 0, 0, 0.14);
-    padding: 0.8em 0;
-    font-weight: bold;
-  }
-}
+// .unclickable /deep/ {
+//   & > .content{
+//     background: rgba(0, 0, 0, 0.14);
+//     padding: 0.8em 0;
+//     font-weight: bold;
+//   }
+// }
 </style>

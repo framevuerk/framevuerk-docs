@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueComponentStyle from 'vue-component-style'
 import VueRouter from 'vue-router'
 import Meta from 'vue-meta'
 
@@ -162,18 +163,8 @@ const routes = require('./routes.js').map(route => {
 Vue.config.productionTip = false
 
 global.Framevuerk = Framevuerk
-Vue.use(Framevuerk, [
-  {
-    name: 'custom',
-    type: 'color',
-    value: '#ff5598'
-  },
-  {
-    name: 'background',
-    type: 'color',
-    value: '#333'
-  }
-])
+Vue.use(VueComponentStyle)
+Vue.use(Framevuerk)
 Vue.use(VueRouter)
 Vue.use(VueHighlightJS)
 Vue.use(Meta)

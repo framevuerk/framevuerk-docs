@@ -15,7 +15,7 @@
           <appExample dir="src/pages/components/fvInput.vue">
             <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
             <div class="fv-margin">
-              <fvInput class="fv-size-xl fv-margin-end fv-margin-bottom" placeholder="XLarge size" color="footer" />
+              <fvInput class="fv-size-xl fv-margin-end fv-margin-bottom" placeholder="XLarge size" color="primary" />
               <fvInput class="fv-size-lg fv-margin-end fv-margin-bottom" placeholder="Large size" />
               <fvInput class="fv-size-md fv-margin-end fv-margin-bottom" placeholder="Medium size" />
               <fvInput class="fv-size-sm fv-margin-end fv-margin-bottom" placeholder="Small size" />
