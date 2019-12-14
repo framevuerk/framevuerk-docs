@@ -1,24 +1,30 @@
 <template>
-<fvLayout>
-  <template slot="header">
-    <button data-sidebar-toggle="true"> Sidebar Toggle </button>
-    Hi i am your header!!!Hi i am your header!!!Hi i am your header!!!Hi i am your header!!!Hi i am your header!!!Hi i am your header!!! <br>
-    salam <br>
-  </template>
-  <template slot="sidebar">
-    <div style="width: 200px">
-      salam chetorin khubi azizam?
-    </div>
-  </template>
-  <template slot="content">
-    <div v-for="(v, i) in Array(100).fill(1)" :key="i">
-      Content
-    </div>
-  </template>
-  <template slot="footer">
-    Hi i am your footer!!!
-  </template>
-</fvLayout>
+<!-- <div style="margin: 30px"> -->
+  <fvLayout id="a">
+    <template slot="header">
+      <h2>Header</h2>
+    </template>
+    <template slot="autohideHeader">
+      <button data-sidebar-toggle="true"> Sidebar Toggle </button>
+      <h2>Auto hide Header</h2>
+    </template>
+    <template slot="sidebar">
+      <div style="width: 200px">
+        <h2>Sidebar</h2>
+        salam chetorin khubi azizam?
+      </div>
+    </template>
+    <template slot="content">
+      <h2>Content</h2>
+      <div v-for="(v, i) in Array(100).fill(1)" :key="i">
+        Content {{i}}
+      </div>
+    </template>
+    <template slot="footer">
+      Hi i am your footer!!!
+    </template>
+  </fvLayout>
+<!-- </div> -->
 
   <!-- <fvContent>
     <appHeader title="Framevuerk">
