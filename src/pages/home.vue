@@ -1,14 +1,23 @@
 <template>
 <!-- <div style="margin: 30px"> -->
   <fvLayout id="a">
-    <template slot="header">
-      <h2>Header</h2>
-    </template>
-    <template slot="autohideHeader">
-      <button data-sidebar-toggle="true"> Sidebar Toggle </button>
+    <!-- <fvHeader>
+      <h2>Static Header</h2>
+      <h2>Static Header</h2>
+      <h2>Static Header</h2>
+      <h2>Static Header</h2>
+    </fvHeader> -->
+    <fvHeader autoHide color="header">
+      <!-- <button data-sidebar-toggle="true"> Sidebar Toggle </button> -->
       <h2>Auto hide Header</h2>
-    </template>
-    <template slot="sidebar">
+    </fvHeader>
+    <fvContent>
+      <h2>Content</h2>
+      <div v-for="(v, i) in Array(100).fill(1)" :key="i">
+        Content {{i}}
+      </div>
+    </fvContent>
+    <!-- <template slot="sidebar">
       <div style="width: 200px">
         <h2>Sidebar</h2>
         salam chetorin khubi azizam?
@@ -22,7 +31,7 @@
     </template>
     <template slot="footer">
       Hi i am your footer!!!
-    </template>
+    </template> -->
   </fvLayout>
 <!-- </div> -->
 
