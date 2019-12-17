@@ -11,7 +11,7 @@
       <h2 style="display: inline-block">Very Good App</h2>
     </fvHeader>
     <fvHeader type="smart">
-      <button @click="$root.sidebar = !$root.sidebar"> Menu </button>
+      <fvButton @click="$root.sidebar = !$root.sidebar" color="header" border> Menu </fvButton>
     </fvHeader>
     <fvSidebar type="smart" :visible.sync="$root.sidebar" style="width: 240px">
       <fvContainer padding>
