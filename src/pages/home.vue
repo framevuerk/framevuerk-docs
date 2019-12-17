@@ -1,5 +1,5 @@
 <template>
-<!-- <div style="margin: 30px"> -->
+<!-- <div > -->
   <fvLayout id="a">
     <!-- <fvHeader>
       <h2>Static Header</h2>
@@ -7,15 +7,32 @@
       <h2>Static Header</h2>
       <h2>Static Header</h2>
     </fvHeader> -->
-    <fvHeader autoHide color="header">
-      <!-- <button data-sidebar-toggle="true"> Sidebar Toggle </button> -->
-      <h2>Auto hide Header</h2>
+    <fvHeader type="normal" color="background">
+      <h2 style="display: inline-block">Very Good App</h2>
     </fvHeader>
+    <fvHeader type="smart">
+      <button @click="$root.sidebar = !$root.sidebar"> Menu </button>
+    </fvHeader>
+    <fvSidebar type="smart" :visible.sync="$root.sidebar" style="width: 240px">
+      <fvContainer padding>
+        <div v-for="(v, i) in Array(100).fill(1)" :key="i+'0'">
+          Sidebar {{i}}
+        </div>
+      </fvContainer>
+    </fvSidebar>
     <fvContent>
-      <h2>Content</h2>
-      <div v-for="(v, i) in Array(100).fill(1)" :key="i">
-        Content {{i}}
-      </div>
+      <fvContainer padding>
+        <h2>Content</h2>
+        <div v-for="(v, i) in Array(20).fill(1)" :key="i+'1'">
+          Content {{i}}
+        </div>
+        <fvContainer padding border>
+          Salam
+        </fvContainer>
+        <div v-for="(v, i) in Array(80).fill(1)" :key="i+'2'">
+          Content {{i}}
+        </div>
+      </fvContainer>
     </fvContent>
     <!-- <template slot="sidebar">
       <div style="width: 200px">

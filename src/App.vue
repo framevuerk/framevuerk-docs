@@ -1,6 +1,6 @@
 <template>
 <fvThemeProvider id="app" :colors="{
-  header: '#394575',
+  headerz: '#394575',
   custom: '#FF3D7F'
 }">
   <router-view></router-view>
