@@ -15,7 +15,7 @@
     </fvHeader>
     <fvSidebar type="smart" :visible.sync="$root.sidebar" style="width: 240px">
       <fvContainer padding>
-        <div v-for="(v, i) in Array(100).fill(1)" :key="i+'0'">
+        <div v-for="(v, i) in Array(15).fill(1)" :key="i+'0'">
           Sidebar {{i}}
         </div>
       </fvContainer>
