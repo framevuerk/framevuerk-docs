@@ -177,6 +177,7 @@ new Vue({
   data () {
     return {
       sidebar: false,
+      sidebar2: false,
       githubRepo: 'https://github.com/framevuerk/framevuerk',
       githubDocsRepo: 'https://github.com/framevuerk/framevuerk-docs',
       npmRepo: 'https://www.npmjs.com/package/framevuerk'
