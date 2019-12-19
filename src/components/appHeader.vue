@@ -1,5 +1,5 @@
 <template>
-  <fvHeader>
+  <fvHeader type="smart">
     <fvButton class="fv-hidden-xl fv-hidden-lg" v-if="typeof $attrs.sidebar !== 'undefined'" @click.native="$root.sidebar = !$root.sidebar; localSidebar = !localSidebar">
       <i class="fa fa-bars"></i>
     </fvButton>

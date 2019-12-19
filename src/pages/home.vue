@@ -11,7 +11,7 @@
       <h2 style="display: inline-block">Very Good App</h2>
     </fvHeader> -->
     <fvHeader type="smart">
-      <fvButton @click="$root.sidebar = !$root.sidebar" color="header" border> Menu </fvButton>
+      <fvButton @click="$root.sidebar = !$root.sidebar" color="header" border fv-no-padding-start> Menu </fvButton>
       <fvButton @click="$root.sidebar2 = !$root.sidebar2" color="header" border> Menu2 </fvButton>
     </fvHeader>
     <fvSidebar type="smart" :visible.sync="$root.sidebar" style="width: 240px" position="start">
@@ -43,21 +43,6 @@
         </div>
       </fvContainer>
     </fvContent>
-    <!-- <template slot="sidebar">
-      <div style="width: 200px">
-        <h2>Sidebar</h2>
-        salam chetorin khubi azizam?
-      </div>
-    </template>
-    <template slot="content">
-      <h2>Content</h2>
-      <div v-for="(v, i) in Array(100).fill(1)" :key="i">
-        Content {{i}}
-      </div>
-    </template>
-    <template slot="footer">
-      Hi i am your footer!!!
-    </template> -->
   </fvLayout>
 <!-- </div> -->
 
