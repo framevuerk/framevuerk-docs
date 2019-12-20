@@ -10,28 +10,28 @@
     <!-- <fvHeader type="normal" color="background">
       <h2 style="display: inline-block">Very Good App</h2>
     </fvHeader> -->
-    <fvHeader type="smart">
+    <fvHeader type="smart" fv-row>
       <fvButton @click="$root.sidebar = !$root.sidebar" color="header" border fv-no-padding-start> Menu </fvButton>
       <fvButton @click="$root.sidebar2 = !$root.sidebar2" color="header" border> Menu2 </fvButton>
     </fvHeader>
-    <fvSidebar type="smart" :visible.sync="$root.sidebar" style="width: 240px" position="start">
-      <fvContainer padding>
+    <fvSidebar type="smart" :visible.sync="$root.sidebar" position="start" fv-col-6>
+      <div fv-padding fv-shadow fv-radius fv-border>
         <div v-for="(v, i) in Array(15).fill(1)" :key="i+'0'">
           Sidebar End {{i}}
         </div>
-      </fvContainer>
+      </div>
     </fvSidebar>
-    <fvSidebar type="smart" :visible.sync="$root.sidebar2" style="width: 240px" position="end">
+    <!-- <fvSidebar type="smart" :visible.sync="$root.sidebar2" style="width: 240px" position="end">
       <fvContainer padding>
         <div v-for="(v, i) in Array(15).fill(1)" :key="i+'0'">
           Sidebar {{i}}
         </div>
       </fvContainer>
-    </fvSidebar>
+    </fvSidebar> -->
 
     <fvContent>
       <fvContainer padding>
-        <h2>Content</h2>
+        <h2 fv-shadow>Content</h2>
         <div v-for="(v, i) in Array(20).fill(1)" :key="i+'1'">
           Content {{i}}
         </div>
