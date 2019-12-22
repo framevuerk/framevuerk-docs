@@ -10,12 +10,16 @@
     <!-- <fvHeader type="normal" color="background">
       <h2 style="display: inline-block">Very Good App</h2>
     </fvHeader> -->
-    <fvHeader type="smart" fv-row>
-      <fvButton @click="$root.sidebar = !$root.sidebar" color="header" border fv-no-padding-start> Menu </fvButton>
-      <fvButton @click="$root.sidebar2 = !$root.sidebar2" color="header" border> Menu2 </fvButton>
+    <fvHeader type="smart" row color="header">
+      <div col="6" hidden-lower-sm>
+        <fvButton @click="$root.sidebar = !$root.sidebar" size-md color="header" full-width> Menu </fvButton>
+      </div>
+      <div col="6">
+        <fvButton @click="$root.sidebar2 = !$root.sidebar2" size-md color="header" border full-width> Menu2 </fvButton>
+      </div>
     </fvHeader>
-    <fvSidebar type="smart" :visible.sync="$root.sidebar" position="start" fv-col-6>
-      <div fv-padding fv-shadow fv-radius fv-border>
+    <fvSidebar type="smart" :visible.sync="$root.sidebar" position="start" col="6">
+      <div padding shadow radius border>
         <div v-for="(v, i) in Array(15).fill(1)" :key="i+'0'">
           Sidebar End {{i}}
         </div>
