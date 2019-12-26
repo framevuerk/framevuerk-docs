@@ -1,37 +1,37 @@
 <template>
-<!-- <div > -->
+<!-- <div >
   <fvLayout id="a">
-    <!-- <fvHeader>
+    <fvHeader>
       <h2>Static Header</h2>
       <h2>Static Header</h2>
       <h2>Static Header</h2>
       <h2>Static Header</h2>
-    </fvHeader> -->
-    <!-- <fvHeader type="normal" color="background">
+    </fvHeader>
+    <fvHeader type="normal" color="background">
       <h2 style="display: inline-block">Very Good App</h2>
-    </fvHeader> -->
+    </fvHeader>
     <fvHeader type="smart" row color="header">
       <div col="6" hidden-lower-sm>
-        <fvButton @click="$root.sidebar = !$root.sidebar" size-md color="header" full-width> Menu </fvButton>
+        <fvButton @click="$root.sidebar = !$root.sidebar" size="md" color="header" full-width> Menu </fvButton>
       </div>
       <div col="6">
-        <fvButton @click="$root.sidebar2 = !$root.sidebar2" size-md color="header" border full-width> Menu2 </fvButton>
+        <fvButton @click="$root.sidebar2 = !$root.sidebar2" size="md" color="header" border="md" full-width> Menu2 </fvButton>
       </div>
     </fvHeader>
-    <fvSidebar type="smart" :visible.sync="$root.sidebar" position="start" col="6">
+    <fvSidebar type="smart" :visible.sync="$root.sidebar" position="start" col="6" padding="md">
       <div padding shadow radius border>
         <div v-for="(v, i) in Array(15).fill(1)" :key="i+'0'">
           Sidebar End {{i}}
         </div>
       </div>
     </fvSidebar>
-    <!-- <fvSidebar type="smart" :visible.sync="$root.sidebar2" style="width: 240px" position="end">
+    <fvSidebar type="smart" :visible.sync="$root.sidebar2" style="width: 240px" position="end">
       <fvContainer padding>
         <div v-for="(v, i) in Array(15).fill(1)" :key="i+'0'">
           Sidebar {{i}}
         </div>
       </fvContainer>
-    </fvSidebar> -->
+    </fvSidebar>
 
     <fvContent>
       <fvContainer padding>
@@ -48,16 +48,16 @@
       </fvContainer>
     </fvContent>
   </fvLayout>
-<!-- </div> -->
+</div> -->
 
-  <!-- <fvContent>
-    <appHeader title="Framevuerk">
-      <router-link class="fv-button fv-primary" to="/installation/setup">
+  <fvLayout>
+    <appHeader title="Framevuerk" layout="header">
+      <fvButton tag="a" href="/installation/setup">
         Documentions
-      </router-link>
+      </fvButton>
     </appHeader>
-    <section>
-      <div class="fv-row">
+    <fvContent>
+      <div row>
         <div class="logo-container">
           <div class="fv-col">
             <app-logo></app-logo>
@@ -119,20 +119,20 @@
           </div>
         </div>
       </div>
-    </section>
-    <fvFooter class="fv-text-center fv-padding"> Released under the MIT License Copyright © 2016-{{new Date().getFullYear()}} Amir Momenian. </fvFooter>
-  </fvContent> -->
+    </fvContent>
+    <!-- <fvFooter class="fv-text-center fv-padding"> Released under the MIT License Copyright © 2016-{{new Date().getFullYear()}} Amir Momenian. </fvFooter> -->
+  </fvLayout>
 </template>
 
 <script>
-// import appHeader from '../components/appHeader.vue'
-// import appLogo from '../components/appLogo.vue'
+import appHeader from '../components/appHeader.vue'
+import appLogo from '../components/appLogo.vue'
 
 export default {
-  // components: {
-  //   appHeader,
-  //   appLogo
-  // }
+  components: {
+    appHeader,
+    appLogo
+  }
 }
 </script>
 

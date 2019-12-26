@@ -1,33 +1,42 @@
 <template>
-  <fvHeader type="smart">
-    <fvButton class="fv-hidden-xl fv-hidden-lg" v-if="typeof $attrs.sidebar !== 'undefined'" @click.native="$root.sidebar = !$root.sidebar; localSidebar = !localSidebar">
+  <fvHeader
+    type="smart"
+    css-flex-auto
+    css-padding="md"
+    css-color="header">
+    <fvButton
+      css-hidden-lg
+      css-color="header"
+      css-border="no"
+      css-shadow="no"
+      css-text-size="lg"
+      fab
+      @click.native="$root.sidebar = !$root.sidebar">
       <i class="fa fa-bars"></i>
     </fvButton>
-    <span class="fv-margin-start"></span>
-    <div class="fv-grow">
-      <h1 class="fv-font-xl">
+    <span css-margin-start="md"></span>
+    <div css-flex-grow>
+      <h1 css-text-size="lg">
         {{$attrs.title}}
       </h1>
     </div>
-    <span class="fv-margin-start"></span>
+    <span css-margin-start="md"></span>
     <slot></slot>
-    <span class="fv-margin-start" v-if="!$attrs.hide_github"></span>
-    <a class="fv-button" :href="$root.githubRepo" target="_blank" v-if="!$attrs.hide_github">
+    <span v-if="!$attrs.hide_github" css-margin-start="md"></span>
+    <fvButton
+      v-if="!$attrs.hide_github"
+      tag="a"
+      :href="$root.githubRepo"
+      target="_blank"
+      css-color="header"
+      css-border="no"
+      css-shadow="no"
+      css-text-size="lg"
+      fab>
       <i class="fa fa-github"></i>
-      GITHUB
-    </a>
+    </fvButton>
   </fvHeader>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      localSidebar: false
-    }
-  }
-}
-</script>
 
 <style lang="scss" scoped>
   // .fv-header /deep/ header {
