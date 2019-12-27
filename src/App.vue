@@ -2,7 +2,7 @@
 <fvThemeProvider id="app" :colors="{
   headerz: '#394575',
   custom: '#FF3D7F',
-  background: '#fff'
+  backgroundz: '#fff'
 }">
   <router-view></router-view>
 </fvThemeProvider>

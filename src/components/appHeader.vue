@@ -1,9 +1,9 @@
 <template>
   <fvHeader
     type="smart"
-    css-flex-auto
-    css-padding="md"
-    css-color="header">
+    css-color="header"
+    css-flex
+    css-padding="md">
     <fvButton
       css-hidden-lg
       css-color="header"
@@ -14,15 +14,15 @@
       @click.native="$root.sidebar = !$root.sidebar">
       <i class="fa fa-bars"></i>
     </fvButton>
-    <span css-margin-start="md"></span>
-    <div css-flex-grow>
+    <span css-space-x="md" />
+    <div css-grow>
       <h1 css-text-size="lg">
         {{$attrs.title}}
       </h1>
     </div>
-    <span css-margin-start="md"></span>
+    <span css-space-x="md" />
     <slot></slot>
-    <span v-if="!$attrs.hide_github" css-margin-start="md"></span>
+    <span v-if="!$attrs.hide_github" css-space-x="md" />
     <fvButton
       v-if="!$attrs.hide_github"
       tag="a"
@@ -30,10 +30,8 @@
       target="_blank"
       css-color="header"
       css-border="no"
-      css-shadow="no"
-      css-text-size="lg"
-      fab>
-      <i class="fa fa-github"></i>
+      css-shadow="no">
+      <i class="fa fa-github"></i> GITHUB
     </fvButton>
   </fvHeader>
 </template>

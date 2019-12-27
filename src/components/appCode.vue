@@ -1,12 +1,14 @@
 <template>
-  <pre class="markup fv-border fv-shadow fv-radius fv-margin-top fv-margin-bottom" v-highlightjs>
-    <div class="panel fv-margin">
-      <span class="hljs-comment" v-text="langText"></span>
-      <!-- <fvButton class="fv-size-sm" @click.prevent="copy" :disabled="copiedToast"><i class="fa fa-copy"></i> Copy</fvButton> -->
-    </div>
-    <code :class="lang" ref="markup" v-text="content.trim()"></code>
-    <fvToast v-model="copiedToast" :timeout="1200">Copied to Clipboard!</fvToast>
-  </pre>
+  <div css-border="md" css-shadow-bottom="md" css-radius="md" css-margin-y="md" css-color="background" css-overflow="hidden">
+    <pre class="markup" v-highlightjs>
+      <div class="panel" css-padding="md" css-color="sidebar">
+        <span class="hljs-comment" v-text="langText"></span>
+        <fvButton css-size="sm" css-color="sidebar" css-shadow="no" @click.prevent="copy" :disabled="copiedToast"><i class="fa fa-copy"></i> Copy</fvButton>
+      </div>
+      <code :class="lang" ref="markup" v-text="content.trim()"></code>
+      <!-- <fvToast v-model="copiedToast" :timeout="1200">Copied to Clipboard!</fvToast> -->
+    </pre>
+  </div>
 </template>
 
 <script>
@@ -64,7 +66,7 @@ export default {
 
   & > .hljs {
     padding: 1em;
-    background: #ffffff;
+    // background: #ffffff;
   }
 
   & > code {

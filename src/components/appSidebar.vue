@@ -1,5 +1,5 @@
 <template>
-  <fvSidebar v-model="$root.sidebar" class="app-sidebar fv-col-xs-8 fv-col-md-5 fv-col-lg-3 fv-col-xl-2">
+  <fvSidebar :visible.sync="$root.sidebar" css-col-xs="8" css-col-md="5" css-col-lg="3" css-col-xl="2" position="start">
     <fvContent>
       <router-link class="fv-padding fv-block" to="/">
         <appLogo style="width: 35px;" white ready></appLogo>

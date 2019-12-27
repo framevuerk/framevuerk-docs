@@ -8,10 +8,10 @@ import Meta from 'vue-meta'
 import Framevuerk from 'framevuerk/dist/framevuerk.js'
 // const Framevuerk = require('framevuerk/dist/framevuerk.js')
 
-import 'framevuerk/dist/framevuerk.css'
+// import 'framevuerk/dist/framevuerk.css'
 import 'font-awesome/css/font-awesome.css'
 import VueHighlightJS from 'vue-highlightjs'
-import 'highlight.js/styles/github.css'
+import 'highlight.js/styles/a11y-dark.css'
 
 import App from './App.vue'
 
