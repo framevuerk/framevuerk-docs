@@ -1,12 +1,12 @@
 <template>
-  <fvSidebar :visible.sync="$root.sidebar" css-col-xs="8" css-col-md="5" css-col-lg="3" css-col-xl="2" position="start">
-    <fvContent>
-      <router-link class="fv-padding fv-block" to="/">
+  <fvSidebar :visible.sync="$root.sidebar" style="width: 300px;" position="start">
+    <div css-color="sidebar">
+      <router-link css-padding="md" css-display="block" to="/">
         <appLogo style="width: 35px;" white ready></appLogo>
         <b> Framevuerk </b>
       </router-link>
-      <div class="fv-padding-start fv-padding-end fv-padding-bottom">
-        <fvInput class="fv-block" placeholder="Type to search..." @input="search" autofocus color="background"/>
+      <div css-padding="md" autofocus>
+        <fvInput css-display="block" css-full-width placeholder="Type to search..." @input="search" css-color="sidebar" css-shadow="no"/>
       </div>
       <fvList v-if="typeof searchResult === 'undefined'">
         <fvListItem expanded class="unclickable">
@@ -68,7 +68,7 @@
             <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
         </fvListItem>
       </fvList>
-    </fvContent>
+    </div>
   </fvSidebar>
 </template>
 

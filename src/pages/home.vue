@@ -57,6 +57,39 @@
       </fvButton>
     </appHeader>
     <fvContent>
+      <div css-margin="xl">
+        <!-- <fvInput />
+        <br />
+        <br /> -->
+        <div>
+          <fvInput v-model="x" css-radius-end="no" css-border-end="no"/> <fvButton css-radius-start="no"> Salam </fvButton>
+        </div>
+        <br />
+        <br />
+        <fvInput multiLine v-model="x" />
+        <!-- <fvList>
+          <fvListItem selected tag="a">Item #1</fvListItem>
+          <fvListItem disabled>Item #2</fvListItem>
+          <fvListItem>
+            Item #3
+            <fvList slot="sub-list">
+              <fvListItem>SubItem #1</fvListItem>
+              <fvListItem disabled>SubItem #2</fvListItem>
+              <fvListItem>SubItem #3</fvListItem>
+              <fvListItem>
+                SubItem #4
+                <fvList slot="sub-list">
+                  <fvListItem>SubItem #1</fvListItem>
+                  <fvListItem disabled>SubItem #2</fvListItem>
+                  <fvListItem>SubItem #3</fvListItem>
+                  <fvListItem>SubItem #4</fvListItem>
+                </fvList>  
+              </fvListItem>
+            </fvList>
+          </fvListItem>
+          <fvListItem>Item #4</fvListItem>
+        </fvList> -->
+      </div>
       <div css-max-width="sm" css-padding-y="xl"  css-margin-x="auto" css-text-align="center">
         <div>
           <app-logo></app-logo>
@@ -129,6 +162,11 @@ export default {
   components: {
     appHeader,
     appLogo
+  },
+  data() {
+    return {
+      x: '123'
+    }
   }
 }
 </script>
