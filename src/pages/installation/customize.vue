@@ -1,8 +1,8 @@
 <template>
   <fvLayout>
-    <appHeader :title="$route.meta.title" sidebar layout="header"></appHeader>
-    <appSidebar layout="sidebar" position="start"/>
-    <fvContent css-padding="md" css-max-width="md" css-margin-x="auto">
+    <appHeader :title="$route.meta.title" sidebar slot="header"></appHeader>
+    <appSidebar slot="start-sidebar"/>
+    <fvContent css-padding="md" css-max-width="md" css-margin-x="auto" slot="content">
       <appDescription :content="$route.meta.api"></appDescription>
       <appCode :content="require('../../codes/customize.sh.raw')" lang="terminal"></appCode>
       <appDescription>And your config or list of configs array in <i>.json</i> file. (Also you can deliver same content via <i>.js</i> file and <i>module.exports</i> format)</appDescription>

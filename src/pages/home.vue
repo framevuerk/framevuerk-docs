@@ -51,12 +51,13 @@
 </div> -->
 
   <fvLayout>
-    <appHeader title="Framevuerk" layout="header">
+    <!-- <span slot="x"></span> -->
+    <appHeader title="Framevuerk" slot="header">
       <fvButton tag="router-link" to="/installation/setup" css-color="header" css-border="no" css-shadow="no">
         Documentions
       </fvButton>
     </appHeader>
-    <fvContent>
+    <fvContent slot="content">
       <div css-margin="xl">
         <!-- <fvInput />
         <br />
@@ -150,7 +151,7 @@
         </div>
       </div>
     </fvContent>
-    <fvFooter css-padding="lg" css-text-align="center" cssz-color="background"> Released under the MIT License Copyright © 2016-{{new Date().getFullYear()}} Amir Momenian. </fvFooter>
+    <fvFooter slot="footer" css-padding="lg" css-text-align="center" cssz-color="background"> Released under the MIT License Copyright © 2016-{{new Date().getFullYear()}} Amir Momenian. </fvFooter>
   </fvLayout>
 </template>
 

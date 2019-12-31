@@ -1,31 +1,32 @@
 <template>
-  <fvMain>
-    <appSidebar></appSidebar>
-    <fvContent>
-      <appHeader :title="$route.meta.title" sidebar></appHeader>
+  <fvLayout>
+    <appHeader :title="$route.meta.title" sidebar slot="header"></appHeader>
+    <appSidebar slot="start-sidebar"></appSidebar>
+    <fvContent css-padding="md" css-max-width="md" css-margin-x="auto" slot="content">
       <div class="fv-row">
         <div class="fv-col-xs-12 fv-col-md-10 fv-col-offset-md-1 fv-col-lg-10 fv-col-offset-lg-1 fv-col-xl-8 fv-col-offset-xl-2">
           <appDescription :content="$route.meta.api"></appDescription>
-          <br />
-          <h2>Code:</h2>
+          <appDescription><h2>Code:</h2></appDescription>
           <appCode :content="require('../../codes/fvButton.html.raw')" lang="html"></appCode>
-          <br />
-          <h2>Examples:</h2>
-
-          <theme-provider >
-            <button color="asghar">salam</button>
-          </theme-provider>
-
+          <appDescription><h2>Examples:</h2></appDescription>
           <appExample dir="src/pages/components/fvButton.vue">
             <label class="fv-control-label fv-padding-start fv-padding-end">Themes</label>
-            <div class="fv-margin">
-              <fvButton class="fv-default fv-margin-end fv-margin-bottom" color="background"> Default theme </fvButton>
-              <fvButton class="fv-secondary fv-margin-end fv-margin-bottom" color="secondary"> Secondary theme </fvButton>
-              <fvButton class="fv-primary fv-margin-end fv-margin-bottom" color="primary"> Primary theme </fvButton>
-              <fvButton class="fv-danger fv-margin-end fv-margin-bottom" color="danger"> Danger theme </fvButton>
-              <fvButton class="fv-warning fv-margin-end fv-margin-bottom" color="warning"> Warning theme </fvButton>
-              <fvButton class="fv-info fv-margin-end fv-margin-bottom" color="info"> Info theme </fvButton>
-              <fvButton class="fv-info fv-margin-end fv-margin-bottom" color="custom"> Custom theme </fvButton>
+            <div>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="background"> Default Theme </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="primary"> Primary Theme </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="primary" invert> Primary Theme Invert </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="danger"> Danger Theme </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="danger" invert> Danger Theme Invert </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="warning"> Warning Theme </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="info"> Info Theme </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="custom"> Custom Theme </fvButton>
+            </div>
+            <div>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="background" fab css-size="xs"> A </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="primary" fab css-size="sm"> B </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="primary" invert fab> C </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="danger" fab css-size="lg"> D </fvButton>
+              <fvButton css-margin-end="md" css-margin-bottom="md" css-color="danger" invert fab css-size="xl"> E </fvButton>
             </div>
             <hr class="fv-hr fv-margin-top fv-margin-bottom"/>
             <label class="fv-control-label fv-padding-start fv-padding-end">Sizes</label>
@@ -48,16 +49,14 @@
               <fvButton tag="a" href="http://framevuerk.com" target="_blank"> Link </fvButton>
             </div>
           </appExample>
-          <br />
-          <h2>Notes:</h2>
+          <appDescription><h2>Notes:</h2></appDescription>
           <appNotes :content="$route.meta.api"></appNotes>
-          <br />
-          <h2>API:</h2>
+          <appDescription><h2>API:</h2></appDescription>
           <appApi :content="$route.meta.api"></appApi>
         </div>
       </div>
     </fvContent>
-  </fvMain>
+  </fvLayout>
 </template>
 
 <script>

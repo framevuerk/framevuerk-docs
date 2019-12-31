@@ -1,8 +1,8 @@
 <template>
   <fvLayout>
-    <appHeader :title="$route.meta.title" sidebar layout="header"></appHeader>
-    <appSidebar layout="sidebar" position="start"/>
-    <fvContent css-padding="md" css-max-width="md" css-margin-x="auto">
+    <appHeader :title="$route.meta.title" sidebar slot="header"></appHeader>
+    <appSidebar slot="start-sidebar"/>
+    <fvContent css-padding="md" css-max-width="md" css-margin-x="auto" slot="content">
       <appDescription :content="$route.meta.api"></appDescription>
       <appCode :content="require('../../codes/setup.sh.raw')" lang="terminal"></appCode>
       <appDescription>And put these on your main script: (Also <i>commonjs</i> syntax and <i>require</i> is available.)</appDescription>
