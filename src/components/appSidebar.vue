@@ -12,8 +12,8 @@
         <fvListItem expanded class="unclickable">
             <i class="fa fa-code" /> Installation
             <fvList slot="sub-list">
-              <fvListItem v-for="item in sidebarItems.installationItems" :key="item.text" :class="{ selected: $route.path === item.route }">
-                  <router-link class="fv-block" :to="item.route">{{item.text}}</router-link>
+              <fvListItem tag="router-link" :to="item.route" v-for="item in sidebarItems.installationItems" :key="item.text" :class="{ selected: $route.path === item.route }">
+                  {{item.text}}
               </fvListItem>
             </fvList>
         </fvListItem>
