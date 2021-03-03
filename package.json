@@ -27,7 +27,7 @@
     "framevuerk-builder": "^2.0.3",
     "node-sass": "^4.9.3",
     "prerender-spa-plugin": "^3.4.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.1.0",
