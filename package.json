@@ -10,7 +10,7 @@
     "lint:fix": "vue-cli-service lint --fix"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "font-awesome": "^4.7.0",
     "framevuerk": "^2.4.0",
     "idate": "^0.1.5",
